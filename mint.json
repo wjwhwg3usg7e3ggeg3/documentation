@@ -197,61 +197,6 @@
         "v2/api-reference/group-controller/leave-group"
       ],
       "version": "v2"
-    },
-    {
-      "group": "Typebot",
-      "pages": [],
-      "version": "v2"
-    },
-    {
-      "group": "OpenAI",
-      "pages": [],
-      "version": "v2"
-    },
-    {
-      "group": "Evolution Bot",
-      "pages": [],
-      "version": "v2"
-    },
-    {
-      "group": "Dify",
-      "pages": [],
-      "version": "v2"
-    },
-    {
-      "group": "n8n",
-      "pages": [],
-      "version": "v2"
-    },
-    {
-      "group": "EvoAI",
-      "pages": [],
-      "version": "v2"
-    },
-    {
-      "group": "Flowise",
-      "pages": [],
-      "version": "v2"
-    },
-    {
-      "group": "Chatwoot",
-      "pages": [],
-      "version": "v2"
-    },
-    {
-      "group": "Websocket",
-      "pages": [],
-      "version": "v2"
-    },
-    {
-      "group": "SQS",
-      "pages": [],
-      "version": "v2"
-    },
-    {
-      "group": "RabbitMQ",
-      "pages": [],
-      "version": "v2"
     }
   ],
   "footerSocials": {
