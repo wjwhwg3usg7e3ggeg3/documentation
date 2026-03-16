@@ -1,0 +1,145 @@
+---
+title: NVM 
+icon: js  
+---
+
+## Prerequisites
+
+Before starting the installation of Evolution API v2, ensure that you have already configured the necessary services, such as PostgreSQL and Redis. Follow the links below for more details:
+
+- [Database Configuration](/v2/pt/requirements/database)
+- [Redis Configuration](/v2/pt/requirements/redis)
+
+## NVM Installation
+
+Evolution API can be easily installed using Node Version Manager (NVM). Follow these steps to set up your environment and start the Evolution API on your server.
+
+### Install NVM
+
+First, download and install Node.js with the following commands:
+
+```bash
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
+```
+
+Now, load the environment and install Node.js:
+
+```bash
+# Load NVM into the current environment
+source ~/.bashrc
+
+# Install and use the required Node.js version
+nvm install v20.10.0 && nvm use v20.10.0
+```
+
+Confirm that NVM was successfully installed:
+
+```bash
+command -v nvm
+```
+
+<Info>  
+If you haven't set it up yet, you can also configure your server's timezone with the command:
+
+```bash
+dpkg-reconfigure tzdata
+```
+</Info>
+
+## Cloning the Repository and Installing Dependencies
+
+Clone the official Evolution API v2 repository from the correct branch:
+
+```bash
+git clone -b v2.0.0 https://github.com/EvolutionAPI/evolution-api.git
+```
+
+Navigate to the project directory and install the dependencies:
+
+```bash
+cd evolution-api
+npm install
+```
+
+## Environment Variables Configuration
+
+Now let's configure the environment variables. First, copy the `.env.example` file to `.env`:
+
+```bash
+cp ./.env.example ./.env
+```
+
+Edit the `.env` file with your specific settings:
+
+```bash
+nano ./.env
+```
+
+Replace the default values with your configurations, such as database connection strings, API keys, server ports, etc.
+
+<Info>  
+Visit the [environment variables section](/v2/pt/env) for detailed instructions on how to configure your `.env` file.
+</Info>
+
+## Database Generation and Deployment
+
+After setting up the environment, you will need to generate the Prisma client files and deploy the migrations to the database. Use the following commands, depending on the database you are using (PostgreSQL or MySQL):
+
+1. Generate the Prisma client files:
+
+    ```bash
+    npm run db:generate
+    ```
+
+2. Deploy the migrations:
+
+    ```bash
+    npm run db:deploy
+    ```
+    
+## Starting the Evolution API
+
+After configuration, you can start the Evolution API with the following command:
+
+```bash
+npm run build
+npm run start:prod
+```
+
+## PM2 Installation and Configuration
+
+Use PM2 to manage the API process:
+
+```bash
+npm install pm2 -g
+pm2 start 'npm run start:prod' --name ApiEvolution
+pm2 startup
+pm2 save --force
+```
+
+<Info>  
+If your server has more memory, consider configuring PM2 to utilize more resources:
+
+```bash
+pm2 start 'npm run start:prod' --name ApiEvolution -- start --node-args="--max-old-space-size=4096" --max-memory-restart 4G
+```
+
+This is recommended for servers with at least 4GB of RAM exclusively available for the Evolution API.
+</Info>
+
+To verify that the API is running, visit [http://localhost:8080](http://localhost:8080). You should see the following response:
+
+```json
+{
+  "status": 200,
+  "message": "Welcome to the Evolution API, it is working!",
+  "version": "2.0.10",
+  "clientName": "evolution01",
+  "manager": "https://evo2.site.com/manager",
+  "documentation": "https://doc.evolution-api.com"
+}
+```
+
+<Tip>  
+Make your life easier with the JSON Formatter extension on [Google Chrome](https://chromewebstore.google.com/detail/json-formatter/gpmodmeblccallcadopbcoeoejepgpnb?hl=en) or [Microsoft Edge](https://microsoftedge.microsoft.com/addons/detail/json-formatter/hdebmbedhflilekbidmmdiaiilaegkjl).
+</Tip>
