@@ -1,7 +1,7 @@
 {
   "openapi": "3.0.3",
   "info": {
-    "title": "Evolution API",
+    "title": "Zynx API",
     "version": "1.7.1"
   },
   "servers": [
@@ -9,8 +9,8 @@
       "url": "https://{server-url}",
       "variables": {
         "server-url": {
-          "default": "evolution-example",
-          "description": "The URL of your EvolutionAPI server"
+          "default": "api.zynxapi.app",
+          "description": "The URL of your ZynxAPI server"
         }
       },
       "description": "Your instance domain"
