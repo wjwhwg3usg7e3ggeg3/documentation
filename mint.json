@@ -61,68 +61,7 @@
       "group": "Iniciar",
       "pages": [
         "v2/pt/get-started/introduction",
-        {
-          "group": "Pr\u00e9-requisitos",
-          "icon": "triangle-exclamation",
-          "pages": [
-            "v2/pt/requirements/database",
-            "v2/pt/requirements/redis"
-          ]
-        },
-        {
-          "group": "Instala\u00e7\u00e3o",
-          "icon": "wrench",
-          "pages": [
-            "v2/pt/install/docker",
-            "v2/pt/install/nvm",
-            "v2/pt/install/nginx"
-          ]
-        },
-        {
-          "group": "Integra\u00e7\u00f5es",
-          "icon": "toolbox",
-          "pages": [
-            {
-              "group": "Eventos",
-              "icon": "calendar",
-              "pages": [
-                "v2/pt/integrations/websocket",
-                "v2/pt/integrations/rabbitmq",
-                "v2/pt/integrations/sqs"
-              ]
-            },
-            {
-              "group": "Chatbots",
-              "icon": "robot",
-              "pages": [
-                "v2/pt/integrations/chatwoot",
-                "v2/pt/integrations/evoai",
-                "v2/pt/integrations/evolution-bot",
-                "v2/pt/integrations/typebot",
-                "v2/pt/integrations/openai",
-                "v2/pt/integrations/dify",
-                "v2/pt/integrations/flowise"
-              ]
-            },
-            {
-              "group": "Canais",
-              "icon": "message",
-              "pages": [
-                "v2/pt/integrations/cloudapi",
-                "v2/pt/integrations/evolution-channel"
-              ]
-            },
-            {
-              "group": "Armazenamento",
-              "icon": "database",
-              "pages": [
-                "v2/pt/integrations/s3minio"
-              ]
-            }
-          ]
-        },
         "v2/pt/env",
-        "v2/pt/updates",
         {
           "group": "Configura\u00e7\u00e3o",
           "icon": "wrench",
@@ -138,68 +77,7 @@
       "group": "Getting Started",
       "pages": [
         "v2/en/get-started/introduction",
-        {
-          "group": "Requirements",
-          "icon": "triangle-exclamation",
-          "pages": [
-            "v2/en/requirements/database",
-            "v2/en/requirements/redis"
-          ]
-        },
-        {
-          "group": "Install",
-          "icon": "wrench",
-          "pages": [
-            "v2/en/install/docker",
-            "v2/en/install/nvm",
-            "v2/en/install/nginx"
-          ]
-        },
-        {
-          "group": "Integrations",
-          "icon": "toolbox",
-          "pages": [
-            {
-              "group": "Events",
-              "icon": "calendar",
-              "pages": [
-                "v2/en/integrations/websocket",
-                "v2/en/integrations/rabbitmq",
-                "v2/en/integrations/sqs"
-              ]
-            },
-            {
-              "group": "Chatbots",
-              "icon": "robot",
-              "pages": [
-                "v2/en/integrations/chatwoot",
-                "v2/en/integrations/evoai",
-                "v2/en/integrations/evolution-bot",
-                "v2/en/integrations/typebot",
-                "v2/en/integrations/openai",
-                "v2/en/integrations/dify",
-                "v2/en/integrations/flowise"
-              ]
-            },
-            {
-              "group": "Channels",
-              "icon": "message",
-              "pages": [
-                "v2/en/integrations/cloudapi",
-                "v2/en/integrations/evolution-channel"
-              ]
-            },
-            {
-              "group": "Storage",
-              "icon": "database",
-              "pages": [
-                "v2/en/integrations/s3minio"
-              ]
-            }
-          ]
-        },
         "v2/en/env",
-        "v2/en/updates",
         {
           "group": "Configuration",
           "icon": "wrench",
@@ -322,138 +200,57 @@
     },
     {
       "group": "Typebot",
-      "pages": [
-        "v2/api-reference/integrations/typebot/set-typebot",
-        "v2/api-reference/integrations/typebot/start-typebot",
-        "v2/api-reference/integrations/typebot/find-typebot",
-        "v2/api-reference/integrations/typebot/fetch-typebot",
-        "v2/api-reference/integrations/typebot/update-typebot",
-        "v2/api-reference/integrations/typebot/delete-typebot",
-        "v2/api-reference/integrations/typebot/change-session-status",
-        "v2/api-reference/integrations/typebot/fetch-session",
-        "v2/api-reference/integrations/typebot/settings-typebot",
-        "v2/api-reference/integrations/typebot/find-settings-typebot"
-      ],
+      "pages": [],
       "version": "v2"
     },
     {
       "group": "OpenAI",
-      "pages": [
-        "v2/api-reference/integrations/openai/create-bot",
-        "v2/api-reference/integrations/openai/find-bot",
-        "v2/api-reference/integrations/openai/find-bots",
-        "v2/api-reference/integrations/openai/update-bot",
-        "v2/api-reference/integrations/openai/delete-bot",
-        "v2/api-reference/integrations/openai/find-creds-openai",
-        "v2/api-reference/integrations/openai/set-creds",
-        "v2/api-reference/integrations/openai/delete-creds",
-        "v2/api-reference/integrations/openai/settings-openai",
-        "v2/api-reference/integrations/openai/find-settings",
-        "v2/api-reference/integrations/openai/change-status",
-        "v2/api-reference/integrations/openai/find-session"
-      ],
+      "pages": [],
       "version": "v2"
     },
     {
       "group": "Evolution Bot",
-      "pages": [
-        "v2/api-reference/integrations/evolution/create-bot",
-        "v2/api-reference/integrations/evolution/find-bot",
-        "v2/api-reference/integrations/evolution/fetch-bots",
-        "v2/api-reference/integrations/evolution/update",
-        "v2/api-reference/integrations/evolution/delete-bot",
-        "v2/api-reference/integrations/evolution/set-settings",
-        "v2/api-reference/integrations/evolution/find-settings",
-        "v2/api-reference/integrations/evolution/change-status-session",
-        "v2/api-reference/integrations/evolution/fetch-session"
-      ],
+      "pages": [],
       "version": "v2"
     },
     {
       "group": "Dify",
-      "pages": [
-        "v2/api-reference/integrations/dify/create-dify",
-        "v2/api-reference/integrations/dify/find-dify",
-        "v2/api-reference/integrations/dify/find-bot-dify",
-        "v2/api-reference/integrations/dify/update-dify",
-        "v2/api-reference/integrations/dify/set-settings-dify",
-        "v2/api-reference/integrations/dify/find-settings",
-        "v2/api-reference/integrations/dify/change-status",
-        "v2/api-reference/integrations/dify/find-status"
-      ],
+      "pages": [],
       "version": "v2"
     },
     {
       "group": "n8n",
-      "pages": [
-        "v2/api-reference/integrations/n8n/create-n8n",
-        "v2/api-reference/integrations/n8n/find-n8n",
-        "v2/api-reference/integrations/n8n/update-n8n",
-        "v2/api-reference/integrations/n8n/set-settings-n8n",
-        "v2/api-reference/integrations/n8n/find-settings",
-        "v2/api-reference/integrations/n8n/change-status",
-        "v2/api-reference/integrations/n8n/find-status"
-      ],
+      "pages": [],
       "version": "v2"
     },
     {
       "group": "EvoAI",
-      "pages": [
-        "v2/api-reference/integrations/evoai/create-evoai",
-        "v2/api-reference/integrations/evoai/find-evoai",
-        "v2/api-reference/integrations/evoai/update-evoai",
-        "v2/api-reference/integrations/evoai/set-settings-evoai",
-        "v2/api-reference/integrations/evoai/find-settings",
-        "v2/api-reference/integrations/evoai/change-status",
-        "v2/api-reference/integrations/evoai/find-status"
-      ],
+      "pages": [],
       "version": "v2"
     },
     {
       "group": "Flowise",
-      "pages": [
-        "v2/api-reference/integrations/flowise/create-bot",
-        "v2/api-reference/integrations/flowise/find-flowise-bots",
-        "v2/api-reference/integrations/flowise/find-flowise-bot",
-        "v2/api-reference/integrations/flowise/update-flowise-bot",
-        "v2/api-reference/integrations/flowise/delete-flowise-bot",
-        "v2/api-reference/integrations/flowise/set-settings",
-        "v2/api-reference/integrations/flowise/find-settings",
-        "v2/api-reference/integrations/flowise/change-session-status",
-        "v2/api-reference/integrations/flowise/find-sessions"
-      ],
+      "pages": [],
       "version": "v2"
     },
     {
       "group": "Chatwoot",
-      "pages": [
-        "v2/api-reference/integrations/chatwoot/set-chatwoot",
-        "v2/api-reference/integrations/chatwoot/find-chatwoot"
-      ],
+      "pages": [],
       "version": "v2"
     },
     {
       "group": "Websocket",
-      "pages": [
-        "v2/api-reference/integrations/websocket/set-websocket",
-        "v2/api-reference/integrations/websocket/find-websocket"
-      ],
+      "pages": [],
       "version": "v2"
     },
     {
       "group": "SQS",
-      "pages": [
-        "v2/api-reference/integrations/sqs/set-sqs",
-        "v2/api-reference/integrations/sqs/find-sqs"
-      ],
+      "pages": [],
       "version": "v2"
     },
     {
       "group": "RabbitMQ",
-      "pages": [
-        "v2/api-reference/integrations/rabbitmq/set-rabbitmq",
-        "v2/api-reference/integrations/rabbitmq/find-rabbitmq"
-      ],
+      "pages": [],
       "version": "v2"
     }
   ],
