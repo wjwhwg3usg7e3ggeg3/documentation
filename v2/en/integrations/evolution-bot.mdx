@@ -1,13 +1,13 @@
 ---
-title: Evolution Bot
+title: Zynx Bot
 icon: robot
 ---
 
-**Evolution Bot** is a universal chatbot integration that allows the use of any API URL or automation to create automated interactions. When using Evolution Bot, your API must return a response in the form of a JSON containing the `message` field, which will be sent back to the user. This system offers flexibility to build chatbots that seamlessly integrate with your custom APIs.
+**Zynx Bot** is a universal chatbot integration that allows the use of any API URL or automation to create automated interactions. When using Zynx Bot, your API must return a response in the form of a JSON containing the `message` field, which will be sent back to the user. This system offers flexibility to build chatbots that seamlessly integrate with your custom APIs.
 
-## 1. Creating Bots in Evolution Bot
+## 1. Creating Bots in Zynx Bot
 
-You can configure bots in Evolution Bot using triggers to initiate interactions. Bot configuration can be done through the `/evolutionBot/create/{{instance}}` endpoint.
+You can configure bots in Zynx Bot using triggers to initiate interactions. Bot configuration can be done through the `/evolutionBot/create/{{instance}}` endpoint.
 
 ### Endpoint for Bot Creation
 
@@ -19,7 +19,7 @@ POST {{baseUrl}}/evolutionBot/create/{{instance}}
 
 #### Request Body
 
-Here is an example of a JSON body to configure a bot in Evolution Bot:
+Here is an example of a JSON body to configure a bot in Zynx Bot:
 
 ~~~json
 {
@@ -71,7 +71,7 @@ Your API's response should be in JSON format and contain the message to be sent 
 }
 ~~~
 
-## 2. Default Settings for Evolution Bot
+## 2. Default Settings for Zynx Bot
 
 You can define default settings that will be applied if parameters are not passed during bot creation.
 
@@ -115,7 +115,7 @@ Here is an example of default settings:
 - **`ignoreJids`**: List of JIDs of contacts that will not activate the bot.
 - **`evolutionBotIdFallback`**: Fallback bot ID that will be used if no trigger is activated.
 
-## 3. Managing Evolution Bot Sessions
+## 3. Managing Zynx Bot Sessions
 
 You can manage the bot sessions by changing the status between open, paused, or closed for each specific contact.
 
@@ -143,9 +143,9 @@ Here is an example of how to manage the session status:
 - **`remoteJid`**: JID (identifier) of the contact on WhatsApp.
 - **`status`**: Session status (`opened`, `paused`, `closed`).
 
-## 4. Automatic and Special Variables in Evolution Bot
+## 4. Automatic and Special Variables in Zynx Bot
 
-When an Evolution Bot session is started, some predefined variables are automatically sent:
+When an Zynx Bot session is started, some predefined variables are automatically sent:
 
 ~~~json
 inputs: {
@@ -153,7 +153,7 @@ inputs: {
     pushName: "Contact name",
     instanceName: "Instance name",
     serverUrl: "API server URL",
-    apiKey: "Evolution API Key"
+    apiKey: "Zynx API Key"
 };
 ~~~
 
@@ -162,9 +162,9 @@ inputs: {
 - **`remoteJid`**: JID of the contact the bot is interacting with.
 - **`pushName`**: Contact's name on WhatsApp.
 - **`instanceName`**: Name of the instance running the bot.
-- **`serverUrl`**: URL of the server where Evolution API is hosted.
+- **`serverUrl`**: URL of the server where Zynx API is hosted.
 - **`apiKey`**: API key used to authenticate requests.
 
 ### Final Considerations
 
-Evolution Bot offers a flexible platform for integrating chatbots with your custom APIs, enabling advanced automation and personalized interactions on WhatsApp. With support for triggers, session management, and automatic variable configuration, you can build a robust and effective chatbot experience for your users.
+Zynx Bot offers a flexible platform for integrating chatbots with your custom APIs, enabling advanced automation and personalized interactions on WhatsApp. With support for triggers, session management, and automatic variable configuration, you can build a robust and effective chatbot experience for your users.

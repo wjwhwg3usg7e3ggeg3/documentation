@@ -1,6 +1,6 @@
 {
   "$schema": "https://mintlify.com/schema.json",
-  "name": "Evolution API Documentation",
+  "name": "Zynx API Documentation",
   "versions": [{"name": "v2", "default": true}, {"name": "v1"}],
   "openapi": ["/openapi/openapi-v1.json", "/openapi/openapi-v2.json"],
   "feedback": {

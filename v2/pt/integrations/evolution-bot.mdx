@@ -1,13 +1,13 @@
 ---
-title: Evolution Bot
+title: Zynx Bot
 icon: robot
 ---
 
-O **Evolution Bot** é uma integração de chatbot universal que permite a utilização de qualquer URL de API ou automação para criar interações automatizadas. Ao utilizar o Evolution Bot, sua API deve retornar a resposta na forma de um JSON contendo o campo `message`, que será enviado de volta ao usuário. Este sistema oferece flexibilidade para construir chatbots que se integram perfeitamente com suas APIs personalizadas.
+O **Zynx Bot** é uma integração de chatbot universal que permite a utilização de qualquer URL de API ou automação para criar interações automatizadas. Ao utilizar o Zynx Bot, sua API deve retornar a resposta na forma de um JSON contendo o campo `message`, que será enviado de volta ao usuário. Este sistema oferece flexibilidade para construir chatbots que se integram perfeitamente com suas APIs personalizadas.
 
-## 1. Criação de Bots no Evolution Bot
+## 1. Criação de Bots no Zynx Bot
 
-Você pode configurar bots no Evolution Bot utilizando triggers para iniciar as interações. A configuração do bot pode ser feita através do endpoint `/evolutionBot/create/{{instance}}`.
+Você pode configurar bots no Zynx Bot utilizando triggers para iniciar as interações. A configuração do bot pode ser feita através do endpoint `/evolutionBot/create/{{instance}}`.
 
 ### Endpoint para Criação de Bots
 
@@ -19,7 +19,7 @@ POST {{baseUrl}}/evolutionBot/create/{{instance}}
 
 #### Corpo da Requisição
 
-Aqui está um exemplo de corpo JSON para configurar um bot no Evolution Bot:
+Aqui está um exemplo de corpo JSON para configurar um bot no Zynx Bot:
 
 ~~~json
 {
@@ -71,7 +71,7 @@ A resposta da sua API deve estar no formato JSON e conter a mensagem a ser envia
 }
 ~~~
 
-## 2. Configurações Padrão do Evolution Bot
+## 2. Configurações Padrão do Zynx Bot
 
 Você pode definir configurações padrão que serão aplicadas caso os parâmetros não sejam passados durante a criação do bot.
 
@@ -115,7 +115,7 @@ Aqui está um exemplo de configuração padrão:
 - **`ignoreJids`**: Lista de JIDs de contatos que não ativarão o bot.
 - **`evolutionBotIdFallback`**: ID do bot de fallback que será utilizado caso nenhum trigger seja ativado.
 
-## 3. Gerenciamento de Sessões do Evolution Bot
+## 3. Gerenciamento de Sessões do Zynx Bot
 
 Você pode gerenciar as sessões do bot, alterando o status entre aberta, pausada ou fechada para cada contato específico.
 
@@ -143,9 +143,9 @@ Aqui está um exemplo de como gerenciar o status da sessão:
 - **`remoteJid`**: JID (identificador) do contato no WhatsApp.
 - **`status`**: Status da sessão (`opened`, `paused`, `closed`).
 
-## 4. Variáveis Automáticas e Especiais no Evolution Bot
+## 4. Variáveis Automáticas e Especiais no Zynx Bot
 
-Quando uma sessão do Evolution Bot é iniciada, algumas variáveis predefinidas são automaticamente enviadas:
+Quando uma sessão do Zynx Bot é iniciada, algumas variáveis predefinidas são automaticamente enviadas:
 
 ~~~json
 inputs: {
@@ -153,7 +153,7 @@ inputs: {
     pushName: "Nome do contato",
     instanceName: "Nome da instância",
     serverUrl: "URL do servidor da API",
-    apiKey: "Chave de API da Evolution"
+    apiKey: "Chave de API da Zynx"
 };
 ~~~
 
@@ -162,9 +162,9 @@ inputs: {
 - **`remoteJid`**: JID do contato com quem o bot está interagindo.
 - **`pushName`**: Nome do contato no WhatsApp.
 - **`instanceName`**: Nome da instância que está executando o bot.
-- **`serverUrl`**: URL do servidor onde a Evolution API está hospedada.
+- **`serverUrl`**: URL do servidor onde a Zynx API está hospedada.
 - **`apiKey`**: Chave de API usada para autenticar as requisições.
 
 ### Considerações Finais
 
-O Evolution Bot oferece uma plataforma flexível para integração de chatbots com suas APIs personalizadas, permitindo automação avançada e interações personalizadas no WhatsApp. Com o suporte para triggers, gerenciamento de sessões e configuração de variáveis automáticas, você pode construir uma experiência de chatbot robusta e eficaz para seus usuários.
+O Zynx Bot oferece uma plataforma flexível para integração de chatbots com suas APIs personalizadas, permitindo automação avançada e interações personalizadas no WhatsApp. Com o suporte para triggers, gerenciamento de sessões e configuração de variáveis automáticas, você pode construir uma experiência de chatbot robusta e eficaz para seus usuários.

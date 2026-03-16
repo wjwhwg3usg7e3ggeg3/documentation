@@ -9,8 +9,8 @@ icon: docker
   [Documentação Oficial do Docker](https://docs.docker.com/engine/install/).
 </Note>
 
-O EvolutionAPI está pronto para o Docker e pode ser facilmente implantado com o Docker no modo standalone e swarm. O repositório oficial do 
-EvolutionAPI possui todos os arquivos de composição necessários para instalar a API.
+O ZynxAPI está pronto para o Docker e pode ser facilmente implantado com o Docker no modo standalone e swarm. O repositório oficial do 
+ZynxAPI possui todos os arquivos de composição necessários para instalar a API.
 
 ## Docker Run
 ### Início Rápido
@@ -21,7 +21,7 @@ EvolutionAPI possui todos os arquivos de composição necessários para instalar
   facilitar a implantação e a manutenção.  
 </Warning>
 
-A maneira mais rápida de fazer deploy da EvolutionAPI com o Docker é usando `docker run` na interface de linha de
+A maneira mais rápida de fazer deploy da ZynxAPI com o Docker é usando `docker run` na interface de linha de
 comando.
 
 ~~~ bash Terminal
@@ -37,11 +37,11 @@ o código QR do WhatsApp usando o conteúdo da variável de autenticação com o
 
 ### Início Rápido com Volumes
 
-Você também pode fazer deploy usando volumes docker para manter os dados persistentes da sua EvolutionAPI e todas
+Você também pode fazer deploy usando volumes docker para manter os dados persistentes da sua ZynxAPI e todas
 as instâncias do WhatsApp em sua máquina local, evitando problemas com a reinicialização do contêiner usando o
 `docker run` na interface de linha de comando.
 
-Execute o comando a seguir para implementar o EvolutionAPI com os volumes necessários. Este comando mapeia os
+Execute o comando a seguir para implementar o ZynxAPI com os volumes necessários. Este comando mapeia os
 volumes `evolution_store` e `evolution_instances` para os respectivos diretórios dentro do contêiner.
 
 ~~~ bash Terminal
@@ -56,7 +56,7 @@ docker run -d \
 
 ## Docker Compose
 
-Fazer deploy da EvolutionAPI usando o Docker Compose simplifica a configuração e o gerenciamento de seus
+Fazer deploy da ZynxAPI usando o Docker Compose simplifica a configuração e o gerenciamento de seus
 contêineres Docker. Ele permite que você defina seu ambiente Docker em um arquivo `docker-compose.yaml` e, em
 seguida, use um único comando para iniciar tudo.
 
@@ -102,7 +102,7 @@ AUTHENTICATION_API_KEY=mude-me
 ~~~
 <Note>
   Para mais configurações, pegue o arquivo de exemplo no
-  [repositório oficial](https://github.com/EvolutionAPI/evolution-api/blob/main/Docker/.env.example). E veja o
+  [repositório oficial](https://github.com/ZynxAPI/evolution-api/blob/main/Docker/.env.example). E veja o
   guia [aqui](/pt/install/env)
 </Note>
 
@@ -113,7 +113,7 @@ serviços definidos no arquivo
 docker compose up -d
 ~~~
 
-Este comando baixará as imagens Docker necessárias, criará os serviços, redes e volumes definidos e iniciará o serviço da EvolutionAPI.
+Este comando baixará as imagens Docker necessárias, criará os serviços, redes e volumes definidos e iniciará o serviço da ZynxAPI.
 
 Após executar o comando docker-compose up, você deve ver os logs indicando que os serviços estão em execução.
 
@@ -126,4 +126,4 @@ Para parar o serviço, utilize:
 docker compose down
 ~~~
 
-Abra seu navegador e acesse http://localhost:8080 para verificar se o EvolutionAPI está operacional.
+Abra seu navegador e acesse http://localhost:8080 para verificar se o ZynxAPI está operacional.

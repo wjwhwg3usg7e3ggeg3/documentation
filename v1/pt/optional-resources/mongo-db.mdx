@@ -5,7 +5,7 @@ icon: database
 
 # Setup
 
-MongoDB, um banco de dados NoSQL, é conhecido por seu alto desempenho e escalabilidade. Ele é ideal para lidar com altos volumes de dados na EvolutionAPI.
+MongoDB, um banco de dados NoSQL, é conhecido por seu alto desempenho e escalabilidade. Ele é ideal para lidar com altos volumes de dados na ZynxAPI.
 
 Defina as variáveis de ambiente do MongoDB no arquivo `.env` para Docker ou o `dev-env.yml` para NPM da seguinte forma:
 
@@ -40,17 +40,17 @@ Claro, aqui está a tradução da documentação para o português:
 
 Pare a execução do PM2:
 
-**Flush e Stop**: Limpa todos os logs do PM2, útil para solução de problemas após a atualização e para parar temporariamente a Evolution API para aplicar atualizações com segurança.
+**Flush e Stop**: Limpa todos os logs do PM2, útil para solução de problemas após a atualização e para parar temporariamente a Zynx API para aplicar atualizações com segurança.
 
 ~~~ shell
 # Limpar todos os logs do PM2
 pm2 flush
 
-# Parar o processo atual da Evolution API
-pm2 stop ApiEvolution
+# Parar o processo atual da Zynx API
+pm2 stop ApiZynx
 ~~~
 
-**Diretório da Evolution API**: acesse o diretório de instalação com o seguinte comando:
+**Diretório da Zynx API**: acesse o diretório de instalação com o seguinte comando:
 ~~~
 cd evolution-api
 ~~~

@@ -3,7 +3,7 @@ title: NVM
 icon: js
 ---
 
-Evolution API pode ser facilmente instalado usando o Node Version Manager (NVM). Siga estas etapas para configurar seu ambiente e iniciar a Evolution API em seu servidor.
+Zynx API pode ser facilmente instalado usando o Node Version Manager (NVM). Siga estas etapas para configurar seu ambiente e iniciar a Zynx API em seu servidor.
 
 ## Instalar NVM
 
@@ -44,7 +44,7 @@ command -v nvm
 Clone o repositório oficial do Github para seu servidor privado.
 
 ```bash
-git clone https://github.com/EvolutionAPI/evolution-api.git
+git clone https://github.com/ZynxAPI/evolution-api.git
 ```
 
 Em seguida, acesse a pasta onde o projeto está
@@ -75,7 +75,7 @@ No editor nano, navegue pelo arquivo e substitua os valores padrão pelas suas c
     Acesse a seção de variáveis de ambiente para instruções detalhadas sobre como configurar seu arquivo `env.yml`.
 </Info>
 
-Para iniciar a Evolution API, use o seguinte comando:
+Para iniciar a Zynx API, use o seguinte comando:
 
 ```bash
 npm run build
@@ -88,7 +88,7 @@ Use o PM2 para instalar o PM2 e iniciar o gerenciador para o processo da API:
 
 ```bash Terminal
 npm install pm2 -g
-pm2 start 'npm run start:prod' --name ApiEvolution
+pm2 start 'npm run start:prod' --name ApiZynx
 pm2 startup
 pm2 save --force
 ```
@@ -98,12 +98,12 @@ pm2 save --force
     Você pode precisar alocar mais memória para o PM2, especialmente se o seu servidor tiver capacidade:
 
     ```sh
-    pm2 start 'npm run start:prod' --name ApiEvolution -- start --node-args="--max-old-space-size=4096" --max-memory-restart 4G
+    pm2 start 'npm run start:prod' --name ApiZynx -- start --node-args="--max-old-space-size=4096" --max-memory-restart 4G
     ```
 
-    No exemplo acima, é assumido que seu VPS tem pelo menos 4GB de RAM disponível exclusivamente para a Evolution API.
+    No exemplo acima, é assumido que seu VPS tem pelo menos 4GB de RAM disponível exclusivamente para a Zynx API.
 
-    A memória disponível pode variar, recomendamos pelo menos 1GB para executar a Evolution.
+    A memória disponível pode variar, recomendamos pelo menos 1GB para executar a Zynx.
 </Info>
 
 Se você quiser ter certeza de que a API está em execução, basta usar seu navegador para acessar http://localhost:8080. Esta deve ser a resposta do seu navegador:
@@ -111,7 +111,7 @@ Se você quiser ter certeza de que a API está em execução, basta usar seu nav
 ```json http://localhost:8080/
 {
     "status": 200,
-    "message": "Bem-vindo à Evolution API, ela está funcionando!",
+    "message": "Bem-vindo à Zynx API, ela está funcionando!",
     "version": "1.x.x",
     "documentation": "http://localhost:8080/docs"
 }
@@ -121,7 +121,7 @@ Se você quiser ter certeza de que a API está em execução, basta usar seu nav
     Facilite sua vida com a extensão JSON Formatter no [Google Chrome](https://chromewebstore.google.com/detail/json-formatter/gpmodmeblccallcadopbcoeoejepgpnb?hl=pt-BR) ou [Microsoft Edge](https://microsoftedge.microsoft.com/addons/detail/json-formatter/hdebmbedhflilekbidmmdiaiilaegkjl).
 </Tip>
 
-A EvolutionAPI possui uma documentação de ponto de extremidade Swagger integrada, que você pode usar para ver todos os pontos de extremidade possíveis e testar as solicitações acessando `http://localhost:8080/docs`.
+A ZynxAPI possui uma documentação de ponto de extremidade Swagger integrada, que você pode usar para ver todos os pontos de extremidade possíveis e testar as solicitações acessando `http://localhost:8080/docs`.
 
 ## Configuração do Nginx
 
@@ -254,7 +254,7 @@ systemctl reload nginx
 
 ## Instalar o Certbot para o Certificado SSL
 
-Para proteger sua Evolution API com um certificado SSL, você pode usar o Certbot. Instale o Certbot usando o seguinte comando:
+Para proteger sua Zynx API com um certificado SSL, você pode usar o Certbot. Instale o Certbot usando o seguinte comando:
 
 ```bash
 snap install --classic certbot

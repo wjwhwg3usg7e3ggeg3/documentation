@@ -1,32 +1,37 @@
-# Mintlify Starter Kit 
- 
-Click on `Use this template` to copy the Mintlify starter kit. The starter kit contains examples including
+# Zynx API Documentation
 
-- Guide pages
-- Navigation
-- Customizations
-- API Reference pages
-- Use of popular components
+Documentação oficial da **Zynx API** - Plataforma profissional para gerenciar WhatsApp em escala.
 
-### Development
+## 📚 Sobre
 
-Install the [Mintlify CLI](https://www.npmjs.com/package/mintlify) to preview the documentation changes locally. To install, use the following command
+A Zynx API é uma solução comercial robusta e escalável para desenvolvedores integrarem funcionalidades avançadas de WhatsApp em suas aplicações.
 
-```
-npm i -g mintlify
-```
+### 🎯 Para Desenvolvedores
 
-Run the following command at the root of your documentation (where mint.json is)
+- **API RESTful** completa e bem documentada
+- **Webhooks** em tempo real para eventos
+- **Suporte a múltiplas instâncias** de WhatsApp
+- **Integração com chatbots** e ferramentas de automação
+- **Escalabilidade** para aplicações em produção
 
-```
-mintlify dev
-```
+## 🚀 Quick Start
 
-### Publishing Changes
+1. Acesse a [documentação](https://docs.zynx.io)
+2. Obtenha suas credenciais de API
+3. Comece a integrar!
 
-Install our Github App to autopropagate changes from youre repo to your deployment. Changes will be deployed to production automatically after pushing to the default branch. Find the link to install on your dashboard. 
+## 📖 Documentação
 
-#### Troubleshooting
+- **Português**: `/v2/pt`
+- **English**: `/v2/en`
+- **API Reference**: `/v2/api-reference`
 
-- Mintlify dev isn't running - Run `mintlify install` it'll re-install dependencies.
-- Page loads as a 404 - Make sure you are running in a folder with `mint.json`
+## 🔗 Links Úteis
+
+- [Site Oficial](https://zynx.io)
+- [GitHub](https://github.com/wjwhwg3usg7e3ggeg3)
+- [Suporte](https://support.zynx.io)
+
+---
+
+**Zynx API** © 2024. Todos os direitos reservados.
