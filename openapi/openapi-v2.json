@@ -1334,7 +1334,7 @@
     "/webhook/find/{instance}": {
       "get": {
         "operationId": "findWebhook",
-        "summary": "Find Webhook",
+        "summary": "Encontrar Webhook",
         "tags": [
           "Webhook Controller"
         ],
@@ -1537,7 +1537,7 @@
     "/settings/find/{instance}": {
       "get": {
         "operationId": "findWebhook",
-        "summary": "Find Webhook",
+        "summary": "Encontrar Webhook",
         "tags": [
           "Webhook Controller"
         ],
@@ -4617,7 +4617,7 @@
             }
           }
         ],
-        "description": "Find all messages",
+        "description": "Encontrar todas as mensagens",
         "requestBody": {
           "content": {
             "application/json": {
@@ -4821,7 +4821,7 @@
             }
           }
         ],
-        "description": "Find all chats",
+        "description": "Encontrar todos os chats",
         "responses": {
           "200": {
             "description": "Ok",
@@ -5290,11 +5290,11 @@
                 "properties": {
                   "subject": {
                     "type": "object",
-                    "description": "Group subject"
+                    "description": "Assunto do grupo"
                   },
                   "description": {
                     "type": "string",
-                    "description": "Group description"
+                    "description": "Descrição do grupo"
                   },
                   "participants": {
                     "type": "array",
@@ -5582,7 +5582,7 @@
           },
           {
             "name": "inviteCode",
-            "description": "Group invite code",
+            "description": "Código de convite do grupo",
             "required": true,
             "in": "query",
             "schema": {
@@ -5751,7 +5751,7 @@
           {
             "name": "inviteCode",
             "in": "query",
-            "description": "Group invite code",
+            "description": "Código de convite do grupo",
             "schema": {
               "type": "string"
             }
@@ -6684,7 +6684,7 @@
     "/typebot/fetchSettings/{instance}": {
       "get": {
         "operationId": "findTypebot",
-        "summary": "Find Typebot",
+        "summary": "Encontrar Typebot",
         "tags": [
           "Typebot Controller"
         ],
@@ -6717,7 +6717,7 @@
     "/typebot/find/{instance}": {
       "get": {
         "operationId": "findTypebot",
-        "summary": "Find Typebot",
+        "summary": "Encontrar Typebot",
         "tags": [
           "Typebot Controller"
         ],
@@ -6750,7 +6750,7 @@
     "/typebot/fetch/:typebotId/{instance}": {
       "get": {
         "operationId": "findTypebot",
-        "summary": "Find Typebot",
+        "summary": "Encontrar Typebot",
         "tags": [
           "Typebot Controller"
         ],
@@ -7752,7 +7752,7 @@
             "name": "openaiBotId",
             "in": "path",
             "required": true,
-            "description": "ID of the bot",
+            "description": "ID do bot",
             "schema": {
               "type": "string"
             }
@@ -7794,7 +7794,7 @@
             "name": "openaiBotId",
             "in": "path",
             "required": true,
-            "description": "ID of the bot",
+            "description": "ID do bot",
             "schema": {
               "type": "string"
             }
@@ -7836,7 +7836,7 @@
             "name": "openaiBotId",
             "in": "path",
             "required": true,
-            "description": "ID of the bot",
+            "description": "ID do bot",
             "schema": {
               "type": "string"
             }
@@ -8611,7 +8611,7 @@
     "/dify/find/:difyId/{instance}": {
       "get": {
         "operationId": "findDify",
-        "summary": "Find Bot Dify",
+        "summary": "Encontrar Bot Dify",
         "tags": [
           "OpenAI Controller"
         ],
@@ -10409,7 +10409,7 @@
         "operationId": "createFlowiseInstance",
         "summary": "Cria uma nova instância do Flowise",
         "tags": [
-          "Flowise Controller"
+          "Controlador Flowise"
         ],
         "description": "Create Bot Flowise",
         "security": [
@@ -10692,7 +10692,7 @@
         "operationId": "updateFlowiseInstance",
         "summary": "Atualiza uma instância do Flowise",
         "tags": [
-          "Flowise Controller"
+          "Controlador Flowise"
         ],
         "description": "Update flowise bot",
         "security": [
@@ -10931,7 +10931,7 @@
         "operationId": "setlowiseSettings",
         "summary": "Set as configurações do Flowise",
         "tags": [
-          "Flowise Controller"
+          "Controlador Flowise"
         ],
         "description": "Set Settings Flowise bot",
         "security": [
@@ -11148,7 +11148,7 @@
         "operationId": "changeFlowiseStatus",
         "summary": "Atualiza o status de uma instância Flowise",
         "tags": [
-          "Flowise Controller"
+          "Controlador Flowise"
         ],
         "description": "Atualiza os settings do bot flowise",
         "security": [
