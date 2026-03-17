@@ -95,7 +95,7 @@
       "version": "v2"
     },
     {
-      "group": "Instances",
+      "group": "Inst\u00e2ncias",
       "pages": [
         "v2/api-reference/instance-controller/create-instance-basic",
         "v2/api-reference/instance-controller/fetch-instances",
@@ -117,7 +117,7 @@
       "version": "v2"
     },
     {
-      "group": "Settings",
+      "group": "Configura\u00e7\u00f5es",
       "pages": [
         "v2/api-reference/settings/set",
         "v2/api-reference/settings/get"
@@ -125,7 +125,7 @@
       "version": "v2"
     },
     {
-      "group": "Send Message",
+      "group": "Enviar Mensagem",
       "pages": [
         "v2/api-reference/message-controller/send-text",
         "v2/api-reference/message-controller/send-status",
@@ -142,7 +142,7 @@
       "version": "v2"
     },
     {
-      "group": "Chat Controller",
+      "group": "Controlador de Chat",
       "pages": [
         "v2/api-reference/chat-controller/check-is-whatsapp",
         "v2/api-reference/chat-controller/mark-as-read",
@@ -162,7 +162,7 @@
       "version": "v2"
     },
     {
-      "group": "Profile Settings",
+      "group": "Configura\u00e7\u00f5es de Perfil",
       "pages": [
         "v2/api-reference/profile-settings/fetch-business-profile",
         "v2/api-reference/profile-settings/fetch-profile",
@@ -176,7 +176,7 @@
       "version": "v2"
     },
     {
-      "group": "Group Controller",
+      "group": "Controlador de Grupos",
       "pages": [
         "v2/api-reference/group-controller/group-create",
         "v2/api-reference/group-controller/update-group-picture",
