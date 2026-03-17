@@ -122,7 +122,7 @@
                       },
                       "byEvents": {
                         "type": "boolean",
-                        "description": "Enable Webhook by events"
+                        "description": "Ativar Webhook por eventos"
                       },
                       "base64": {
                         "type": "boolean",
@@ -172,7 +172,7 @@
                             "TYPEBOT_CHANGE_STATUS"
                           ]
                         },
-                        "description": "Events to be sent to the Webhook"
+                        "description": "Eventos a serem enviados para o Webhook"
                       }
                     },
                     "description": "Webhook URL"
@@ -182,7 +182,7 @@
                     "properties": {
                       "enabled": {
                         "type": "boolean",
-                        "description": "Enable RabbitMQ"
+                        "description": "Ativar RabbitMQ"
                       },
                       "events": {
                         "type": "array",
@@ -215,7 +215,7 @@
                             "TYPEBOT_CHANGE_STATUS"
                           ]
                         },
-                        "description": "Events to be sent to the RabbitMQ"
+                        "description": "Eventos a serem enviados para RabbitMQ"
                       }
                     }
                   },
@@ -256,7 +256,7 @@
                             "TYPEBOT_CHANGE_STATUS"
                           ]
                         },
-                        "description": "Events to be sent to the SQS"
+                        "description": "Eventos a serem enviados para SQS"
                       }
                     },
                     "description": "Enable SQS"
@@ -307,7 +307,7 @@
                   },
                   "chatwootOrganization": {
                     "type": "string",
-                    "description": "Evolution Bot"
+                    "description": "Bot Evolution"
                   },
                   "chatwootLogo": {
                     "type": "string",
@@ -1005,7 +1005,7 @@
             }
           }
         ],
-        "description": "Delete instance",
+        "description": "Deletar instância",
         "responses": {
           "200": {
             "description": "Ok",
@@ -1111,7 +1111,7 @@
             }
           }
         ],
-        "description": "Deletes instance",
+        "description": "Deleta instância",
         "requestBody": {
           "content": {
             "application/json": {
@@ -1230,7 +1230,7 @@
                   },
                   "webhookByEvents": {
                     "type": "boolean",
-                    "description": "Enables Webhook by events"
+                    "description": "Ativa Webhook por eventos"
                   },
                   "webhookBase64": {
                     "type": "boolean",
@@ -1267,7 +1267,7 @@
                         "TYPEBOT_CHANGE_STATUS"
                       ]
                     },
-                    "description": "Events to be sent to the Webhook"
+                    "description": "Eventos a serem enviados para o Webhook"
                   }
                 }
               }
@@ -1967,7 +1967,7 @@
                               "description": "Informações de contexto adicional."
                             }
                           },
-                          "description": "Details of the image message."
+                          "description": "Detalhes da mensagem de imagem."
                         }
                       },
                       "description": "The message content, which may include various types of messages like text, images, etc."
@@ -2180,7 +2180,7 @@
                               "description": "The timestamp of the media key."
                             }
                           },
-                          "description": "Details of the audio message."
+                          "description": "Detalhes da mensagem de áudio."
                         }
                       },
                       "description": "The message content, which may include various types of messages like text, images, audio, etc."
@@ -2384,7 +2384,7 @@
                   },
                   "backgroundColor": {
                     "type": "string",
-                    "description": "Exemple #008000"
+                    "description": "Exemplo #008000"
                   },
                   "font": {
                     "type": "number",
@@ -2454,7 +2454,7 @@
                               "description": "The font used in the text message."
                             }
                           },
-                          "description": "Details of the extended text message."
+                          "description": "Detalhes da mensagem de texto estendida."
                         }
                       },
                       "description": "The message content, which may include various types of messages like text, images, etc."
@@ -2659,7 +2659,7 @@
                               "description": "Informações de contexto adicional."
                             }
                           },
-                          "description": "Details of the location message."
+                          "description": "Detalhes da mensagem de localização."
                         }
                       },
                       "description": "The message content, which may include various types of messages like text, images, location, etc."
@@ -2828,7 +2828,7 @@
                               "description": "Informações de contexto adicional."
                             }
                           },
-                          "description": "Details of the contact message."
+                          "description": "Detalhes da mensagem de contato."
                         }
                       },
                       "description": "The message content, which may include various types of messages like text, images, contact, etc."
@@ -2982,7 +2982,7 @@
                               "description": "The timestamp when the reaction was sent, in milliseconds."
                             }
                           },
-                          "description": "Details of the reaction message."
+                          "description": "Detalhes da mensagem de reação."
                         }
                       },
                       "description": "The message content, which may include various types of messages like text, images, reaction, etc."
@@ -3198,7 +3198,7 @@
                               "description": "The number of options that can be selected in the poll."
                             }
                           },
-                          "description": "Details of the poll creation message."
+                          "description": "Detalhes da mensagem de criação de enquete."
                         }
                       },
                       "description": "The message content, which may include various types of messages like text, images, poll creation, etc."
@@ -3297,7 +3297,7 @@
                   },
                   "description": {
                     "type": "string",
-                    "description": "Description for lists"
+                    "description": "Descrição para listas"
                   },
                   "buttonText": {
                     "type": "string",
@@ -3327,7 +3327,7 @@
                               },
                               "description": {
                                 "type": "string",
-                                "description": "Description of row"
+                                "description": "Descrição da linha"
                               },
                               "rowId": {
                                 "type": "string",
@@ -3453,7 +3453,7 @@
                               "description": "The number of options that can be selected in the poll."
                             }
                           },
-                          "description": "Details of the poll creation message."
+                          "description": "Detalhes da mensagem de criação de enquete."
                         }
                       },
                       "description": "The message content, which may include various types of messages like text, images, poll creation, etc."
@@ -3551,7 +3551,7 @@
                   },
                   "description": {
                     "type": "string",
-                    "description": "Description for buttons"
+                    "description": "Descrição para botões"
                   },
                   "footer": {
                     "type": "string",
@@ -3691,7 +3691,7 @@
                               "description": "The number of options that can be selected in the poll."
                             }
                           },
-                          "description": "Details of the poll creation message."
+                          "description": "Detalhes da mensagem de criação de enquete."
                         }
                       },
                       "description": "The message content, which may include various types of messages like text, images, poll creation, etc."
@@ -4225,7 +4225,7 @@
                               "description": "The type of protocol message, e.g., 'REVOKE'."
                             }
                           },
-                          "description": "Details of the protocol message."
+                          "description": "Detalhes da mensagem de protocolo."
                         }
                       },
                       "description": "The content of the message."
@@ -4403,7 +4403,7 @@
     "/chat/fetchProfilePictureUrl/{instance}": {
       "post": {
         "operationId": "fetchProfilePictureUrl",
-        "summary": "Fetch Profile Picture URL",
+        "summary": "Buscar URL da Foto de Perfil",
         "tags": [
           "Controlador de Chat"
         ],
@@ -4424,7 +4424,7 @@
             }
           }
         ],
-        "description": "Fetch Profile Picture URL",
+        "description": "Buscar URL da Foto de Perfil",
         "requestBody": {
           "content": {
             "application/json": {
@@ -4578,7 +4578,7 @@
                   },
                   "convertToMp4": {
                     "type": "boolean",
-                    "description": "Convert video to MP4, for video only"
+                    "description": "Converter vídeo para MP4, apenas para vídeo"
                   }
                 }
               }
@@ -4833,7 +4833,7 @@
     "/chat/fetchBusinessProfile/{instance}": {
       "post": {
         "operationId": "fetchBusinessProfile",
-        "summary": "Fetch Business Profile",
+        "summary": "Buscar Perfil Comercial",
         "tags": [
           "Controlador de Chat"
         ],
@@ -4884,7 +4884,7 @@
     "/chat/fetchProfile/{instance}": {
       "post": {
         "operationId": "fetchBusinessProfile",
-        "summary": "Fetch Business Profile",
+        "summary": "Buscar Perfil Comercial",
         "tags": [
           "Controlador de Chat"
         ],
@@ -5121,7 +5121,7 @@
     "/chat/fetchPrivacySettings/{instance}": {
       "get": {
         "operationId": "fetchPrivacySettings",
-        "summary": "Fetch Privacy Settings",
+        "summary": "Buscar Configurações de Privacidade",
         "tags": [
           "Controlador de Chat"
         ],
@@ -5498,7 +5498,7 @@
     "/group/inviteCode/{instance}": {
       "get": {
         "operationId": "fetchInviteCode",
-        "summary": "Fetch Group Invite Code",
+        "summary": "Buscar Código de Convite do Grupo",
         "tags": [
           "Controlador de Grupos"
         ],
@@ -5560,7 +5560,7 @@
     "/group/acceptInviteCode/{instance}": {
       "get": {
         "operationId": "fetchInviteCode",
-        "summary": "Fetch Group Invite Code",
+        "summary": "Buscar Código de Convite do Grupo",
         "tags": [
           "Controlador de Grupos"
         ],
@@ -5602,7 +5602,7 @@
     "/group/revokeInviteCode/{instance}": {
       "post": {
         "operationId": "fetchInviteCode",
-        "summary": "Fetch Group Invite Code",
+        "summary": "Buscar Código de Convite do Grupo",
         "tags": [
           "Controlador de Grupos"
         ],
@@ -5683,7 +5683,7 @@
                   },
                   "description": {
                     "type": "string",
-                    "description": "Description to send with the invitation"
+                    "description": "Descrição para enviar com o convite"
                   },
                   "numbers": {
                     "type": "array",
@@ -5876,7 +5876,7 @@
                   },
                   "example": {
                     "id": "120363295648424210@g.us",
-                    "subject": "Example Group",
+                    "subject": "Grupo de Exemplo",
                     "subjectOwner": "553198296801@s.whatsapp.net",
                     "subjectTime": 1714769954,
                     "pictureUrl": null,
@@ -5904,7 +5904,7 @@
     "/group/fetchAllGroups/{instance}": {
       "get": {
         "operationId": "fetchAllGroups",
-        "summary": "Fetch All Groups",
+        "summary": "Buscar Todos os Grupos",
         "tags": [
           "Controlador de Grupos"
         ],
@@ -6010,7 +6010,7 @@
                   "example": [
                     {
                       "id": "120363295648424210@g.us",
-                      "subject": "Example Group",
+                      "subject": "Grupo de Exemplo",
                       "subjectOwner": "553198296801@s.whatsapp.net",
                       "subjectTime": 1714769954,
                       "pictureUrl": null,
@@ -6033,7 +6033,7 @@
     "/group/participants/{instance}": {
       "get": {
         "operationId": "fetchAllGroupMembers",
-        "summary": "Fetch All Group Members",
+        "summary": "Buscar Todos os Membros do Grupo",
         "tags": [
           "Controlador de Grupos"
         ],
@@ -6402,7 +6402,7 @@
                   },
                   "triggerType": {
                     "type": "string",
-                    "description": "All or keyword"
+                    "description": "Palavra-chave all ou"
                   },
                   "triggerOperator": {
                     "type": "string",
@@ -6410,7 +6410,7 @@
                   },
                   "triggerValue": {
                     "type": "string",
-                    "description": "All or keyword"
+                    "description": "Palavra-chave all ou"
                   },
                   "expire": {
                     "type": "number",
@@ -6422,7 +6422,7 @@
                   },
                   "delayMessage": {
                     "type": "number",
-                    "description": "Delay when the bot send message"
+                    "description": "Atraso quando o bot envia mensagem"
                   },
                   "unknownMessage": {
                     "type": "string",
@@ -6638,7 +6638,7 @@
                   },
                   "delayMessage": {
                     "type": "string",
-                    "description": "Delay when the bot send message"
+                    "description": "Atraso quando o bot envia mensagem"
                   },
                   "unknownMessage": {
                     "type": "string",
@@ -6889,7 +6889,7 @@
                 "properties": {
                   "enabled": {
                     "type": "boolean",
-                    "description": "Enable typebot"
+                    "description": "Ativar typebot"
                   },
                   "url": {
                     "type": "string",
@@ -6909,7 +6909,7 @@
                   },
                   "delayMessage": {
                     "type": "number",
-                    "description": "Delay when the bot send message"
+                    "description": "Atraso quando o bot envia mensagem"
                   },
                   "unknownMessage": {
                     "type": "string",
@@ -6933,7 +6933,7 @@
                   },
                   "triggerType": {
                     "type": "string",
-                    "description": "All or keyword"
+                    "description": "Palavra-chave all ou"
                   },
                   "triggerOperator": {
                     "type": "string",
@@ -6959,7 +6959,7 @@
     "/typebot/delete/:typebotId/{instance}": {
       "delete": {
         "operationId": "changeTypebotStatus",
-        "summary": "Delete Status",
+        "summary": "Deletar Status",
         "tags": [
           "Typebot Controller"
         ],
@@ -6989,7 +6989,7 @@
             }
           }
         ],
-        "description": "Delete typebot",
+        "description": "Deletar typebot",
         "responses": {
           "200": {
             "description": "Ok",
@@ -7050,7 +7050,7 @@
                 "properties": {
                   "enabled": {
                     "type": "boolean",
-                    "description": "Enable chatwoot"
+                    "description": "Ativar chatwoot"
                   },
                   "accountId": {
                     "type": "string",
@@ -7232,7 +7232,7 @@
                             "TYPEBOT_CHANGE_STATUS"
                           ]
                         },
-                        "description": "Events to be sent to the Webhook"
+                        "description": "Eventos a serem enviados para o Webhook"
                       }
                     }
                   }
@@ -7353,7 +7353,7 @@
                             "TYPEBOT_CHANGE_STATUS"
                           ]
                         },
-                        "description": "Events to be sent to the Webhook"
+                        "description": "Eventos a serem enviados para o Webhook"
                       }
                     }
                   }
@@ -7474,7 +7474,7 @@
                             "TYPEBOT_CHANGE_STATUS"
                           ]
                         },
-                        "description": "Events to be sent to the websocket"
+                        "description": "Eventos a serem enviados para o websocket"
                       }
                     }
                   }
@@ -7642,7 +7642,7 @@
                   },
                   "expire": {
                     "type": "integer",
-                    "description": "Expiration time in seconds"
+                    "description": "Tempo de expiração em segundos"
                   },
                   "keywordFinish": {
                     "type": "string",
@@ -7650,7 +7650,7 @@
                   },
                   "delayMessage": {
                     "type": "integer",
-                    "description": "Delay before the bot responds, in milliseconds"
+                    "description": "Atraso antes do bot responder, em milissegundos"
                   },
                   "unknownMessage": {
                     "type": "string",
@@ -7670,7 +7670,7 @@
                   },
                   "debounceTime": {
                     "type": "integer",
-                    "description": "Debounce time for message processing"
+                    "description": "Tempo de debounce para processamento de mensagens"
                   },
                   "ignoreJids": {
                     "type": "array",
@@ -7800,7 +7800,7 @@
             }
           }
         ],
-        "description": "Delete bot OpenAi",
+        "description": "Deletar bot OpenAI",
         "responses": {
           "200": {
             "description": "Ok",
@@ -7989,7 +7989,7 @@
     "/openai/creds/{instance}": {
       "post": {
         "operationId": "credsBotOpenAI",
-        "summary": "Creds OpenAI Bot",
+        "summary": "Credenciais Bot OpenAI",
         "tags": [
           "OpenIA Controller"
         ],
@@ -8010,7 +8010,7 @@
             }
           }
         ],
-        "description": "Creds openia bot configuration",
+        "description": "Configuração de credenciais do bot OpenAI",
         "requestBody": {
           "description": "Configuração para a instância do bot OpenAI",
           "required": true,
@@ -8108,7 +8108,7 @@
             }
           }
         ],
-        "description": "Delete bot OpenAi",
+        "description": "Deletar bot OpenAI",
         "responses": {
           "200": {
             "description": "Ok",
@@ -8155,7 +8155,7 @@
                   },
                   "expire": {
                     "type": "integer",
-                    "description": "Expiration time in seconds"
+                    "description": "Tempo de expiração em segundos"
                   },
                   "keywordFinish": {
                     "type": "string",
@@ -8163,7 +8163,7 @@
                   },
                   "delayMessage": {
                     "type": "integer",
-                    "description": "Delay time for the message in milliseconds"
+                    "description": "Tempo de atraso para a mensagem em milissegundos"
                   },
                   "unknownMessage": {
                     "type": "string",
@@ -8194,7 +8194,7 @@
                   },
                   "openaiIdFallback": {
                     "type": "string",
-                    "description": "Fallback OpenAI credentials ID if the main one fails"
+                    "description": "ID de credenciais OpenAI de fallback se o principal falhar"
                   }
                 },
                 "required": [
@@ -8228,7 +8228,7 @@
                     },
                     "message": {
                       "type": "string",
-                      "description": "Details about the operation"
+                      "description": "Detalhes sobre a operação"
                     }
                   }
                 }
@@ -8345,7 +8345,7 @@
                     },
                     "message": {
                       "type": "string",
-                      "description": "Details about the status change operation"
+                      "description": "Detalhes sobre a operação de mudança de status"
                     }
                   }
                 }
@@ -8428,7 +8428,7 @@
         "operationId": "createDifyBot",
         "summary": "Create a new Dify bot instance",
         "tags": [
-          "Dify Controller"
+          "Controlador Dify"
         ],
         "description": "Creates a new Dify bot with the provided configuration",
         "security": [
@@ -8567,7 +8567,7 @@
     "/dify/find/{instance}": {
       "get": {
         "operationId": "fetchDify",
-        "summary": "Fetch Bot Dify",
+        "summary": "Buscar Bot Dify",
         "tags": [
           "OpenAI Controller"
         ],
@@ -8666,7 +8666,7 @@
         "operationId": "updateDifyBot",
         "summary": "Create a new Dify bot instance",
         "tags": [
-          "Dify Controller"
+          "Controlador Dify"
         ],
         "description": "Update bot Dify",
         "security": [
@@ -8807,7 +8807,7 @@
         "operationId": "updateDifySettings",
         "summary": "Atualiza as configurações do bot Dify",
         "tags": [
-          "Dify Controller"
+          "Controlador Dify"
         ],
         "description": "Atualiza as configurações do bot Dify.",
         "security": [
@@ -8929,7 +8929,7 @@
         "operationId": "findDifySettings",
         "summary": "Find settings dify bot",
         "tags": [
-          "Dify Controller"
+          "Controlador Dify"
         ],
         "description": "Find settigns dify bot",
         "security": [
@@ -8973,7 +8973,7 @@
         "operationId": "changeDifyBotStatus",
         "summary": "Altera o status do bot Dify",
         "tags": [
-          "Dify Controller"
+          "Controlador Dify"
         ],
         "description": "Altera o status de um bot Dify. O status pode ser `opened`, `paused`, ou `closed`. O status `closed` encerra a interação do bot.",
         "security": [
@@ -9049,7 +9049,7 @@
         "operationId": "fetchDifyBotSessions",
         "summary": "Recupera as sessões ativas do bot Dify",
         "tags": [
-          "Dify Controller"
+          "Controlador Dify"
         ],
         "description": "Recupera as sessões ativas de um bot Dify específico, com base no ID do bot (`difyId`) e na instância do bot (`instance`).",
         "security": [
@@ -9758,7 +9758,7 @@
         "operationId": "createEvoAIBot",
         "summary": "Create a new evoai bot instance",
         "tags": [
-          "EvoAI Controller"
+          "Controlador EvoAI"
         ],
         "description": "Creates a new EvoAI bot with the provided configuration",
         "security": [
@@ -9856,7 +9856,7 @@
         },
         "responses": {
           "200": {
-            "description": "EvoAI bot instance created successfully",
+            "description": "Instância do bot EvoAI criada com sucesso",
             "content": {
               "application/json": {
                 "schema": {
@@ -9864,7 +9864,7 @@
                   "properties": {
                     "message": {
                       "type": "string",
-                      "example": "EvoAI bot instance created successfully"
+                      "example": "Instância do bot EvoAI criada com sucesso"
                     }
                   }
                 }
@@ -9886,9 +9886,9 @@
     "/evoai/find/{instance}": {
       "get": {
         "operationId": "fetchEvoAIBot",
-        "summary": "Fetch EvoAI Bot",
+        "summary": "Buscar Bot EvoAI",
         "tags": [
-          "EvoAI Controller"
+          "Controlador EvoAI"
         ],
         "description": "Fetches EvoAI bots.",
         "security": [
@@ -9932,7 +9932,7 @@
         "operationId": "findEvoAIBot",
         "summary": "Find EvoAI Bot",
         "tags": [
-          "EvoAI Controller"
+          "Controlador EvoAI"
         ],
         "description": "Update EvoAI bot.",
         "security": [
@@ -9985,7 +9985,7 @@
         "operationId": "updateEvoAIBot",
         "summary": "Create a new EvoAI bot instance",
         "tags": [
-          "EvoAI Controller"
+          "Controlador EvoAI"
         ],
         "description": "Update bot EvoAI",
         "security": [
@@ -10092,7 +10092,7 @@
         },
         "responses": {
           "200": {
-            "description": "EvoAI bot instance created successfully",
+            "description": "Instância do bot EvoAI criada com sucesso",
             "content": {
               "application/json": {
                 "schema": {
@@ -10100,7 +10100,7 @@
                   "properties": {
                     "message": {
                       "type": "string",
-                      "example": "EvoAI bot instance created successfully"
+                      "example": "Instância do bot EvoAI criada com sucesso"
                     }
                   }
                 }
@@ -10115,7 +10115,7 @@
         "operationId": "updateEvoAISettings",
         "summary": "Atualiza as configurações do bot EvoAI",
         "tags": [
-          "EvoAI Controller"
+          "Controlador EvoAI"
         ],
         "description": "Atualiza as configurações do bot EvoAI.",
         "security": [
@@ -10237,7 +10237,7 @@
         "operationId": "findEvoAISettings",
         "summary": "Find settings EvoAI bot",
         "tags": [
-          "EvoAI Controller"
+          "Controlador EvoAI"
         ],
         "description": "Find settigns EvoAI bot",
         "security": [
@@ -10281,7 +10281,7 @@
         "operationId": "changeEvoAIBotStatus",
         "summary": "Altera o status do bot EvoAI",
         "tags": [
-          "EvoAI Controller"
+          "Controlador EvoAI"
         ],
         "description": "Altera o status de um bot EvoAI. O status pode ser `opened`, `paused`, ou `closed`. O status `closed` encerra a interação do bot.",
         "security": [
@@ -10357,7 +10357,7 @@
         "operationId": "fetchEvoAIBotSessions",
         "summary": "Recupera as sessões ativas do bot EvoAI",
         "tags": [
-          "EvoAI Controller"
+          "Controlador EvoAI"
         ],
         "description": "Recupera as sessões ativas de um bot EvoAI específico, com base no ID do bot (`evoaiId`) e na instância do bot (`instance`).",
         "security": [
@@ -10597,7 +10597,7 @@
         "operationId": "fetchFlowiseBotSessions",
         "summary": "Recupera as sessões ativas do bot Flowise",
         "tags": [
-          "Dify Controller"
+          "Controlador Dify"
         ],
         "description": "Fetch bots flowise",
         "security": [
@@ -10640,7 +10640,7 @@
         "operationId": "fetchFlowiseBotSessions",
         "summary": "Recupera as sessões ativas do bot Flowise",
         "tags": [
-          "Dify Controller"
+          "Controlador Dify"
         ],
         "description": "Fetch bots flowise",
         "security": [
@@ -11053,7 +11053,7 @@
         "operationId": "fetchFlowiseSessions",
         "summary": "Recupera as sessões ativas do bot Flowise",
         "tags": [
-          "Dify Controller"
+          "Controlador Dify"
         ],
         "description": "Fetch session flowise",
         "security": [
@@ -11105,7 +11105,7 @@
         "operationId": "fetchFlowiseSettings",
         "summary": "Recupera os configurações do bot flowise",
         "tags": [
-          "Dify Controller"
+          "Controlador Dify"
         ],
         "description": "Fetch settings flowise",
         "security": [
@@ -11256,7 +11256,7 @@
         "operationId": "createEvolutionBot",
         "summary": "Create Evolution Bot",
         "tags": [
-          "Evolution Bot Controller"
+          "Controlador Bot Evolution"
         ],
         "deprecated": false,
         "security": [
@@ -11299,7 +11299,7 @@
                 "properties": {
                   "enabled": {
                     "type": "boolean",
-                    "description": "Enable Evolution Bot"
+                    "description": "Ativar Bot Evolution"
                   },
                   "apiUrl": {
                     "type": "string",
@@ -11323,7 +11323,7 @@
                   },
                   "expire": {
                     "type": "number",
-                    "description": "Expiration time for the session (in seconds)"
+                    "description": "Tempo de expiração da sessão (em segundos)"
                   },
                   "keywordFinish": {
                     "type": "string",
@@ -11331,7 +11331,7 @@
                   },
                   "delayMessage": {
                     "type": "number",
-                    "description": "Delay time (in ms) for sending messages"
+                    "description": "Tempo de atraso (em ms) para envio de mensagens"
                   },
                   "unknownMessage": {
                     "type": "string",
@@ -11443,7 +11443,7 @@
         "operationId": "updateEvolutionBot",
         "summary": "Update Evolution Bot",
         "tags": [
-          "Evolution Bot Controller"
+          "Controlador Bot Evolution"
         ],
         "deprecated": false,
         "security": [
@@ -11495,7 +11495,7 @@
                 "properties": {
                   "enabled": {
                     "type": "boolean",
-                    "description": "Enable or disable the Evolution Bot"
+                    "description": "Ativar ou desativar o Bot Evolution"
                   },
                   "apiUrl": {
                     "type": "string",
@@ -11519,7 +11519,7 @@
                   },
                   "expire": {
                     "type": "number",
-                    "description": "Expiration time for the session (in seconds)"
+                    "description": "Tempo de expiração da sessão (em segundos)"
                   },
                   "keywordFinish": {
                     "type": "string",
@@ -11527,7 +11527,7 @@
                   },
                   "delayMessage": {
                     "type": "number",
-                    "description": "Delay time (in ms) for sending messages"
+                    "description": "Tempo de atraso (em ms) para envio de mensagens"
                   },
                   "unknownMessage": {
                     "type": "string",
@@ -11672,7 +11672,7 @@
         "operationId": "createEvolutionBotSettings",
         "summary": "Create Evolution Bot Settings",
         "tags": [
-          "Evolution Bot Controller"
+          "Controlador Bot Evolution"
         ],
         "deprecated": false,
         "security": [
@@ -11711,7 +11711,7 @@
                 "properties": {
                   "expire": {
                     "type": "number",
-                    "description": "Expiration time for the session (in seconds)"
+                    "description": "Tempo de expiração da sessão (em segundos)"
                   },
                   "keywordFinish": {
                     "type": "string",
@@ -11719,7 +11719,7 @@
                   },
                   "delayMessage": {
                     "type": "number",
-                    "description": "Delay time (in ms) for sending messages"
+                    "description": "Tempo de atraso (em ms) para envio de mensagens"
                   },
                   "unknownMessage": {
                     "type": "string",
@@ -11750,7 +11750,7 @@
                   },
                   "botIdFallback": {
                     "type": "string",
-                    "description": "Fallback bot ID to use"
+                    "description": "ID do bot de fallback a usar"
                   }
                 }
               }
@@ -11770,7 +11770,7 @@
         "operationId": "findEvolutionBot",
         "summary": "Find EvoBot",
         "tags": [
-          "Evolution Bot Controller"
+          "Controlador Bot Evolution"
         ],
         "deprecated": false,
         "security": [
@@ -11803,7 +11803,7 @@
         "operationId": "findEvolutionBot",
         "summary": "Find EvoBot session",
         "tags": [
-          "Evolution Bot Controller"
+          "Controlador Bot Evolution"
         ],
         "deprecated": false,
         "security": [
