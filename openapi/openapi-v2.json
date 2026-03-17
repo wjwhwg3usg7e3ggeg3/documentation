@@ -22,7 +22,7 @@
         "operationId": "createInstance",
         "summary": "Criar Instância",
         "tags": [
-          "Instance Controller"
+          "Controlador de Instâncias"
         ],
         "deprecated": false,
         "security": [
@@ -51,7 +51,7 @@
                   },
                   "qrcode": {
                     "type": "boolean",
-                    "description": "Create QR Code automatically after creation"
+                    "description": "Criar código QR automaticamente após a criação"
                   },
                   "number": {
                     "type": "string",
@@ -59,7 +59,7 @@
                   },
                   "integration": {
                     "type": "string",
-                    "description": "WhatsApp engine",
+                    "description": "Mecanismo WhatsApp",
                     "enum": [
                       "WHATSAPP-BAILEYS",
                       "WHATSAPP-BUSINESS"
@@ -67,39 +67,39 @@
                   },
                   "rejectCall": {
                     "type": "boolean",
-                    "description": "Reject WhatsApp calls automatically"
+                    "description": "Rejeitar chamadas do WhatsApp automaticamente"
                   },
                   "msgCall": {
                     "type": "string",
-                    "description": "Message to be sent when a call is rejected automatically"
+                    "description": "Mensagem a ser enviada quando uma chamada é rejeitada automaticamente"
                   },
                   "groupsIgnore": {
                     "type": "boolean",
-                    "description": "Ignore group messages"
+                    "description": "Ignorar mensagens de grupo"
                   },
                   "alwaysOnline": {
                     "type": "boolean",
-                    "description": "Keep WhatsApp always online"
+                    "description": "Manter o WhatsApp sempre online"
                   },
                   "readMessages": {
                     "type": "boolean",
-                    "description": "Send read receipts to received messages"
+                    "description": "Enviar confirmações de leitura para mensagens recebidas"
                   },
                   "readStatus": {
                     "type": "boolean",
-                    "description": "Show sent messages read status"
+                    "description": "Mostrar status de leitura das mensagens enviadas"
                   },
                   "syncFullHistory": {
                     "type": "boolean",
-                    "description": "Syncronize full WhatsApp history with EvolutionAPI"
+                    "description": "Sincronizar histórico completo do WhatsApp com Zynx API"
                   },
                   "proxyHost": {
                     "type": "string",
-                    "description": "proxy host"
+                    "description": "host do proxy"
                   },
                   "proxyPort": {
                     "type": "string",
-                    "description": "proxy port"
+                    "description": "porta do proxy"
                   },
                   "proxyProtocol": {
                     "type": "string",
@@ -111,7 +111,7 @@
                   },
                   "proxyPassword": {
                     "type": "string",
-                    "description": "proxy password"
+                    "description": "senha do proxy"
                   },
                   "webhook": {
                     "type": "object",
@@ -468,7 +468,7 @@
         "operationId": "fetchInstances",
         "summary": "Listar Instâncias",
         "tags": [
-          "Instance Controller"
+          "Controlador de Instâncias"
         ],
         "deprecated": false,
         "security": [
@@ -571,7 +571,7 @@
         "operationId": "instanceConnect",
         "summary": "Instances Connect",
         "tags": [
-          "Instance Controller"
+          "Controlador de Instâncias"
         ],
         "deprecated": false,
         "security": [
@@ -678,7 +678,7 @@
         "operationId": "restartInstance",
         "summary": "Reiniciar Instância",
         "tags": [
-          "Instance Controller"
+          "Controlador de Instâncias"
         ],
         "deprecated": false,
         "security": [
@@ -779,7 +779,7 @@
         "operationId": "connectionState",
         "summary": "Estado da Conexão",
         "tags": [
-          "Instance Controller"
+          "Controlador de Instâncias"
         ],
         "deprecated": false,
         "security": [
@@ -880,7 +880,7 @@
         "operationId": "logoutInstance",
         "summary": "Desconectar Instância",
         "tags": [
-          "Instance Controller"
+          "Controlador de Instâncias"
         ],
         "deprecated": false,
         "security": [
@@ -986,7 +986,7 @@
         "operationId": "deleteInstance",
         "summary": "Deletar Instância",
         "tags": [
-          "Instance Controller"
+          "Controlador de Instâncias"
         ],
         "deprecated": false,
         "security": [
@@ -1092,7 +1092,7 @@
         "operationId": "setPresence",
         "summary": "Definir Presença",
         "tags": [
-          "Instance Controller"
+          "Controlador de Instâncias"
         ],
         "deprecated": false,
         "security": [
@@ -1440,11 +1440,11 @@
                   },
                   "msgCall": {
                     "type": "string",
-                    "description": "Message to be sent when a call is rejected automatically"
+                    "description": "Mensagem a ser enviada quando uma chamada é rejeitada automaticamente"
                   },
                   "groupsIgnore": {
                     "type": "boolean",
-                    "description": "Ignore group messages"
+                    "description": "Ignorar mensagens de grupo"
                   },
                   "alwaysOnline": {
                     "type": "boolean",
@@ -1460,7 +1460,7 @@
                   },
                   "syncFullHistory": {
                     "type": "boolean",
-                    "description": "Syncronize full WhatsApp history with EvolutionAPI"
+                    "description": "Sincronizar histórico completo do WhatsApp com Zynx API"
                   }
                 }
               }
@@ -3746,7 +3746,7 @@
         "operationId": "whatsappNumbers",
         "summary": "WhatsApp Numbers",
         "tags": [
-          "Chat Controller"
+          "Controlador de Chat"
         ],
         "deprecated": false,
         "security": [
@@ -3828,7 +3828,7 @@
         "operationId": "markMessageAsRead",
         "summary": "Mark Message As Read",
         "tags": [
-          "Chat Controller"
+          "Controlador de Chat"
         ],
         "deprecated": false,
         "security": [
@@ -3916,7 +3916,7 @@
         "operationId": "markMessageAsRead",
         "summary": "Mark Message As Unread",
         "tags": [
-          "Chat Controller"
+          "Controlador de Chat"
         ],
         "deprecated": false,
         "security": [
@@ -4009,7 +4009,7 @@
         "operationId": "archiveChat",
         "summary": "Archive Chat",
         "tags": [
-          "Chat Controller"
+          "Controlador de Chat"
         ],
         "deprecated": false,
         "security": [
@@ -4117,7 +4117,7 @@
         "operationId": "deleteMessageForEveryone",
         "summary": "Delete Message For Everyone",
         "tags": [
-          "Chat Controller"
+          "Controlador de Chat"
         ],
         "deprecated": false,
         "security": [
@@ -4271,7 +4271,7 @@
         "operationId": "sendPresence",
         "summary": "Send Presence",
         "tags": [
-          "Chat Controller"
+          "Controlador de Chat"
         ],
         "deprecated": false,
         "security": [
@@ -4349,7 +4349,7 @@
         "operationId": "updateBlockStatus",
         "summary": "Update block status",
         "tags": [
-          "Chat Controller"
+          "Controlador de Chat"
         ],
         "deprecated": false,
         "security": [
@@ -4405,7 +4405,7 @@
         "operationId": "fetchProfilePictureUrl",
         "summary": "Fetch Profile Picture URL",
         "tags": [
-          "Chat Controller"
+          "Controlador de Chat"
         ],
         "deprecated": false,
         "security": [
@@ -4476,7 +4476,7 @@
         "operationId": "findContacts",
         "summary": "Find Contacts",
         "tags": [
-          "Chat Controller"
+          "Controlador de Chat"
         ],
         "deprecated": false,
         "security": [
@@ -4532,7 +4532,7 @@
         "operationId": "getBase64FromMediaMessage",
         "summary": "Get Base64 From Media Message",
         "tags": [
-          "Chat Controller"
+          "Controlador de Chat"
         ],
         "deprecated": false,
         "security": [
@@ -4598,7 +4598,7 @@
         "operationId": "findMessages",
         "summary": "Find Messages",
         "tags": [
-          "Chat Controller"
+          "Controlador de Chat"
         ],
         "deprecated": false,
         "security": [
@@ -4656,7 +4656,7 @@
         "operationId": "findStatusMessage",
         "summary": "Find Status Message",
         "tags": [
-          "Chat Controller"
+          "Controlador de Chat"
         ],
         "deprecated": false,
         "security": [
@@ -4728,7 +4728,7 @@
         "operationId": "updateMessage",
         "summary": "Update Message",
         "tags": [
-          "Chat Controller"
+          "Controlador de Chat"
         ],
         "deprecated": false,
         "security": [
@@ -4802,7 +4802,7 @@
         "operationId": "findChats",
         "summary": "Find Chats",
         "tags": [
-          "Chat Controller"
+          "Controlador de Chat"
         ],
         "deprecated": false,
         "security": [
@@ -4835,7 +4835,7 @@
         "operationId": "fetchBusinessProfile",
         "summary": "Fetch Business Profile",
         "tags": [
-          "Chat Controller"
+          "Controlador de Chat"
         ],
         "deprecated": false,
         "security": [
@@ -4886,7 +4886,7 @@
         "operationId": "fetchBusinessProfile",
         "summary": "Fetch Business Profile",
         "tags": [
-          "Chat Controller"
+          "Controlador de Chat"
         ],
         "deprecated": false,
         "security": [
@@ -4937,7 +4937,7 @@
         "operationId": "updateProfileName",
         "summary": "Update Profile Name",
         "tags": [
-          "Chat Controller"
+          "Controlador de Chat"
         ],
         "deprecated": false,
         "security": [
@@ -4988,7 +4988,7 @@
         "operationId": "updateProfileStatus",
         "summary": "Update Profile Status",
         "tags": [
-          "Chat Controller"
+          "Controlador de Chat"
         ],
         "deprecated": false,
         "security": [
@@ -5039,7 +5039,7 @@
         "operationId": "updateProfilePicture",
         "summary": "Update Profile Picture",
         "tags": [
-          "Chat Controller"
+          "Controlador de Chat"
         ],
         "deprecated": false,
         "security": [
@@ -5090,7 +5090,7 @@
         "operationId": "removeProfilePicture",
         "summary": "Remove Profile Picture",
         "tags": [
-          "Chat Controller"
+          "Controlador de Chat"
         ],
         "deprecated": false,
         "security": [
@@ -5123,7 +5123,7 @@
         "operationId": "fetchPrivacySettings",
         "summary": "Fetch Privacy Settings",
         "tags": [
-          "Chat Controller"
+          "Controlador de Chat"
         ],
         "deprecated": false,
         "security": [
@@ -5156,7 +5156,7 @@
         "operationId": "updatePrivacySettings",
         "summary": "Update Privacy Settings",
         "tags": [
-          "Chat Controller"
+          "Controlador de Chat"
         ],
         "deprecated": false,
         "security": [
@@ -5257,7 +5257,7 @@
         "operationId": "createGroup",
         "summary": "Create Group",
         "tags": [
-          "Group Controller"
+          "Controlador de Grupos"
         ],
         "deprecated": false,
         "security": [
@@ -5380,7 +5380,7 @@
         "operationId": "updateGroupSubject",
         "summary": "Update Group Subject",
         "tags": [
-          "Group Controller"
+          "Controlador de Grupos"
         ],
         "deprecated": false,
         "security": [
@@ -5440,7 +5440,7 @@
         "operationId": "updateGroupDescription",
         "summary": "Update Group Description",
         "tags": [
-          "Group Controller"
+          "Controlador de Grupos"
         ],
         "deprecated": false,
         "security": [
@@ -5500,7 +5500,7 @@
         "operationId": "fetchInviteCode",
         "summary": "Fetch Group Invite Code",
         "tags": [
-          "Group Controller"
+          "Controlador de Grupos"
         ],
         "deprecated": false,
         "security": [
@@ -5562,7 +5562,7 @@
         "operationId": "fetchInviteCode",
         "summary": "Fetch Group Invite Code",
         "tags": [
-          "Group Controller"
+          "Controlador de Grupos"
         ],
         "deprecated": false,
         "security": [
@@ -5604,7 +5604,7 @@
         "operationId": "fetchInviteCode",
         "summary": "Fetch Group Invite Code",
         "tags": [
-          "Group Controller"
+          "Controlador de Grupos"
         ],
         "deprecated": false,
         "security": [
@@ -5646,7 +5646,7 @@
         "operationId": "sendGroupInvite",
         "summary": "Send Group Invite",
         "tags": [
-          "Group Controller"
+          "Controlador de Grupos"
         ],
         "deprecated": false,
         "security": [
@@ -5730,7 +5730,7 @@
         "operationId": "findGroupByInviteCode",
         "summary": "Find Group By Invite Code",
         "tags": [
-          "Group Controller"
+          "Controlador de Grupos"
         ],
         "deprecated": false,
         "security": [
@@ -5771,7 +5771,7 @@
         "operationId": "findGroupByJid",
         "summary": "Find Group By Remote JID",
         "tags": [
-          "Group Controller"
+          "Controlador de Grupos"
         ],
         "deprecated": false,
         "security": [
@@ -5906,7 +5906,7 @@
         "operationId": "fetchAllGroups",
         "summary": "Fetch All Groups",
         "tags": [
-          "Group Controller"
+          "Controlador de Grupos"
         ],
         "deprecated": false,
         "security": [
@@ -6035,7 +6035,7 @@
         "operationId": "fetchAllGroupMembers",
         "summary": "Fetch All Group Members",
         "tags": [
-          "Group Controller"
+          "Controlador de Grupos"
         ],
         "deprecated": false,
         "security": [
@@ -6113,7 +6113,7 @@
         "operationId": "updateParticipant",
         "summary": "Update Group Members",
         "tags": [
-          "Group Controller"
+          "Controlador de Grupos"
         ],
         "deprecated": false,
         "security": [
@@ -6182,7 +6182,7 @@
         "operationId": "updateSetting",
         "summary": "Update Group Settings",
         "tags": [
-          "Group Controller"
+          "Controlador de Grupos"
         ],
         "deprecated": false,
         "security": [
@@ -6245,7 +6245,7 @@
         "operationId": "toggleEphemeral",
         "summary": "Toggle Ephemeral Group Messages",
         "tags": [
-          "Group Controller"
+          "Controlador de Grupos"
         ],
         "deprecated": false,
         "security": [
@@ -6305,7 +6305,7 @@
         "operationId": "leaveGroup",
         "summary": "Leave Group",
         "tags": [
-          "Group Controller"
+          "Controlador de Grupos"
         ],
         "deprecated": false,
         "security": [
@@ -10889,7 +10889,7 @@
         "operationId": "deleteBot",
         "summary": "Delete Bot Flowise",
         "tags": [
-          "Group Controller"
+          "Controlador de Grupos"
         ],
         "deprecated": false,
         "security": [
@@ -11630,7 +11630,7 @@
         "operationId": "deleteBot",
         "summary": "Delete Bot Evolution",
         "tags": [
-          "Group Controller"
+          "Controlador de Grupos"
         ],
         "deprecated": false,
         "security": [
