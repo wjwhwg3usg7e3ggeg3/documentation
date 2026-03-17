@@ -10,10 +10,10 @@
       "variables": {
         "server-url": {
           "default": "api.zynxapi.app",
-          "description": "The URL of your ZynxAPI server"
+          "description": "A URL do seu servidor ZynxAPI"
         }
       },
-      "description": "Your instance domain"
+      "description": "Seu domínio de instância"
     }
   ],
   "paths": {
@@ -428,7 +428,7 @@
                   "properties": {
                     "status": {
                       "type": "integer",
-                      "description": "The HTTP status of the response"
+                      "description": "O status HTTP da resposta"
                     },
                     "error": {
                       "type": "string",
@@ -505,7 +505,7 @@
                   "properties": {
                     "status": {
                       "type": "integer",
-                      "description": "The HTTP status of the response"
+                      "description": "O status HTTP da resposta"
                     },
                     "error": {
                       "type": "string",
@@ -638,7 +638,7 @@
                   "properties": {
                     "status": {
                       "type": "integer",
-                      "description": "The HTTP status of the response"
+                      "description": "O status HTTP da resposta"
                     },
                     "error": {
                       "type": "string",
@@ -739,7 +739,7 @@
                   "properties": {
                     "status": {
                       "type": "integer",
-                      "description": "The HTTP status of the response"
+                      "description": "O status HTTP da resposta"
                     },
                     "error": {
                       "type": "string",
@@ -840,7 +840,7 @@
                   "properties": {
                     "status": {
                       "type": "integer",
-                      "description": "The HTTP status of the response"
+                      "description": "O status HTTP da resposta"
                     },
                     "error": {
                       "type": "string",
@@ -946,7 +946,7 @@
                   "properties": {
                     "status": {
                       "type": "integer",
-                      "description": "The HTTP status of the response"
+                      "description": "O status HTTP da resposta"
                     },
                     "error": {
                       "type": "string",
@@ -1052,7 +1052,7 @@
                   "properties": {
                     "status": {
                       "type": "integer",
-                      "description": "The HTTP status of the response"
+                      "description": "O status HTTP da resposta"
                     },
                     "error": {
                       "type": "string",
@@ -1147,7 +1147,7 @@
                   "properties": {
                     "status": {
                       "type": "integer",
-                      "description": "The HTTP status of the response"
+                      "description": "O status HTTP da resposta"
                     },
                     "error": {
                       "type": "string",
@@ -11895,7 +11895,7 @@
     "/": {
       "get": {
         "operationId": "getEvoInfo",
-        "summary": "Get information about your EvolutionAPI",
+        "summary": "Obter informações sobre sua Zynx API",
         "deprecated": false,
         "parameters": [
           {
@@ -11908,7 +11908,7 @@
             }
           }
         ],
-        "description": "Get information about your EvolutionAPI",
+        "description": "Obter informações sobre sua Zynx API",
         "responses": {
           "200": {
             "description": "Ok",
@@ -11919,32 +11919,32 @@
                   "properties": {
                     "status": {
                       "type": "integer",
-                      "description": "The HTTP status of the response"
+                      "description": "O status HTTP da resposta"
                     },
                     "message": {
                       "type": "string",
-                      "description": "Descriptive message about the current state of the API"
+                      "description": "Mensagem descritiva sobre o estado atual da API"
                     },
                     "version": {
                       "type": "string",
-                      "description": "The current version of the API"
+                      "description": "A versão atual da API"
                     },
                     "swagger": {
                       "type": "string",
-                      "description": "URL to the API's Swagger documentation"
+                      "description": "URL para a documentação Swagger da API"
                     },
                     "manager": {
                       "type": "string",
-                      "description": "URL to the API manager"
+                      "description": "URL para o gerenciador da API"
                     },
                     "documentation": {
                       "type": "string",
-                      "description": "URL to the detailed API documentation"
+                      "description": "URL para a documentação detalhada da API"
                     }
                   },
                   "example": {
                     "status": 200,
-                    "message": "Welcome to the Evolution API, it is working!",
+                    "message": "Bem-vindo à Zynx API, está funcionando!",
                     "version": "1.7.4",
                     "swagger": "http://example.evolution-api.com/docs",
                     "manager": "http://example.evolution-api.com/manager",
