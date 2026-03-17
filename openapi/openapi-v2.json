@@ -103,7 +103,7 @@
                   },
                   "proxyProtocol": {
                     "type": "string",
-                    "description": "proxy protocol"
+                    "description": "protocolo do proxy"
                   },
                   "proxyUsername": {
                     "type": "string",
@@ -134,7 +134,7 @@
                         "properties": {
                           "authorization": {
                             "type": "string",
-                            "description": "Your authorization key header"
+                            "description": "Sua chave de autorização no header"
                           },
                           "Content-Type": {
                             "type": "string",
@@ -320,7 +320,7 @@
         },
         "responses": {
           "201": {
-            "description": "Created",
+            "description": "Criado",
             "content": {
               "application/json": {
                 "schema": {
@@ -331,23 +331,23 @@
                       "properties": {
                         "instanceName": {
                           "type": "string",
-                          "description": "The name of the instance"
+                          "description": "O nome da instância"
                         },
                         "instanceId": {
                           "type": "string",
-                          "description": "The unique identifier for the instance"
+                          "description": "O identificador único da instância"
                         },
                         "webhook_wa_business": {
                           "type": "string",
-                          "description": "The webhook URL for WhatsApp Business integration"
+                          "description": "A URL do webhook para integração WhatsApp Business"
                         },
                         "access_token_wa_business": {
                           "type": "string",
-                          "description": "The access token for WhatsApp Business"
+                          "description": "O token de acesso para WhatsApp Business"
                         },
                         "status": {
                           "type": "string",
-                          "description": "The current status of the instance"
+                          "description": "O status atual da instância"
                         }
                       }
                     },
@@ -356,7 +356,7 @@
                       "properties": {
                         "apikey": {
                           "type": "string",
-                          "description": "The API key for authentication"
+                          "description": "A chave de API para autenticação"
                         }
                       }
                     },
@@ -365,31 +365,31 @@
                       "properties": {
                         "reject_call": {
                           "type": "boolean",
-                          "description": "Indicates whether calls are rejected"
+                          "description": "Indica se as chamadas são rejeitadas"
                         },
                         "msg_call": {
                           "type": "string",
-                          "description": "Message to be sent when a call is rejected"
+                          "description": "Mensagem a ser enviada quando uma chamada é rejeitada"
                         },
                         "groups_ignore": {
                           "type": "boolean",
-                          "description": "Indicates whether groups are ignored"
+                          "description": "Indica se os grupos são ignorados"
                         },
                         "always_online": {
                           "type": "boolean",
-                          "description": "Indicates whether the instance is always online"
+                          "description": "Indica se a instância está sempre online"
                         },
                         "read_messages": {
                           "type": "boolean",
-                          "description": "Indicates whether messages are marked as read"
+                          "description": "Indica se as mensagens são marcadas como lidas"
                         },
                         "read_status": {
                           "type": "boolean",
-                          "description": "Indicates whether status updates are marked as read"
+                          "description": "Indica se as atualizações de status são marcadas como lidas"
                         },
                         "sync_full_history": {
                           "type": "boolean",
-                          "description": "Indicates whether the full message history is synchronized"
+                          "description": "Indica se o histórico completo de mensagens é sincronizado"
                         }
                       }
                     }
@@ -420,7 +420,7 @@
             }
           },
           "403": {
-            "description": "Forbidden",
+            "description": "Proibido",
             "content": {
               "application/json": {
                 "schema": {
@@ -449,10 +449,10 @@
                   },
                   "example": {
                     "status": 403,
-                    "error": "Forbidden",
+                    "error": "Proibido",
                     "response": {
                       "message": [
-                        "This name \"instance-example-name\" is already in use."
+                        "Este nome \"instance-example-name\" já está em uso."
                       ]
                     }
                   }
@@ -1276,7 +1276,7 @@
         },
         "responses": {
           "201": {
-            "description": "Created",
+            "description": "Criado",
             "content": {
               "application/json": {
                 "schema": {
@@ -1469,7 +1469,7 @@
         },
         "responses": {
           "201": {
-            "description": "Created",
+            "description": "Criado",
             "content": {
               "application/json": {
                 "schema": {
@@ -1702,7 +1702,7 @@
         },
         "responses": {
           "201": {
-            "description": "Created",
+            "description": "Criado",
             "content": {
               "application/json": {
                 "schema": {
@@ -1884,7 +1884,7 @@
         },
         "responses": {
           "201": {
-            "description": "Created",
+            "description": "Criado",
             "content": {
               "application/json": {
                 "schema": {
@@ -2411,7 +2411,7 @@
         },
         "responses": {
           "201": {
-            "description": "Created",
+            "description": "Criado",
             "content": {
               "application/json": {
                 "schema": {
@@ -2606,7 +2606,7 @@
         },
         "responses": {
           "201": {
-            "description": "Created",
+            "description": "Criado",
             "content": {
               "application/json": {
                 "schema": {
@@ -2785,7 +2785,7 @@
         },
         "responses": {
           "201": {
-            "description": "Created",
+            "description": "Criado",
             "content": {
               "application/json": {
                 "schema": {
@@ -2925,7 +2925,7 @@
         },
         "responses": {
           "201": {
-            "description": "Created",
+            "description": "Criado",
             "content": {
               "application/json": {
                 "schema": {
@@ -3136,7 +3136,7 @@
         },
         "responses": {
           "201": {
-            "description": "Created",
+            "description": "Criado",
             "content": {
               "application/json": {
                 "schema": {
@@ -3391,7 +3391,7 @@
         },
         "responses": {
           "201": {
-            "description": "Created",
+            "description": "Criado",
             "content": {
               "application/json": {
                 "schema": {
@@ -3629,7 +3629,7 @@
         },
         "responses": {
           "201": {
-            "description": "Created",
+            "description": "Criado",
             "content": {
               "application/json": {
                 "schema": {
@@ -3885,7 +3885,7 @@
         },
         "responses": {
           "201": {
-            "description": "Created",
+            "description": "Criado",
             "content": {
               "application/json": {
                 "schema": {
@@ -3978,7 +3978,7 @@
         },
         "responses": {
           "201": {
-            "description": "Created",
+            "description": "Criado",
             "content": {
               "application/json": {
                 "schema": {
@@ -4086,7 +4086,7 @@
         },
         "responses": {
           "201": {
-            "description": "Created",
+            "description": "Criado",
             "content": {
               "application/json": {
                 "schema": {
@@ -4172,7 +4172,7 @@
         },
         "responses": {
           "201": {
-            "description": "Created",
+            "description": "Criado",
             "content": {
               "application/json": {
                 "schema": {
@@ -4338,7 +4338,7 @@
         },
         "responses": {
           "201": {
-            "description": "Created",
+            "description": "Criado",
             "content": {}
           }
         }
@@ -4394,7 +4394,7 @@
         },
         "responses": {
           "201": {
-            "description": "Created",
+            "description": "Criado",
             "content": {}
           }
         }
@@ -11964,7 +11964,7 @@
         "type": "apiKey",
         "in": "header",
         "name": "apikey",
-        "description": "Your authorization key header"
+        "description": "Sua chave de autorização no header"
       }
     }
   }
