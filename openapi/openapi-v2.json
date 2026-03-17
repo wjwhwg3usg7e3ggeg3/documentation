@@ -55,7 +55,7 @@
                   },
                   "number": {
                     "type": "string",
-                    "description": "559999999999 (Instance owner number with Country Code)"
+                    "description": "559999999999 (Número do proprietário da instância com código do país)"
                   },
                   "integration": {
                     "type": "string",
@@ -107,7 +107,7 @@
                   },
                   "proxyUsername": {
                     "type": "string",
-                    "description": "proxy Username"
+                    "description": "nome de usuário do proxy"
                   },
                   "proxyPassword": {
                     "type": "string",
@@ -118,7 +118,7 @@
                     "properties": {
                       "url": {
                         "type": "string",
-                        "description": "The URL of the webhook."
+                        "description": "A URL do webhook."
                       },
                       "byEvents": {
                         "type": "boolean",
@@ -126,11 +126,11 @@
                       },
                       "base64": {
                         "type": "boolean",
-                        "description": "Sends files in base64 when available"
+                        "description": "Envia arquivos em base64 quando disponível"
                       },
                       "headers": {
                         "type": "object",
-                        "description": "Headers for send the API from webhook",
+                        "description": "Headers para enviar a API do webhook",
                         "properties": {
                           "authorization": {
                             "type": "string",
@@ -138,7 +138,7 @@
                           },
                           "Content-Type": {
                             "type": "string",
-                            "description": "content-type"
+                            "description": "tipo de conteúdo"
                           }
                         }
                       },
@@ -175,7 +175,7 @@
                         "description": "Eventos a serem enviados para o Webhook"
                       }
                     },
-                    "description": "Webhook URL"
+                    "description": "URL do Webhook"
                   },
                   "rabbitmq": {
                     "type": "object",
@@ -1187,7 +1187,7 @@
         "operationId": "setWebhook",
         "summary": "Set Webhook",
         "tags": [
-          "Webhook Controller"
+          "Controlador de Webhook"
         ],
         "deprecated": false,
         "security": [
@@ -1226,7 +1226,7 @@
                   },
                   "url": {
                     "type": "string",
-                    "description": "Webhook URL"
+                    "description": "URL do Webhook"
                   },
                   "webhookByEvents": {
                     "type": "boolean",
@@ -1234,7 +1234,7 @@
                   },
                   "webhookBase64": {
                     "type": "boolean",
-                    "description": "Sends files in base64 when available"
+                    "description": "Envia arquivos em base64 quando disponível"
                   },
                   "events": {
                     "type": "array",
@@ -1294,7 +1294,7 @@
                           "properties": {
                             "url": {
                               "type": "string",
-                              "description": "The URL of the webhook."
+                              "description": "A URL do webhook."
                             },
                             "events": {
                               "type": "array",
@@ -1336,7 +1336,7 @@
         "operationId": "findWebhook",
         "summary": "Encontrar Webhook",
         "tags": [
-          "Webhook Controller"
+          "Controlador de Webhook"
         ],
         "deprecated": false,
         "security": [
@@ -1370,7 +1370,7 @@
                     },
                     "url": {
                       "type": "string",
-                      "description": "The URL of the webhook."
+                      "description": "A URL do webhook."
                     },
                     "events": {
                       "type": "array",
@@ -1399,7 +1399,7 @@
         "operationId": "setSettings",
         "summary": "Set Settings",
         "tags": [
-          "Settings Controller"
+          "Controlador de Configurações"
         ],
         "deprecated": false,
         "security": [
@@ -1539,7 +1539,7 @@
         "operationId": "findWebhook",
         "summary": "Encontrar Webhook",
         "tags": [
-          "Webhook Controller"
+          "Controlador de Webhook"
         ],
         "deprecated": false,
         "security": [
