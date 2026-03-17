@@ -275,11 +275,11 @@
                   },
                   "chatwootSignMsg": {
                     "type": "boolean",
-                    "description": "Send message signature on Chatwoot"
+                    "description": "Enviar assinatura de mensagem no Chatwoot"
                   },
                   "chatwootReopenConversation": {
                     "type": "boolean",
-                    "description": "Reopen conversation on Chatwoot"
+                    "description": "Reabrir conversa no Chatwoot"
                   },
                   "chatwootConversationPending": {
                     "type": "boolean",
@@ -494,7 +494,7 @@
             }
           }
         ],
-        "description": "Returns the instance with the name informed in the parameter, or all the instances if empty.",
+        "description": "Retorna a instância com o nome informado no parâmetro, ou todas as instâncias se vazio.",
         "responses": {
           "200": {
             "description": "Ok",
@@ -532,7 +532,7 @@
                         "owner": "553198296801@s.whatsapp.net",
                         "profileName": "Guilherme Gomes",
                         "profilePictureUrl": null,
-                        "profileStatus": "This is the profile status.",
+                        "profileStatus": "Este é o status do perfil.",
                         "status": "open",
                         "serverUrl": "https://example.evolution-api.com",
                         "apikey": "B3844804-481D-47A4-B69C-F14B4206EB56",
@@ -591,7 +591,7 @@
           },
           {
             "name": "number",
-            "description": "Phone number (with country code) to be connected",
+            "description": "Número de telefone (com código do país) a ser conectado",
             "in": "query",
             "schema": {
               "type": "string"
@@ -609,7 +609,7 @@
                   "properties": {
                     "pairingCode": {
                       "type": "string",
-                      "description": "The unique code used for pairing a device or account."
+                      "description": "O código único usado para emparelhar um dispositivo ou conta."
                     },
                     "code": {
                       "type": "string",
@@ -691,13 +691,13 @@
             "name": "instance",
             "in": "path",
             "required": true,
-            "description": "Name of the instance to restart",
+            "description": "Nome da instância para reiniciar",
             "schema": {
               "type": "string"
             }
           }
         ],
-        "description": "Restarts the instance",
+        "description": "Reinicia a instância",
         "responses": {
           "200": {
             "description": "Ok",
@@ -715,7 +715,7 @@
                         },
                         "state": {
                           "type": "string",
-                          "description": "The state of the instance."
+                          "description": "O estado da instância."
                         }
                       }
                     }
@@ -816,7 +816,7 @@
                         },
                         "state": {
                           "type": "string",
-                          "description": "The state of the instance."
+                          "description": "O estado da instância."
                         }
                       }
                     }
@@ -910,7 +910,7 @@
                   "properties": {
                     "status": {
                       "type": "string",
-                      "description": "The status of the response."
+                      "description": "O status da resposta."
                     },
                     "error": {
                       "type": "boolean",
@@ -1016,7 +1016,7 @@
                   "properties": {
                     "status": {
                       "type": "string",
-                      "description": "The status of the response."
+                      "description": "O status da resposta."
                     },
                     "error": {
                       "type": "boolean",
@@ -1185,7 +1185,7 @@
     "/webhook/set/{instance}": {
       "post": {
         "operationId": "setWebhook",
-        "summary": "Set Webhook",
+        "summary": "Configurar Webhook",
         "tags": [
           "Controlador de Webhook"
         ],
@@ -1206,7 +1206,7 @@
             }
           }
         ],
-        "description": "Set Webhook for instance",
+        "description": "Configurar Webhook para instância",
         "requestBody": {
           "content": {
             "application/json": {
@@ -1397,7 +1397,7 @@
     "/settings/set/{instance}": {
       "post": {
         "operationId": "setSettings",
-        "summary": "Set Settings",
+        "summary": "Configurar Configurações",
         "tags": [
           "Controlador de Configurações"
         ],
@@ -1418,7 +1418,7 @@
             }
           }
         ],
-        "description": "Set settings",
+        "description": "Configurar configurações",
         "requestBody": {
           "content": {
             "application/json": {
@@ -1436,7 +1436,7 @@
                 "properties": {
                   "rejectCall": {
                     "type": "boolean",
-                    "description": "Reject calls automatically"
+                    "description": "Rejeitar chamadas automaticamente"
                   },
                   "msgCall": {
                     "type": "string",
@@ -1452,11 +1452,11 @@
                   },
                   "readMessages": {
                     "type": "boolean",
-                    "description": "Send read receipts"
+                    "description": "Enviar confirmações de leitura"
                   },
                   "readStatus": {
                     "type": "boolean",
-                    "description": "See message status"
+                    "description": "Ver status da mensagem"
                   },
                   "syncFullHistory": {
                     "type": "boolean",
@@ -1631,7 +1631,7 @@
             }
           }
         ],
-        "description": "Send plain text message",
+        "description": "Enviar mensagem de texto simples",
         "requestBody": {
           "content": {
             "application/json": {
@@ -1644,7 +1644,7 @@
                 "properties": {
                   "number": {
                     "type": "string",
-                    "description": "Number to receive the message (with country code)"
+                    "description": "Número para receber a mensagem (com código do país)"
                   },
                   "text": {
                     "type": "string",
@@ -1652,11 +1652,11 @@
                   },
                   "delay": {
                     "type": "integer",
-                    "description": "Presence time in milliseconds before sending message"
+                    "description": "Tempo de presença em milissegundos antes de enviar a mensagem"
                   },
                   "linkPreview": {
                     "type": "boolean",
-                    "description": "Shows a preview of the target website if there's a link within the message"
+                    "description": "Mostra uma visualização do site de destino se houver um link dentro da mensagem"
                   },
                   "mentionsEveryOne": {
                     "type": "boolean",
@@ -1670,7 +1670,7 @@
                         "{{remoteJID}}"
                       ]
                     },
-                    "description": "Numbers to mention"
+                    "description": "Números a mencionar"
                   },
                   "quoted": {
                     "type": "object",
@@ -1680,7 +1680,7 @@
                         "properties": {
                           "id": {
                             "type": "string",
-                            "description": "Quoted message ID"
+                            "description": "ID da mensagem citada"
                           }
                         }
                       },
@@ -1689,7 +1689,7 @@
                         "properties": {
                           "conversation": {
                             "type": "string",
-                            "description": "Quoted message content"
+                            "description": "Conteúdo da mensagem citada"
                           }
                         }
                       }
@@ -1713,7 +1713,7 @@
                       "properties": {
                         "remoteJid": {
                           "type": "string",
-                          "description": "The remote Jid."
+                          "description": "O JID remoto."
                         },
                         "fromMe": {
                           "type": "boolean",
@@ -1733,7 +1733,7 @@
                           "properties": {
                             "text": {
                               "type": "string",
-                              "description": "The text message."
+                              "description": "A mensagem de texto."
                             }
                           }
                         }
@@ -1741,11 +1741,11 @@
                     },
                     "messageTimestamp": {
                       "type": "string",
-                      "description": "The timestamp of the message."
+                      "description": "O timestamp da mensagem."
                     },
                     "status": {
                       "type": "string",
-                      "description": "The status of the message."
+                      "description": "O status da mensagem."
                     }
                   },
                   "example": {
@@ -1793,7 +1793,7 @@
             }
           }
         ],
-        "description": "Send media message",
+        "description": "Enviar mensagem de mídia",
         "requestBody": {
           "content": {
             "application/json": {
@@ -1810,7 +1810,7 @@
                 "properties": {
                   "number": {
                     "type": "string",
-                    "description": "Number to receive the message (with country code)"
+                    "description": "Número para receber a mensagem (com código do país)"
                   },
                   "mediatype": {
                     "type": "string",
@@ -1834,11 +1834,11 @@
                   },
                   "delay": {
                     "type": "integer",
-                    "description": "Presence time in milliseconds before sending message"
+                    "description": "Tempo de presença em milissegundos antes de enviar a mensagem"
                   },
                   "linkPreview": {
                     "type": "boolean",
-                    "description": "Shows a preview of the target website if there's a link within the message"
+                    "description": "Mostra uma visualização do site de destino se houver um link dentro da mensagem"
                   },
                   "mentionsEveryOne": {
                     "type": "boolean",
@@ -1852,7 +1852,7 @@
                         "{{remoteJID}}"
                       ]
                     },
-                    "description": "Numbers to mention"
+                    "description": "Números a mencionar"
                   },
                   "quoted": {
                     "type": "object",
@@ -1862,7 +1862,7 @@
                         "properties": {
                           "id": {
                             "type": "string",
-                            "description": "Quoted message ID"
+                            "description": "ID da mensagem citada"
                           }
                         }
                       },
@@ -1871,7 +1871,7 @@
                         "properties": {
                           "conversation": {
                             "type": "string",
-                            "description": "Quoted message content"
+                            "description": "Conteúdo da mensagem citada"
                           }
                         }
                       }
@@ -1895,7 +1895,7 @@
                       "properties": {
                         "remoteJid": {
                           "type": "string",
-                          "description": "The remote Jid."
+                          "description": "O JID remoto."
                         },
                         "fromMe": {
                           "type": "boolean",
@@ -1940,7 +1940,7 @@
                             },
                             "width": {
                               "type": "integer",
-                              "description": "The width of the image."
+                              "description": "A largura da imagem."
                             },
                             "mediaKey": {
                               "type": "string",
@@ -1956,7 +1956,7 @@
                             },
                             "mediaKeyTimestamp": {
                               "type": "string",
-                              "description": "The timestamp of the media key."
+                              "description": "O timestamp da chave de mídia."
                             },
                             "jpegThumbnail": {
                               "type": "string",
@@ -1974,11 +1974,11 @@
                     },
                     "messageTimestamp": {
                       "type": "string",
-                      "description": "The timestamp of the message, represented as a string."
+                      "description": "O timestamp da mensagem, representado como uma string."
                     },
                     "status": {
                       "type": "string",
-                      "description": "The status of the message, such as sent, received, or pending."
+                      "description": "O status da mensagem, como enviado, recebido ou pendente."
                     }
                   },
                   "example": {
@@ -2017,7 +2017,7 @@
     "/message/sendWhatsAppAudio/{instance}": {
       "post": {
         "operationId": "sendWhatsAppAudio",
-        "summary": "Send WhatsApp Audio",
+        "summary": "Enviar Áudio WhatsApp",
         "tags": [
           "Controlador de Mensagens"
         ],
@@ -2038,7 +2038,7 @@
             }
           }
         ],
-        "description": "Send WhatsApp Audio",
+        "description": "Enviar Áudio WhatsApp",
         "requestBody": {
           "content": {
             "application/json": {
@@ -2051,7 +2051,7 @@
                 "properties": {
                   "number": {
                     "type": "string",
-                    "description": "Number to receive the message (with country code)"
+                    "description": "Número para receber a mensagem (com código do país)"
                   },
                   "audio": {
                     "type": "string",
@@ -2059,11 +2059,11 @@
                   },
                   "delay": {
                     "type": "integer",
-                    "description": "Presence time in milliseconds before sending message"
+                    "description": "Tempo de presença em milissegundos antes de enviar a mensagem"
                   },
                   "linkPreview": {
                     "type": "boolean",
-                    "description": "Shows a preview of the target website if there's a link within the message"
+                    "description": "Mostra uma visualização do site de destino se houver um link dentro da mensagem"
                   },
                   "mentionsEveryOne": {
                     "type": "boolean",
@@ -2077,7 +2077,7 @@
                         "{{remoteJID}}"
                       ]
                     },
-                    "description": "Numbers to mention"
+                    "description": "Números a mencionar"
                   },
                   "quoted": {
                     "type": "object",
@@ -2087,7 +2087,7 @@
                         "properties": {
                           "id": {
                             "type": "string",
-                            "description": "Quoted message ID"
+                            "description": "ID da mensagem citada"
                           }
                         }
                       },
@@ -2096,7 +2096,7 @@
                         "properties": {
                           "conversation": {
                             "type": "string",
-                            "description": "Quoted message content"
+                            "description": "Conteúdo da mensagem citada"
                           }
                         }
                       }
@@ -2120,7 +2120,7 @@
                       "properties": {
                         "remoteJid": {
                           "type": "string",
-                          "description": "The remote Jid."
+                          "description": "O JID remoto."
                         },
                         "fromMe": {
                           "type": "boolean",
@@ -2177,7 +2177,7 @@
                             },
                             "mediaKeyTimestamp": {
                               "type": "string",
-                              "description": "The timestamp of the media key."
+                              "description": "O timestamp da chave de mídia."
                             }
                           },
                           "description": "Detalhes da mensagem de áudio."
@@ -2187,11 +2187,11 @@
                     },
                     "messageTimestamp": {
                       "type": "string",
-                      "description": "The timestamp of the message, represented as a string."
+                      "description": "O timestamp da mensagem, representado como uma string."
                     },
                     "status": {
                       "type": "string",
-                      "description": "The status of the message, such as sent, received, or pending."
+                      "description": "O status da mensagem, como enviado, recebido ou pendente."
                     }
                   },
                   "example": {
@@ -2227,7 +2227,7 @@
     "/message/sendSticker/{instance}": {
       "post": {
         "operationId": "sendSticker",
-        "summary": "Send Sticker",
+        "summary": "Enviar Adesivo",
         "tags": [
           "Controlador de Mensagens"
         ],
@@ -2248,7 +2248,7 @@
             }
           }
         ],
-        "description": "Send Sticker",
+        "description": "Enviar Adesivo",
         "requestBody": {
           "content": {
             "application/json": {
@@ -2261,7 +2261,7 @@
                 "properties": {
                   "number": {
                     "type": "string",
-                    "description": "Number to receive the message (with country code)"
+                    "description": "Número para receber a mensagem (com código do país)"
                   },
                   "sticker": {
                     "type": "string",
@@ -2269,11 +2269,11 @@
                   },
                   "delay": {
                     "type": "integer",
-                    "description": "Presence time in milliseconds before sending message"
+                    "description": "Tempo de presença em milissegundos antes de enviar a mensagem"
                   },
                   "linkPreview": {
                     "type": "boolean",
-                    "description": "Shows a preview of the target website if there's a link within the message"
+                    "description": "Mostra uma visualização do site de destino se houver um link dentro da mensagem"
                   },
                   "mentionsEveryOne": {
                     "type": "boolean",
@@ -2287,7 +2287,7 @@
                         "{{remoteJID}}"
                       ]
                     },
-                    "description": "Numbers to mention"
+                    "description": "Números a mencionar"
                   },
                   "quoted": {
                     "type": "object",
@@ -2297,7 +2297,7 @@
                         "properties": {
                           "id": {
                             "type": "string",
-                            "description": "Quoted message ID"
+                            "description": "ID da mensagem citada"
                           }
                         }
                       },
@@ -2306,7 +2306,7 @@
                         "properties": {
                           "conversation": {
                             "type": "string",
-                            "description": "Quoted message content"
+                            "description": "Conteúdo da mensagem citada"
                           }
                         }
                       }
@@ -2328,7 +2328,7 @@
     "/message/sendStatus/{instance}": {
       "post": {
         "operationId": "sendStatus",
-        "summary": "Send Status",
+        "summary": "Enviar Status",
         "tags": [
           "Controlador de Mensagens"
         ],
@@ -2349,7 +2349,7 @@
             }
           }
         ],
-        "description": "Post WhatsApp status (stories)",
+        "description": "Postar status WhatsApp (histórias)",
         "requestBody": {
           "content": {
             "application/json": {
@@ -2380,7 +2380,7 @@
                   },
                   "caption": {
                     "type": "string",
-                    "description": "Optional for image or video"
+                    "description": "Opcional para imagem ou vídeo"
                   },
                   "backgroundColor": {
                     "type": "string",
@@ -2396,7 +2396,7 @@
                   },
                   "statusJidList": {
                     "type": "array",
-                    "description": "Numbers to send status",
+                    "description": "Números para enviar status",
                     "items": {
                       "type": "string",
                       "enum": [
@@ -2422,7 +2422,7 @@
                       "properties": {
                         "remoteJid": {
                           "type": "string",
-                          "description": "The remote Jid."
+                          "description": "O JID remoto."
                         },
                         "fromMe": {
                           "type": "boolean",
@@ -2443,7 +2443,7 @@
                           "properties": {
                             "text": {
                               "type": "string",
-                              "description": "The text content of the message."
+                              "description": "O conteúdo de texto da mensagem."
                             },
                             "backgroundArgb": {
                               "type": "integer",
@@ -2461,11 +2461,11 @@
                     },
                     "messageTimestamp": {
                       "type": "string",
-                      "description": "The timestamp of the message, represented as a string."
+                      "description": "O timestamp da mensagem, representado como uma string."
                     },
                     "status": {
                       "type": "string",
-                      "description": "The status of the message, such as sent, received, or pending."
+                      "description": "O status da mensagem, como enviado, recebido ou pendente."
                     },
                     "participant": {
                       "type": "string",
@@ -2499,7 +2499,7 @@
     "/message/sendLocation/{instance}": {
       "post": {
         "operationId": "sendLocation",
-        "summary": "Send Location",
+        "summary": "Enviar Localização",
         "tags": [
           "Controlador de Mensagens"
         ],
@@ -2520,7 +2520,7 @@
             }
           }
         ],
-        "description": "Send Location",
+        "description": "Enviar Localização",
         "requestBody": {
           "content": {
             "application/json": {
@@ -2536,11 +2536,11 @@
                 "properties": {
                   "number": {
                     "type": "string",
-                    "description": "Number to receive the message (with country code)"
+                    "description": "Número para receber a mensagem (com código do país)"
                   },
                   "name": {
                     "type": "string",
-                    "description": "Name the city"
+                    "description": "Nome da cidade"
                   },
                   "address": {
                     "type": "string",
@@ -2556,11 +2556,11 @@
                   },
                   "delay": {
                     "type": "integer",
-                    "description": "Presence time in milliseconds before sending message"
+                    "description": "Tempo de presença em milissegundos antes de enviar a mensagem"
                   },
                   "linkPreview": {
                     "type": "boolean",
-                    "description": "Shows a preview of the target website if there's a link within the message"
+                    "description": "Mostra uma visualização do site de destino se houver um link dentro da mensagem"
                   },
                   "mentionsEveryOne": {
                     "type": "boolean",
@@ -2574,7 +2574,7 @@
                         "{{remoteJID}}"
                       ]
                     },
-                    "description": "Numbers to mention"
+                    "description": "Números a mencionar"
                   },
                   "quoted": {
                     "type": "object",
@@ -2584,7 +2584,7 @@
                         "properties": {
                           "id": {
                             "type": "string",
-                            "description": "Quoted message ID"
+                            "description": "ID da mensagem citada"
                           }
                         }
                       },
@@ -2593,7 +2593,7 @@
                         "properties": {
                           "conversation": {
                             "type": "string",
-                            "description": "Quoted message content"
+                            "description": "Conteúdo da mensagem citada"
                           }
                         }
                       }
@@ -2617,7 +2617,7 @@
                       "properties": {
                         "remoteJid": {
                           "type": "string",
-                          "description": "The remote Jid."
+                          "description": "O JID remoto."
                         },
                         "fromMe": {
                           "type": "boolean",
@@ -2666,11 +2666,11 @@
                     },
                     "messageTimestamp": {
                       "type": "string",
-                      "description": "The timestamp of the message, represented as a string."
+                      "description": "O timestamp da mensagem, representado como uma string."
                     },
                     "status": {
                       "type": "string",
-                      "description": "The status of the message, such as sent, received, or pending."
+                      "description": "O status da mensagem, como enviado, recebido ou pendente."
                     }
                   },
                   "example": {
@@ -2701,7 +2701,7 @@
     "/message/sendContact/{instance}": {
       "post": {
         "operationId": "sendContact",
-        "summary": "Send Contact",
+        "summary": "Enviar Contato",
         "tags": [
           "Controlador de Mensagens"
         ],
@@ -2722,7 +2722,7 @@
             }
           }
         ],
-        "description": "Send Contact",
+        "description": "Enviar Contato",
         "requestBody": {
           "content": {
             "application/json": {
@@ -2735,7 +2735,7 @@
                 "properties": {
                   "number": {
                     "type": "string",
-                    "description": "Number to receive the message (with country code)"
+                    "description": "Número para receber a mensagem (com código do país)"
                   },
                   "contact": {
                     "type": "array",
@@ -2757,15 +2757,15 @@
                         },
                         "wuid": {
                           "type": "string",
-                          "description": "Phone number non-stylized with country code (553198296801)"
+                          "description": "Número de telefone não estilizado com código do país (553198296801)"
                         },
                         "phoneNumber": {
                           "type": "string",
-                          "description": "Phone number stylized (+55 31 9 9999-9999)"
+                          "description": "Número de telefone estilizado (+55 31 9 9999-9999)"
                         },
                         "organization": {
                           "type": "string",
-                          "description": "Organization name for the contact"
+                          "description": "Nome da organização para o contato"
                         },
                         "email": {
                           "type": "string",
@@ -2796,7 +2796,7 @@
                       "properties": {
                         "remoteJid": {
                           "type": "string",
-                          "description": "The remote Jid."
+                          "description": "O JID remoto."
                         },
                         "fromMe": {
                           "type": "boolean",
@@ -2821,7 +2821,7 @@
                             },
                             "vcard": {
                               "type": "string",
-                              "description": "The vCard format contact information."
+                              "description": "As informações de contato no formato vCard."
                             },
                             "contextInfo": {
                               "type": "object",
@@ -2835,11 +2835,11 @@
                     },
                     "messageTimestamp": {
                       "type": "string",
-                      "description": "The timestamp of the message, represented as a string."
+                      "description": "O timestamp da mensagem, representado como uma string."
                     },
                     "status": {
                       "type": "string",
-                      "description": "The status of the message, such as sent, received, or pending."
+                      "description": "O status da mensagem, como enviado, recebido ou pendente."
                     }
                   },
                   "example": {
@@ -2868,7 +2868,7 @@
     "/message/sendReaction/{instance}": {
       "post": {
         "operationId": "sendReaction",
-        "summary": "Send Reaction",
+        "summary": "Enviar Reação",
         "tags": [
           "Controlador de Mensagens"
         ],
@@ -2889,7 +2889,7 @@
             }
           }
         ],
-        "description": "Send Reaction",
+        "description": "Enviar Reação",
         "requestBody": {
           "content": {
             "application/json": {
@@ -2915,7 +2915,7 @@
                   },
                   "reaction": {
                     "type": "string",
-                    "description": "Reaction emoji",
+                    "description": "Emoji de reação",
                     "example": "🚀"
                   }
                 }
@@ -2936,7 +2936,7 @@
                       "properties": {
                         "remoteJid": {
                           "type": "string",
-                          "description": "The remote Jid."
+                          "description": "O JID remoto."
                         },
                         "fromMe": {
                           "type": "boolean",
@@ -2960,7 +2960,7 @@
                               "properties": {
                                 "remoteJid": {
                                   "type": "string",
-                                  "description": "The remote Jid of the original message."
+                                  "description": "O JID remoto da mensagem original."
                                 },
                                 "fromMe": {
                                   "type": "boolean",
@@ -2979,7 +2979,7 @@
                             },
                             "senderTimestampMs": {
                               "type": "string",
-                              "description": "The timestamp when the reaction was sent, in milliseconds."
+                              "description": "O timestamp quando a reação foi enviada, em milissegundos."
                             }
                           },
                           "description": "Detalhes da mensagem de reação."
@@ -2989,11 +2989,11 @@
                     },
                     "messageTimestamp": {
                       "type": "string",
-                      "description": "The timestamp of the message, represented as a string."
+                      "description": "O timestamp da mensagem, representado como uma string."
                     },
                     "status": {
                       "type": "string",
-                      "description": "The status of the message, such as sent, received, or pending."
+                      "description": "O status da mensagem, como enviado, recebido ou pendente."
                     }
                   },
                   "example": {
@@ -3086,11 +3086,11 @@
                   },
                   "delay": {
                     "type": "integer",
-                    "description": "Presence time in milliseconds before sending message"
+                    "description": "Tempo de presença em milissegundos antes de enviar a mensagem"
                   },
                   "linkPreview": {
                     "type": "boolean",
-                    "description": "Shows a preview of the target website if there's a link within the message"
+                    "description": "Mostra uma visualização do site de destino se houver um link dentro da mensagem"
                   },
                   "mentionsEveryOne": {
                     "type": "boolean",
@@ -3104,7 +3104,7 @@
                         "{{remoteJID}}"
                       ]
                     },
-                    "description": "Numbers to mention"
+                    "description": "Números a mencionar"
                   },
                   "quoted": {
                     "type": "object",
@@ -3114,7 +3114,7 @@
                         "properties": {
                           "id": {
                             "type": "string",
-                            "description": "Quoted message ID"
+                            "description": "ID da mensagem citada"
                           }
                         }
                       },
@@ -3123,7 +3123,7 @@
                         "properties": {
                           "conversation": {
                             "type": "string",
-                            "description": "Quoted message content"
+                            "description": "Conteúdo da mensagem citada"
                           }
                         }
                       }
@@ -3147,7 +3147,7 @@
                       "properties": {
                         "remoteJid": {
                           "type": "string",
-                          "description": "The remote Jid."
+                          "description": "O JID remoto."
                         },
                         "fromMe": {
                           "type": "boolean",
@@ -3168,7 +3168,7 @@
                           "properties": {
                             "messageSecret": {
                               "type": "string",
-                              "description": "The secret of the message context."
+                              "description": "O segredo do contexto da mensagem."
                             }
                           },
                           "description": "Informações sobre o contexto da mensagem."
@@ -3205,11 +3205,11 @@
                     },
                     "messageTimestamp": {
                       "type": "string",
-                      "description": "The timestamp of the message, represented as a string."
+                      "description": "O timestamp da mensagem, representado como uma string."
                     },
                     "status": {
                       "type": "string",
-                      "description": "The status of the message, such as sent, received, or pending."
+                      "description": "O status da mensagem, como enviado, recebido ou pendente."
                     }
                   },
                   "example": {
@@ -3293,7 +3293,7 @@
                   },
                   "title": {
                     "type": "string",
-                    "description": "Title of list"
+                    "description": "Título da lista"
                   },
                   "description": {
                     "type": "string",
@@ -3323,7 +3323,7 @@
                             "properties": {
                               "title": {
                                 "type": "string",
-                                "description": "Title of row"
+                                "description": "Título da linha"
                               },
                               "description": {
                                 "type": "string",
@@ -3341,11 +3341,11 @@
                   },
                   "delay": {
                     "type": "integer",
-                    "description": "Presence time in milliseconds before sending message"
+                    "description": "Tempo de presença em milissegundos antes de enviar a mensagem"
                   },
                   "linkPreview": {
                     "type": "boolean",
-                    "description": "Shows a preview of the target website if there's a link within the message"
+                    "description": "Mostra uma visualização do site de destino se houver um link dentro da mensagem"
                   },
                   "mentionsEveryOne": {
                     "type": "boolean",
@@ -3359,7 +3359,7 @@
                         "{{remoteJID}}"
                       ]
                     },
-                    "description": "Numbers to mention"
+                    "description": "Números a mencionar"
                   },
                   "quoted": {
                     "type": "object",
@@ -3369,7 +3369,7 @@
                         "properties": {
                           "id": {
                             "type": "string",
-                            "description": "Quoted message ID"
+                            "description": "ID da mensagem citada"
                           }
                         }
                       },
@@ -3378,7 +3378,7 @@
                         "properties": {
                           "conversation": {
                             "type": "string",
-                            "description": "Quoted message content"
+                            "description": "Conteúdo da mensagem citada"
                           }
                         }
                       }
@@ -3402,7 +3402,7 @@
                       "properties": {
                         "remoteJid": {
                           "type": "string",
-                          "description": "The remote Jid."
+                          "description": "O JID remoto."
                         },
                         "fromMe": {
                           "type": "boolean",
@@ -3423,7 +3423,7 @@
                           "properties": {
                             "messageSecret": {
                               "type": "string",
-                              "description": "The secret of the message context."
+                              "description": "O segredo do contexto da mensagem."
                             }
                           },
                           "description": "Informações sobre o contexto da mensagem."
@@ -3460,11 +3460,11 @@
                     },
                     "messageTimestamp": {
                       "type": "string",
-                      "description": "The timestamp of the message, represented as a string."
+                      "description": "O timestamp da mensagem, representado como uma string."
                     },
                     "status": {
                       "type": "string",
-                      "description": "The status of the message, such as sent, received, or pending."
+                      "description": "O status da mensagem, como enviado, recebido ou pendente."
                     }
                   },
                   "example": {
@@ -3506,7 +3506,7 @@
     "/message/sendButtons/{instance}": {
       "post": {
         "operationId": "sendList",
-        "summary": "Send Buttons",
+        "summary": "Enviar Botões",
         "tags": [
           "Controlador de Mensagens"
         ],
@@ -3527,7 +3527,7 @@
             }
           }
         ],
-        "description": "Send Buttons",
+        "description": "Enviar Botões",
         "requestBody": {
           "content": {
             "application/json": {
@@ -3547,7 +3547,7 @@
                   },
                   "title": {
                     "type": "string",
-                    "description": "Title Button"
+                    "description": "Botão de Título"
                   },
                   "description": {
                     "type": "string",
@@ -3579,11 +3579,11 @@
                   },
                   "delay": {
                     "type": "integer",
-                    "description": "Presence time in milliseconds before sending message"
+                    "description": "Tempo de presença em milissegundos antes de enviar a mensagem"
                   },
                   "linkPreview": {
                     "type": "boolean",
-                    "description": "Shows a preview of the target website if there's a link within the message"
+                    "description": "Mostra uma visualização do site de destino se houver um link dentro da mensagem"
                   },
                   "mentionsEveryOne": {
                     "type": "boolean",
@@ -3597,7 +3597,7 @@
                         "{{remoteJID}}"
                       ]
                     },
-                    "description": "Numbers to mention"
+                    "description": "Números a mencionar"
                   },
                   "quoted": {
                     "type": "object",
@@ -3607,7 +3607,7 @@
                         "properties": {
                           "id": {
                             "type": "string",
-                            "description": "Quoted message ID"
+                            "description": "ID da mensagem citada"
                           }
                         }
                       },
@@ -3616,7 +3616,7 @@
                         "properties": {
                           "conversation": {
                             "type": "string",
-                            "description": "Quoted message content"
+                            "description": "Conteúdo da mensagem citada"
                           }
                         }
                       }
@@ -3640,7 +3640,7 @@
                       "properties": {
                         "remoteJid": {
                           "type": "string",
-                          "description": "The remote Jid."
+                          "description": "O JID remoto."
                         },
                         "fromMe": {
                           "type": "boolean",
@@ -3661,7 +3661,7 @@
                           "properties": {
                             "messageSecret": {
                               "type": "string",
-                              "description": "The secret of the message context."
+                              "description": "O segredo do contexto da mensagem."
                             }
                           },
                           "description": "Informações sobre o contexto da mensagem."
@@ -3698,11 +3698,11 @@
                     },
                     "messageTimestamp": {
                       "type": "string",
-                      "description": "The timestamp of the message, represented as a string."
+                      "description": "O timestamp da mensagem, representado como uma string."
                     },
                     "status": {
                       "type": "string",
-                      "description": "The status of the message, such as sent, received, or pending."
+                      "description": "O status da mensagem, como enviado, recebido ou pendente."
                     }
                   },
                   "example": {
@@ -3774,7 +3774,7 @@
                 "properties": {
                   "numbers": {
                     "type": "array",
-                    "description": "Phone numbers (with country code) to be checked",
+                    "description": "Números de telefone (com código do país) a serem verificados",
                     "items": {
                       "type": "string"
                     }
@@ -3897,11 +3897,11 @@
                     },
                     "read": {
                       "type": "string",
-                      "description": "The status of the read action."
+                      "description": "O status da ação de leitura."
                     }
                   },
                   "example": {
-                    "message": "Read messages",
+                    "message": "Ler mensagens",
                     "read": "success"
                   }
                 }
@@ -3990,11 +3990,11 @@
                     },
                     "read": {
                       "type": "string",
-                      "description": "The status of the read action."
+                      "description": "O status da ação de leitura."
                     }
                   },
                   "example": {
-                    "message": "Read messages",
+                    "message": "Ler mensagens",
                     "read": "success"
                   }
                 }
@@ -4163,7 +4163,7 @@
                   },
                   "participant": {
                     "type": "string",
-                    "description": "Participant for group messages only TODO"
+                    "description": "Participante apenas para mensagens de grupo TODO"
                   }
                 }
               }
@@ -4222,7 +4222,7 @@
                             },
                             "type": {
                               "type": "string",
-                              "description": "The type of protocol message, e.g., 'REVOKE'."
+                              "description": "O tipo de mensagem de protocolo, ex: 'REVOKE'."
                             }
                           },
                           "description": "Detalhes da mensagem de protocolo."
@@ -4232,14 +4232,14 @@
                     },
                     "messageTimestamp": {
                       "type": "string",
-                      "description": "The timestamp of the message, represented as a string."
+                      "description": "O timestamp da mensagem, representado como uma string."
                     },
                     "status": {
                       "type": "string",
-                      "description": "The status of the message, such as sent, received, or pending."
+                      "description": "O status da mensagem, como enviado, recebido ou pendente."
                     }
                   },
-                  "description": "Schema representing a WhatsApp protocol message, including the key, message content, timestamp, and status.",
+                  "description": "Esquema representando uma mensagem de protocolo WhatsApp, incluindo a chave, conteúdo da mensagem, timestamp e status.",
                   "example": {
                     "key": {
                       "remoteJid": "553198296801@s.whatsapp.com",
@@ -4269,7 +4269,7 @@
     "/chat/sendPresence/{instance}": {
       "post": {
         "operationId": "sendPresence",
-        "summary": "Send Presence",
+        "summary": "Enviar Presença",
         "tags": [
           "Controlador de Chat"
         ],
@@ -4290,7 +4290,7 @@
             }
           }
         ],
-        "description": "Send Presence (typing...)",
+        "description": "Enviar Presença (digitando...)",
         "requestBody": {
           "content": {
             "application/json": {
@@ -4303,7 +4303,7 @@
                 "properties": {
                   "number": {
                     "type": "string",
-                    "description": "Receiver phone number with country code"
+                    "description": "Número de telefone do receptor com código do país"
                   },
                   "options": {
                     "type": "object",
@@ -4315,11 +4315,11 @@
                     "properties": {
                       "delay": {
                         "type": "integer",
-                        "description": "Presence display time in milliseconds"
+                        "description": "Tempo de exibição de presença em milissegundos"
                       },
                       "presence": {
                         "type": "string",
-                        "description": "Presence type",
+                        "description": "Tipo de presença",
                         "enum": [
                           "composing",
                           "recording"
@@ -4327,7 +4327,7 @@
                       },
                       "number": {
                         "type": "string",
-                        "description": "Number contact"
+                        "description": "Número do contato"
                       }
                     }
                   }
@@ -4436,7 +4436,7 @@
                 "properties": {
                   "number": {
                     "type": "string",
-                    "description": "Number to fetch profile picture URL: {{remoteJid}}"
+                    "description": "Número para buscar URL da foto de perfil: {{remoteJid}}"
                   }
                 }
               }
@@ -4761,11 +4761,11 @@
                 "properties": {
                   "number": {
                     "type": "integer",
-                    "description": "Receiver phone number with country code"
+                    "description": "Número de telefone do receptor com código do país"
                   },
                   "text": {
                     "type": "string",
-                    "description": "New message content"
+                    "description": "Novo conteúdo da mensagem"
                   },
                   "key": {
                     "type": "object",
@@ -4866,7 +4866,7 @@
                 "properties": {
                   "number": {
                     "type": "string",
-                    "description": "Phone number with country code"
+                    "description": "Número de telefone com código do país"
                   }
                 }
               }
@@ -4917,7 +4917,7 @@
                 "properties": {
                   "number": {
                     "type": "string",
-                    "description": "Phone number with country code"
+                    "description": "Número de telefone com código do país"
                   }
                 }
               }
@@ -4968,7 +4968,7 @@
                 "properties": {
                   "name": {
                     "type": "string",
-                    "description": "New name for profile"
+                    "description": "Novo nome para o perfil"
                   }
                 }
               }
@@ -5019,7 +5019,7 @@
                 "properties": {
                   "status": {
                     "type": "string",
-                    "description": "New status for profile"
+                    "description": "Novo status para o perfil"
                   }
                 }
               }
@@ -5070,7 +5070,7 @@
                 "properties": {
                   "picture": {
                     "type": "string",
-                    "description": "New spicture URL"
+                    "description": "URL da nova foto"
                   }
                 }
               }
@@ -5088,7 +5088,7 @@
     "/chat/removeProfilePicture/{instance}": {
       "delete": {
         "operationId": "removeProfilePicture",
-        "summary": "Remove Profile Picture",
+        "summary": "Remover Foto de Perfil",
         "tags": [
           "Controlador de Chat"
         ],
@@ -5360,7 +5360,7 @@
                 "properties": {
                   "image": {
                     "type": "string",
-                    "description": "New profile picture image URL"
+                    "description": "URL da nova imagem de foto de perfil"
                   }
                 }
               }
@@ -5420,7 +5420,7 @@
                 "properties": {
                   "subject": {
                     "type": "string",
-                    "description": "New group subject"
+                    "description": "Novo assunto do grupo"
                   }
                 }
               }
@@ -5480,7 +5480,7 @@
                 "properties": {
                   "description": {
                     "type": "string",
-                    "description": "New group description"
+                    "description": "Nova descrição do grupo"
                   }
                 }
               }
@@ -5632,7 +5632,7 @@
             }
           }
         ],
-        "description": "Revoke group invite",
+        "description": "Revogar convite do grupo",
         "responses": {
           "200": {
             "description": "Ok",
@@ -5644,7 +5644,7 @@
     "/group/sendInvite/{instance}": {
       "post": {
         "operationId": "sendGroupInvite",
-        "summary": "Send Group Invite",
+        "summary": "Enviar Convite do Grupo",
         "tags": [
           "Controlador de Grupos"
         ],
@@ -5665,7 +5665,7 @@
             }
           }
         ],
-        "description": "Send group invite",
+        "description": "Enviar convite do grupo",
         "requestBody": {
           "content": {
             "application/json": {
@@ -5687,7 +5687,7 @@
                   },
                   "numbers": {
                     "type": "array",
-                    "description": "Numbers to receive the invitation",
+                    "description": "Números para receber o convite",
                     "items": {
                       "type": "string"
                     }
@@ -5814,7 +5814,7 @@
                     },
                     "subject": {
                       "type": "string",
-                      "description": "The subject (name) of the group."
+                      "description": "O assunto (nome) do grupo."
                     },
                     "subjectOwner": {
                       "type": "string",
@@ -5822,7 +5822,7 @@
                     },
                     "subjectTime": {
                       "type": "integer",
-                      "description": "The timestamp when the subject was set."
+                      "description": "O timestamp quando o assunto foi definido."
                     },
                     "pictureUrl": {
                       "type": "string",
@@ -5834,7 +5834,7 @@
                     },
                     "creation": {
                       "type": "integer",
-                      "description": "The timestamp when the group was created."
+                      "description": "O timestamp quando o grupo foi criado."
                     },
                     "owner": {
                       "type": "string",
@@ -5867,7 +5867,7 @@
                           },
                           "admin": {
                             "type": "string",
-                            "description": "The role of the participant (e.g., 'admin', 'superadmin')."
+                            "description": "O papel do participante (ex: 'admin', 'superadmin')."
                           }
                         }
                       },
@@ -5951,7 +5951,7 @@
                       },
                       "subject": {
                         "type": "string",
-                        "description": "The subject (name) of the group."
+                        "description": "O assunto (nome) do grupo."
                       },
                       "subjectOwner": {
                         "type": "string",
@@ -5959,7 +5959,7 @@
                       },
                       "subjectTime": {
                         "type": "integer",
-                        "description": "The timestamp when the subject was set."
+                        "description": "O timestamp quando o assunto foi definido."
                       },
                       "pictureUrl": {
                         "type": "string",
@@ -5971,7 +5971,7 @@
                       },
                       "creation": {
                         "type": "integer",
-                        "description": "The timestamp when the group was created."
+                        "description": "O timestamp quando o grupo foi criado."
                       },
                       "owner": {
                         "type": "string",
@@ -6083,7 +6083,7 @@
                           },
                           "admin": {
                             "type": "string",
-                            "description": "The role of the participant (e.g., 'admin', 'superadmin')."
+                            "description": "O papel do participante (ex: 'admin', 'superadmin')."
                           }
                         },
                         "required": [
@@ -6243,7 +6243,7 @@
     "/group/toggleEphemeral/{instance}": {
       "post": {
         "operationId": "toggleEphemeral",
-        "summary": "Toggle Ephemeral Group Messages",
+        "summary": "Alternar Mensagens de Grupo Efêmeras",
         "tags": [
           "Controlador de Grupos"
         ],
@@ -6273,7 +6273,7 @@
             }
           }
         ],
-        "description": "Toggle temporary messages on group",
+        "description": "Alternar mensagens temporárias no grupo",
         "requestBody": {
           "content": {
             "application/json": {
@@ -6285,7 +6285,7 @@
                 "properties": {
                   "expiration": {
                     "type": "integer",
-                    "description": "Time to expire message (in seconds)"
+                    "description": "Tempo para expirar mensagem (em segundos)"
                   }
                 }
               }
@@ -6347,7 +6347,7 @@
         "operationId": "setTypebot",
         "summary": "Criar Typebot",
         "tags": [
-          "Typebot Controller"
+          "Controlador Typebot"
         ],
         "deprecated": false,
         "security": [
@@ -6366,7 +6366,7 @@
             }
           }
         ],
-        "description": "Set typebot",
+        "description": "Configurar typebot",
         "requestBody": {
           "content": {
             "application/json": {
@@ -6394,11 +6394,11 @@
                   },
                   "url": {
                     "type": "string",
-                    "description": "Typebot URL"
+                    "description": "URL do Typebot"
                   },
                   "typebot": {
                     "type": "string",
-                    "description": "Typebot name"
+                    "description": "Nome do Typebot"
                   },
                   "triggerType": {
                     "type": "string",
@@ -6406,7 +6406,7 @@
                   },
                   "triggerOperator": {
                     "type": "string",
-                    "description": "Operator logic, ex: contains, equals, startsWith, endsWith, regex"
+                    "description": "Lógica do operador, ex: contains, equals, startsWith, endsWith, regex"
                   },
                   "triggerValue": {
                     "type": "string",
@@ -6414,7 +6414,7 @@
                   },
                   "expire": {
                     "type": "number",
-                    "description": "Time to expire session"
+                    "description": "Tempo para expirar sessão"
                   },
                   "keywordFinish": {
                     "type": "string",
@@ -6460,9 +6460,9 @@
     "/typebot/start/{instance}": {
       "post": {
         "operationId": "startTypebot",
-        "summary": "Start Typebot",
+        "summary": "Iniciar Typebot",
         "tags": [
-          "Typebot Controller"
+          "Controlador Typebot"
         ],
         "deprecated": false,
         "security": [
@@ -6490,15 +6490,15 @@
                 "properties": {
                   "url": {
                     "type": "string",
-                    "description": "Typebot URL"
+                    "description": "URL do Typebot"
                   },
                   "typebot": {
                     "type": "string",
-                    "description": "Typebot name"
+                    "description": "Nome do Typebot"
                   },
                   "remoteJid": {
                     "type": "string",
-                    "description": "Receiver remote JID"
+                    "description": "JID remoto do receptor"
                   },
                   "startSession": {
                     "type": "boolean",
@@ -6538,7 +6538,7 @@
         "operationId": "startTypebot",
         "summary": "Alterar Status da Sessão",
         "tags": [
-          "Typebot Controller"
+          "Controlador Typebot"
         ],
         "deprecated": false,
         "security": [
@@ -6590,7 +6590,7 @@
         "operationId": "startTypebot",
         "summary": "Alterar Status da Sessão",
         "tags": [
-          "Typebot Controller"
+          "Controlador Typebot"
         ],
         "deprecated": false,
         "security": [
@@ -6609,7 +6609,7 @@
             }
           }
         ],
-        "description": "Set settings typebot",
+        "description": "Configurar configurações typebot",
         "requestBody": {
           "content": {
             "application/json": {
@@ -6630,7 +6630,7 @@
                 "properties": {
                   "expire": {
                     "type": "string",
-                    "description": "Time to expire session bot"
+                    "description": "Tempo para expirar sessão do bot"
                   },
                   "keywordFinish": {
                     "type": "string",
@@ -6686,7 +6686,7 @@
         "operationId": "findTypebot",
         "summary": "Encontrar Typebot",
         "tags": [
-          "Typebot Controller"
+          "Controlador Typebot"
         ],
         "deprecated": false,
         "security": [
@@ -6719,7 +6719,7 @@
         "operationId": "findTypebot",
         "summary": "Encontrar Typebot",
         "tags": [
-          "Typebot Controller"
+          "Controlador Typebot"
         ],
         "deprecated": false,
         "security": [
@@ -6752,7 +6752,7 @@
         "operationId": "findTypebot",
         "summary": "Encontrar Typebot",
         "tags": [
-          "Typebot Controller"
+          "Controlador Typebot"
         ],
         "deprecated": false,
         "security": [
@@ -6794,7 +6794,7 @@
         "operationId": "findTypebot",
         "summary": "Encontrar sessão typebot",
         "tags": [
-          "Typebot Controller"
+          "Controlador Typebot"
         ],
         "deprecated": false,
         "security": [
@@ -6836,7 +6836,7 @@
         "operationId": "changeTypebotStatus",
         "summary": "Alterar Status do Typebot",
         "tags": [
-          "Typebot Controller"
+          "Controlador Typebot"
         ],
         "deprecated": false,
         "security": [
@@ -6897,11 +6897,11 @@
                   },
                   "typebot": {
                     "type": "string",
-                    "description": "Nmae typebot"
+                    "description": "Nome typebot"
                   },
                   "expire": {
                     "type": "number",
-                    "description": "Time to expire session"
+                    "description": "Tempo para expirar sessão"
                   },
                   "keywordFinish": {
                     "type": "string",
@@ -6929,7 +6929,7 @@
                   },
                   "debounceTime": {
                     "type": "number",
-                    "description": "The timestamp of the message."
+                    "description": "O timestamp da mensagem."
                   },
                   "triggerType": {
                     "type": "string",
@@ -6937,7 +6937,7 @@
                   },
                   "triggerOperator": {
                     "type": "string",
-                    "description": "Operator logic, ex: contains, equals, startsWith, endsWith, regex"
+                    "description": "Lógica do operador, ex: contains, equals, startsWith, endsWith, regex"
                   },
                   "triggerValue": {
                     "type": "string",
@@ -6961,7 +6961,7 @@
         "operationId": "changeTypebotStatus",
         "summary": "Deletar Status",
         "tags": [
-          "Typebot Controller"
+          "Controlador Typebot"
         ],
         "deprecated": false,
         "security": [
@@ -7001,7 +7001,7 @@
     "/chatwoot/set/{instance}": {
       "post": {
         "operationId": "setChatwoot",
-        "summary": "Set Chatwoot",
+        "summary": "Configurar Chatwoot",
         "tags": [
           "Controlador Chatwoot"
         ],
@@ -7022,7 +7022,7 @@
             }
           }
         ],
-        "description": "Set Chatwoot",
+        "description": "Configurar Chatwoot",
         "requestBody": {
           "content": {
             "application/json": {
@@ -7066,7 +7066,7 @@
                   },
                   "signMsg": {
                     "type": "boolean",
-                    "description": "Sign message with user name"
+                    "description": "Assinar mensagem com nome de usuário"
                   },
                   "reopenConversation": {
                     "type": "boolean",
@@ -7102,7 +7102,7 @@
                   },
                   "organization": {
                     "type": "string",
-                    "description": "Name organization"
+                    "description": "Nome da organização"
                   },
                   "logo": {
                     "type": "string",
@@ -7166,7 +7166,7 @@
         "operationId": "setSQS",
         "summary": "Set SQS",
         "tags": [
-          "SQS Controller"
+          "Controlador SQS"
         ],
         "deprecated": false,
         "security": [
@@ -7254,7 +7254,7 @@
         "operationId": "findSQS",
         "summary": "Find SQS",
         "tags": [
-          "SQS Controller"
+          "Controlador SQS"
         ],
         "deprecated": false,
         "security": [
@@ -7285,9 +7285,9 @@
     "/rabbitmq/set/{instance}": {
       "post": {
         "operationId": "setRabbitMQ",
-        "summary": "Set RabbitMQ",
+        "summary": "Configurar RabbitMQ",
         "tags": [
-          "RabbitMQ Controller"
+          "Controlador RabbitMQ"
         ],
         "deprecated": false,
         "security": [
@@ -7306,7 +7306,7 @@
             }
           }
         ],
-        "description": "Set RabbitMQ",
+        "description": "Configurar RabbitMQ",
         "requestBody": {
           "content": {
             "application/json": {
@@ -7375,7 +7375,7 @@
         "operationId": "findRabbitMQ",
         "summary": "Encontrar RabbitMQ",
         "tags": [
-          "RabbitMQ Controller"
+          "Controlador RabbitMQ"
         ],
         "deprecated": false,
         "security": [
@@ -7406,7 +7406,7 @@
     "/websocket/set/{instance}": {
       "post": {
         "operationId": "setWebsocket",
-        "summary": "Set Websocket",
+        "summary": "Configurar Websocket",
         "tags": [
           "Controlador Websocket"
         ],
@@ -7427,7 +7427,7 @@
             }
           }
         ],
-        "description": "Set Websocket",
+        "description": "Configurar Websocket",
         "requestBody": {
           "content": {
             "application/json": {
@@ -7529,7 +7529,7 @@
         "operationId": "createBotOpenAI",
         "summary": "Criar OpenAI",
         "tags": [
-          "OpenIA Controller"
+          "Controlador OpenIA"
         ],
         "deprecated": false,
         "security": [
@@ -7589,7 +7589,7 @@
                   },
                   "botType": {
                     "type": "string",
-                    "description": "Type of the bot (e.g., 'assistant')"
+                    "description": "Tipo do bot (ex: 'assistant')"
                   },
                   "assistantId": {
                     "type": "string",
@@ -7615,14 +7615,14 @@
                     "items": {
                       "type": "string"
                     },
-                    "description": "Predefined assistant messages"
+                    "description": "Mensagens de assistente predefinidas"
                   },
                   "userMessages": {
                     "type": "array",
                     "items": {
                       "type": "string"
                     },
-                    "description": "Predefined user messages"
+                    "description": "Mensagens de usuário predefinidas"
                   },
                   "maxTokens": {
                     "type": "integer",
@@ -7630,11 +7630,11 @@
                   },
                   "triggerType": {
                     "type": "string",
-                    "description": "Type of trigger for the bot"
+                    "description": "Tipo de gatilho para o bot"
                   },
                   "triggerOperator": {
                     "type": "string",
-                    "description": "Operator for trigger evaluation"
+                    "description": "Operador para avaliação de gatilho"
                   },
                   "triggerValue": {
                     "type": "string",
@@ -7697,7 +7697,7 @@
         "operationId": "findBotOpenAI",
         "summary": "Encontrar Bots OpenAI",
         "tags": [
-          "OpenIA Controller"
+          "Controlador OpenIA"
         ],
         "deprecated": false,
         "security": [
@@ -7730,7 +7730,7 @@
         "operationId": "findBotOpenAI",
         "summary": "Encontrar Bot OpenAI",
         "tags": [
-          "OpenIA Controller"
+          "Controlador OpenIA"
         ],
         "deprecated": false,
         "security": [
@@ -7772,7 +7772,7 @@
         "operationId": "deleteBotOpenAI",
         "summary": "Deletar Bot OpenAI",
         "tags": [
-          "OpenIA Controller"
+          "Controlador OpenIA"
         ],
         "deprecated": false,
         "security": [
@@ -7814,7 +7814,7 @@
         "operationId": "updateBotOpenAI",
         "summary": "Atualizar Bot OpenAI",
         "tags": [
-          "OpenIA Controller"
+          "Controlador OpenIA"
         ],
         "deprecated": false,
         "security": [
@@ -7865,7 +7865,7 @@
                       "assistant",
                       "chatCompletion"
                     ],
-                    "description": "The type of bot (either 'assistant' or 'chatCompletion')"
+                    "description": "O tipo de bot (ou 'assistant' ou 'chatCompletion')"
                   },
                   "assistantId": {
                     "type": "string",
@@ -7884,7 +7884,7 @@
                     "items": {
                       "type": "string"
                     },
-                    "description": "The system messages to define the assistant behavior"
+                    "description": "As mensagens do sistema para definir o comportamento do assistente"
                   },
                   "assistantMessages": {
                     "type": "array",
@@ -7910,7 +7910,7 @@
                       "all",
                       "keyword"
                     ],
-                    "description": "The trigger type for the bot (e.g., 'keyword' or 'all')"
+                    "description": "O tipo de gatilho para o bot (ex: 'keyword' ou 'all')"
                   },
                   "triggerOperator": {
                     "type": "string",
@@ -7926,7 +7926,7 @@
                   },
                   "triggerValue": {
                     "type": "string",
-                    "description": "The value that triggers the bot (e.g., 'teste')"
+                    "description": "O valor que dispara o bot (ex: 'teste')"
                   },
                   "expire": {
                     "type": "integer",
@@ -7938,7 +7938,7 @@
                   },
                   "delayMessage": {
                     "type": "integer",
-                    "description": "Time in milliseconds to delay the message"
+                    "description": "Tempo em milissegundos para atrasar a mensagem"
                   },
                   "unknownMessage": {
                     "type": "string",
@@ -7958,7 +7958,7 @@
                   },
                   "debounceTime": {
                     "type": "integer",
-                    "description": "Time in milliseconds for the debounce delay"
+                    "description": "Tempo em milissegundos para o atraso de debounce"
                   },
                   "ignoreJids": {
                     "type": "array",
@@ -7991,7 +7991,7 @@
         "operationId": "credsBotOpenAI",
         "summary": "Credenciais Bot OpenAI",
         "tags": [
-          "OpenIA Controller"
+          "Controlador OpenIA"
         ],
         "deprecated": false,
         "security": [
@@ -8047,7 +8047,7 @@
         "operationId": "getBotOpenAICreds",
         "summary": "Encontrar Credenciais OpenAI",
         "tags": [
-          "OpenIA Controller"
+          "Controlador OpenIA"
         ],
         "deprecated": false,
         "security": [
@@ -8080,7 +8080,7 @@
         "operationId": "deleteCredsOpenAI",
         "summary": "Deletar Credenciais OpenAI",
         "tags": [
-          "OpenIA Controller"
+          "Controlador OpenIA"
         ],
         "deprecated": false,
         "security": [
@@ -8120,11 +8120,11 @@
     "/openai/settings/{instance}": {
       "post": {
         "operationId": "setOpenAISettings",
-        "summary": "Set OpenAI Bot Settings",
+        "summary": "Configurar Configurações do Bot OpenAI",
         "tags": [
-          "OpenAI Controller"
+          "Controlador OpenAI"
         ],
-        "description": "Set settings for an OpenAI bot instance.",
+        "description": "Configurar configurações para uma instância do bot OpenAI.",
         "security": [
           {
             "ApiKeyAuth": []
@@ -8183,7 +8183,7 @@
                   },
                   "debounceTime": {
                     "type": "integer",
-                    "description": "Time in milliseconds to wait before processing the next input"
+                    "description": "Tempo em milissegundos para aguardar antes de processar a próxima entrada"
                   },
                   "ignoreJids": {
                     "type": "array",
@@ -8249,7 +8249,7 @@
         "operationId": "findSettingsOpenAI",
         "summary": "Encontrar Configurações OpenAI",
         "tags": [
-          "OpenIA Controller"
+          "Controlador OpenIA"
         ],
         "deprecated": false,
         "security": [
@@ -8282,7 +8282,7 @@
         "operationId": "changeOpenAIStatus",
         "summary": "Alterar Status do Bot OpenAI",
         "tags": [
-          "OpenAI Controller"
+          "Controlador OpenAI"
         ],
         "description": "Altera o status da instância do bot OpenAI.",
         "security": [
@@ -8366,7 +8366,7 @@
         "operationId": "fetchSessions",
         "summary": "Buscar sessões da instância do bot OpenAI",
         "tags": [
-          "OpenAI Controller"
+          "Controlador OpenAI"
         ],
         "description": "Busca as sessões da instância do bot OpenAI especificada.",
         "security": [
@@ -8415,7 +8415,7 @@
             "description": "Requisição Inválida - Parâmetros inválidos"
           },
           "404": {
-            "description": "Not Found - No sessions found for the given bot and instance"
+            "description": "Não Encontrado - Nenhuma sessão encontrada para o bot e instância fornecidos"
           },
           "500": {
             "description": "Erro Interno do Servidor"
@@ -8556,7 +8556,7 @@
             "description": "Requisição Inválida - Parâmetros inválidos ou ausentes"
           },
           "404": {
-            "description": "Not Found - Instance could not be created"
+            "description": "Não Encontrado - Instância não pôde ser criada"
           },
           "500": {
             "description": "Erro Interno do Servidor"
@@ -8569,7 +8569,7 @@
         "operationId": "fetchDify",
         "summary": "Buscar Bot Dify",
         "tags": [
-          "OpenAI Controller"
+          "Controlador OpenAI"
         ],
         "description": "Busca bots dify.",
         "security": [
@@ -8613,7 +8613,7 @@
         "operationId": "findDify",
         "summary": "Encontrar Bot Dify",
         "tags": [
-          "OpenAI Controller"
+          "Controlador OpenAI"
         ],
         "description": "Atualizar bot dify.",
         "security": [
@@ -9221,7 +9221,7 @@
             "description": "Requisição Inválida - Parâmetros inválidos ou ausentes"
           },
           "404": {
-            "description": "Not Found - Instance could not be created"
+            "description": "Não Encontrado - Instância não pôde ser criada"
           },
           "500": {
             "description": "Erro Interno do Servidor"
@@ -9875,7 +9875,7 @@
             "description": "Requisição Inválida - Parâmetros inválidos ou ausentes"
           },
           "404": {
-            "description": "Not Found - Instance could not be created"
+            "description": "Não Encontrado - Instância não pôde ser criada"
           },
           "500": {
             "description": "Erro Interno do Servidor"
@@ -10933,7 +10933,7 @@
         "tags": [
           "Controlador Flowise"
         ],
-        "description": "Set Settings Flowise bot",
+        "description": "Configurar Configurações do bot Flowise",
         "security": [
           {
             "ApiKeyAuth": []
@@ -11311,15 +11311,15 @@
                   },
                   "triggerType": {
                     "type": "string",
-                    "description": "Trigger type, e.g., 'all' or 'keyword'"
+                    "description": "Tipo de gatilho, ex: 'all' ou 'keyword'"
                   },
                   "triggerOperator": {
                     "type": "string",
-                    "description": "Operator logic, e.g., 'contains', 'equals', 'startsWith', 'endsWith', 'regex'"
+                    "description": "Lógica do operador, ex: 'contains', 'equals', 'startsWith', 'endsWith', 'regex'"
                   },
                   "triggerValue": {
                     "type": "string",
-                    "description": "Trigger value, e.g., 'test'"
+                    "description": "Valor do gatilho, ex: 'test'"
                   },
                   "expire": {
                     "type": "number",
@@ -11351,7 +11351,7 @@
                   },
                   "debounceTime": {
                     "type": "number",
-                    "description": "Time delay to debounce messages"
+                    "description": "Atraso de tempo para debounce de mensagens"
                   },
                   "ignoreJids": {
                     "type": "array",
@@ -11390,7 +11390,7 @@
         "operationId": "findEvo",
         "summary": "Encontrar Bot Evo",
         "tags": [
-          "OpenAI Controller"
+          "Controlador OpenAI"
         ],
         "description": "Atualizar bot evo.",
         "security": [
@@ -11507,15 +11507,15 @@
                   },
                   "triggerType": {
                     "type": "string",
-                    "description": "Trigger type, e.g., 'all' or 'keyword'"
+                    "description": "Tipo de gatilho, ex: 'all' ou 'keyword'"
                   },
                   "triggerOperator": {
                     "type": "string",
-                    "description": "Operator logic, e.g., 'contains', 'equals', 'startsWith', 'endsWith', 'regex'"
+                    "description": "Lógica do operador, ex: 'contains', 'equals', 'startsWith', 'endsWith', 'regex'"
                   },
                   "triggerValue": {
                     "type": "string",
-                    "description": "Trigger value, e.g., 'test'"
+                    "description": "Valor do gatilho, ex: 'test'"
                   },
                   "expire": {
                     "type": "number",
@@ -11547,7 +11547,7 @@
                   },
                   "debounceTime": {
                     "type": "number",
-                    "description": "Time delay to debounce messages"
+                    "description": "Atraso de tempo para debounce de mensagens"
                   },
                   "ignoreJids": {
                     "type": "array",
@@ -11586,7 +11586,7 @@
         "operationId": "findEvo",
         "summary": "Encontrar Bots Evo",
         "tags": [
-          "OpenAI Controller"
+          "Controlador OpenAI"
         ],
         "description": "Atualizar bots evo.",
         "security": [
@@ -11739,7 +11739,7 @@
                   },
                   "debounceTime": {
                     "type": "number",
-                    "description": "Time delay to debounce messages"
+                    "description": "Atraso de tempo para debounce de mensagens"
                   },
                   "ignoreJids": {
                     "type": "array",
@@ -11845,7 +11845,7 @@
         "operationId": "changeEvobotStatus",
         "summary": "Alterar Status da Sessão",
         "tags": [
-          "Typebot Controller"
+          "Controlador Typebot"
         ],
         "deprecated": false,
         "security": [
