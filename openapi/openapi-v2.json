@@ -20,7 +20,7 @@
     "/instance/create": {
       "post": {
         "operationId": "createInstance",
-        "summary": "Create Instance",
+        "summary": "Criar Instância",
         "tags": [
           "Instance Controller"
         ],
@@ -43,11 +43,11 @@
                 "properties": {
                   "instanceName": {
                     "type": "string",
-                    "description": "instance (Instance name)"
+                    "description": "instância (Nome da instância)"
                   },
                   "token": {
                     "type": "string",
-                    "description": "apikey (Enter or leave empty to create dynamically)"
+                    "description": "chave de API (Digite ou deixe em branco para criar dinamicamente)"
                   },
                   "qrcode": {
                     "type": "boolean",
@@ -466,7 +466,7 @@
     "/instance/fetchInstances": {
       "get": {
         "operationId": "fetchInstances",
-        "summary": "Fetch Instances",
+        "summary": "Listar Instâncias",
         "tags": [
           "Instance Controller"
         ],
@@ -676,7 +676,7 @@
     "/instance/restart/{instance}": {
       "put": {
         "operationId": "restartInstance",
-        "summary": "Restart Instance",
+        "summary": "Reiniciar Instância",
         "tags": [
           "Instance Controller"
         ],
@@ -777,7 +777,7 @@
     "/instance/connectionState/{instance}": {
       "get": {
         "operationId": "connectionState",
-        "summary": "Connection State",
+        "summary": "Estado da Conexão",
         "tags": [
           "Instance Controller"
         ],
@@ -878,7 +878,7 @@
     "/instance/logout/{instance}": {
       "delete": {
         "operationId": "logoutInstance",
-        "summary": "Logout Instance",
+        "summary": "Desconectar Instância",
         "tags": [
           "Instance Controller"
         ],
@@ -984,7 +984,7 @@
     "/instance/delete/{instance}": {
       "delete": {
         "operationId": "deleteInstance",
-        "summary": "Delete Instance",
+        "summary": "Deletar Instância",
         "tags": [
           "Instance Controller"
         ],
@@ -1090,7 +1090,7 @@
     "/instance/setPresence/{instance}": {
       "post": {
         "operationId": "setPresence",
-        "summary": "Set Presence",
+        "summary": "Definir Presença",
         "tags": [
           "Instance Controller"
         ],
