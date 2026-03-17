@@ -263,15 +263,15 @@
                   },
                   "chatwootAccountId": {
                     "type": "integer",
-                    "description": "Chatwoot account ID"
+                    "description": "ID da conta Chatwoot"
                   },
                   "chatwootToken": {
                     "type": "string",
-                    "description": "Chatwoot authentication token"
+                    "description": "Token de autenticação Chatwoot"
                   },
                   "chatwootUrl": {
                     "type": "string",
-                    "description": "Chatwoot server URL"
+                    "description": "URL do servidor Chatwoot"
                   },
                   "chatwootSignMsg": {
                     "type": "boolean",
@@ -613,7 +613,7 @@
                     },
                     "code": {
                       "type": "string",
-                      "description": "A specific code associated with the pairing process. This may include tokens or other identifiers."
+                      "description": "Um código específico associado ao processo de emparelhamento."
                     },
                     "count": {
                       "type": "integer",
@@ -921,7 +921,7 @@
                       "properties": {
                         "message": {
                           "type": "string",
-                          "description": "A message related to the response."
+                          "description": "Uma mensagem relacionada à resposta."
                         }
                       }
                     }
@@ -1027,7 +1027,7 @@
                       "properties": {
                         "message": {
                           "type": "string",
-                          "description": "A message related to the response."
+                          "description": "Uma mensagem relacionada à resposta."
                         }
                       }
                     }
@@ -1448,7 +1448,7 @@
                   },
                   "alwaysOnline": {
                     "type": "boolean",
-                    "description": "Always show WhatsApp online"
+                    "description": "Sempre mostrar WhatsApp online"
                   },
                   "readMessages": {
                     "type": "boolean",
@@ -1964,7 +1964,7 @@
                             },
                             "contextInfo": {
                               "type": "object",
-                              "description": "Additional context information."
+                              "description": "Informações de contexto adicional."
                             }
                           },
                           "description": "Details of the image message."
@@ -1991,7 +1991,7 @@
                       "imageMessage": {
                         "url": "https://mmg.whatsapp.net/o1/v/t62.7118-2...",
                         "mimetype": "image/png",
-                        "caption": "Caption text",
+                        "caption": "Texto da legenda",
                         "fileSha256": "VbCGkGBv5SZStLD5PHdkBWpQav/lNsXcY...",
                         "fileLength": "1305757",
                         "height": 1080,
@@ -2656,7 +2656,7 @@
                             },
                             "contextInfo": {
                               "type": "object",
-                              "description": "Additional context information."
+                              "description": "Informações de contexto adicional."
                             }
                           },
                           "description": "Details of the location message."
@@ -2753,7 +2753,7 @@
                       "properties": {
                         "fullName": {
                           "type": "string",
-                          "description": "Contact full name"
+                          "description": "Nome completo do contato"
                         },
                         "wuid": {
                           "type": "string",
@@ -2769,7 +2769,7 @@
                         },
                         "email": {
                           "type": "string",
-                          "description": "Contact email address"
+                          "description": "Endereço de email do contato"
                         },
                         "url": {
                           "type": "string",
@@ -2825,7 +2825,7 @@
                             },
                             "contextInfo": {
                               "type": "object",
-                              "description": "Additional context information."
+                              "description": "Informações de contexto adicional."
                             }
                           },
                           "description": "Details of the contact message."
@@ -2901,7 +2901,7 @@
                     "properties": {
                       "remoteJid": {
                         "type": "string",
-                        "description": "Chat contact or group remote JID"
+                        "description": "JID remoto de contato ou grupo de chat"
                       },
                       "fromMe": {
                         "type": "boolean",
@@ -3765,7 +3765,7 @@
             }
           }
         ],
-        "description": "Check if numbers are on WhatsApp",
+        "description": "Verificar se números estão no WhatsApp",
         "requestBody": {
           "content": {
             "application/json": {
@@ -3808,7 +3808,7 @@
                       }
                     }
                   },
-                  "description": "Array of objects representing WhatsApp account existence information.",
+                  "description": "Array de objetos representando informações de existência de conta WhatsApp.",
                   "example": [
                     {
                       "exists": true,
@@ -3865,7 +3865,7 @@
                       "properties": {
                         "remoteJid": {
                           "type": "string",
-                          "description": "Chat contact or group remote JID"
+                          "description": "JID remoto de contato ou grupo de chat"
                         },
                         "fromMe": {
                           "type": "boolean",
@@ -3893,7 +3893,7 @@
                   "properties": {
                     "message": {
                       "type": "string",
-                      "description": "A brief message describing the action performed."
+                      "description": "Uma breve mensagem descrevendo a ação realizada."
                     },
                     "read": {
                       "type": "string",
@@ -3954,7 +3954,7 @@
                       "properties": {
                         "remoteJid": {
                           "type": "string",
-                          "description": "Chat contact or group remote JID"
+                          "description": "JID remoto de contato ou grupo de chat"
                         },
                         "fromMe": {
                           "type": "boolean",
@@ -3986,7 +3986,7 @@
                   "properties": {
                     "message": {
                       "type": "string",
-                      "description": "A brief message describing the action performed."
+                      "description": "Uma breve mensagem descrevendo a ação realizada."
                     },
                     "read": {
                       "type": "string",
@@ -4007,7 +4007,7 @@
     "/chat/archiveChat/{instance}": {
       "post": {
         "operationId": "archiveChat",
-        "summary": "Archive Chat",
+        "summary": "Arquivar Chat",
         "tags": [
           "Controlador de Chat"
         ],
@@ -4028,7 +4028,7 @@
             }
           }
         ],
-        "description": "Archive Chat",
+        "description": "Arquivar Chat",
         "requestBody": {
           "content": {
             "application/json": {
@@ -4057,7 +4057,7 @@
                         "properties": {
                           "remoteJid": {
                             "type": "string",
-                            "description": "Chat contact or group remote JID"
+                            "description": "JID remoto de contato ou grupo de chat"
                           },
                           "fromMe": {
                             "type": "boolean",
@@ -4155,7 +4155,7 @@
                   },
                   "remoteJid": {
                     "type": "string",
-                    "description": "Chat contact or group remote JID"
+                    "description": "JID remoto de contato ou grupo de chat"
                   },
                   "fromMe": {
                     "type": "boolean",
@@ -4368,7 +4368,7 @@
             }
           }
         ],
-        "description": "Block status to contacts",
+        "description": "Status de bloqueio para contatos",
         "requestBody": {
           "content": {
             "application/json": {
@@ -4510,7 +4510,7 @@
                     "properties": {
                       "id": {
                         "type": "string",
-                        "description": "Contact number: optional"
+                        "description": "Número do contato: opcional"
                       }
                     }
                   }
@@ -4632,7 +4632,7 @@
                         "properties": {
                           "remoteJid": {
                             "type": "string",
-                            "description": "Contact or group remote JID"
+                            "description": "JID remoto de contato ou grupo"
                           }
                         }
                       }
@@ -4698,7 +4698,7 @@
                       },
                       "remoteJid": {
                         "type": "string",
-                        "description": "Contact or group remote JID"
+                        "description": "JID remoto de contato ou grupo"
                       },
                       "fromMe": {
                         "type": "boolean",
@@ -4772,7 +4772,7 @@
                     "properties": {
                       "remoteJid": {
                         "type": "string",
-                        "description": "Chat contact or group remote JID"
+                        "description": "JID remoto de contato ou grupo de chat"
                       },
                       "fromMe": {
                         "type": "boolean",
@@ -6006,7 +6006,7 @@
                       "announce"
                     ]
                   },
-                  "description": "Array of objects representing WhatsApp group details.",
+                  "description": "Array de objetos representando detalhes de grupos WhatsApp.",
                   "example": [
                     {
                       "id": "120363295648424210@g.us",
@@ -6536,7 +6536,7 @@
     "/typebot/changeStatus/{instance}": {
       "post": {
         "operationId": "startTypebot",
-        "summary": "Change Session Status",
+        "summary": "Alterar Status da Sessão",
         "tags": [
           "Typebot Controller"
         ],
@@ -6557,7 +6557,7 @@
             }
           }
         ],
-        "description": "Change status session",
+        "description": "Alterar status da sessão",
         "requestBody": {
           "content": {
             "application/json": {
@@ -6588,7 +6588,7 @@
     "/typebot/settings/{instance}": {
       "post": {
         "operationId": "startTypebot",
-        "summary": "Change Session Status",
+        "summary": "Alterar Status da Sessão",
         "tags": [
           "Typebot Controller"
         ],
@@ -6834,7 +6834,7 @@
     "/typebot/update/:typebotId/{instance}": {
       "post": {
         "operationId": "changeTypebotStatus",
-        "summary": "Change Typebot Status",
+        "summary": "Alterar Status do Typebot",
         "tags": [
           "Typebot Controller"
         ],
@@ -7003,7 +7003,7 @@
         "operationId": "setChatwoot",
         "summary": "Set Chatwoot",
         "tags": [
-          "Chatwoot Controller"
+          "Controlador Chatwoot"
         ],
         "deprecated": false,
         "security": [
@@ -7054,15 +7054,15 @@
                   },
                   "accountId": {
                     "type": "string",
-                    "description": "Chatwoot account ID"
+                    "description": "ID da conta Chatwoot"
                   },
                   "token": {
                     "type": "string",
-                    "description": "Chatwoot token"
+                    "description": "Token Chatwoot"
                   },
                   "url": {
                     "type": "string",
-                    "description": "Chatwoot server URL"
+                    "description": "URL do servidor Chatwoot"
                   },
                   "signMsg": {
                     "type": "boolean",
@@ -7133,7 +7133,7 @@
         "operationId": "findChatwoot",
         "summary": "Find Chatwoot",
         "tags": [
-          "Chatwoot Controller"
+          "Controlador Chatwoot"
         ],
         "deprecated": false,
         "security": [
@@ -7844,7 +7844,7 @@
         ],
         "description": "Update OpenAI bot with detailed configuration",
         "requestBody": {
-          "description": "Configuration for the OpenAI bot instance",
+          "description": "Configuração para a instância do bot OpenAI",
           "required": true,
           "content": {
             "application/json": {
@@ -8012,7 +8012,7 @@
         ],
         "description": "Creds openia bot configuration",
         "requestBody": {
-          "description": "Configuration for the OpenAI bot instance",
+          "description": "Configuração para a instância do bot OpenAI",
           "required": true,
           "content": {
             "application/json": {
@@ -8142,7 +8142,7 @@
           }
         ],
         "requestBody": {
-          "description": "Configuration for updating the OpenAI bot settings",
+          "description": "Configuração para atualizar as configurações do bot OpenAI",
           "required": true,
           "content": {
             "application/json": {
@@ -8236,7 +8236,7 @@
             }
           },
           "400": {
-            "description": "Bad Request - Invalid input parameters"
+            "description": "Requisição Inválida - Parâmetros de entrada inválidos"
           },
           "500": {
             "description": "Internal Server Error"
@@ -8280,11 +8280,11 @@
     "/openai/changeStatus/{instance}": {
       "post": {
         "operationId": "changeOpenAIStatus",
-        "summary": "Change OpenAI Bot Status",
+        "summary": "Alterar Status do Bot OpenAI",
         "tags": [
           "OpenAI Controller"
         ],
-        "description": "Changes the status of the OpenAI bot instance.",
+        "description": "Altera o status da instância do bot OpenAI.",
         "security": [
           {
             "ApiKeyAuth": []
@@ -8302,7 +8302,7 @@
           }
         ],
         "requestBody": {
-          "description": "Body for changing the status of the OpenAI bot",
+          "description": "Corpo para alterar o status do bot OpenAI",
           "required": true,
           "content": {
             "application/json": {
@@ -8353,7 +8353,7 @@
             }
           },
           "400": {
-            "description": "Bad Request - Invalid input parameters"
+            "description": "Requisição Inválida - Parâmetros de entrada inválidos"
           },
           "500": {
             "description": "Internal Server Error"
@@ -8412,7 +8412,7 @@
             }
           },
           "400": {
-            "description": "Bad Request - Invalid parameters"
+            "description": "Requisição Inválida - Parâmetros inválidos"
           },
           "404": {
             "description": "Not Found - No sessions found for the given bot and instance"
@@ -8448,7 +8448,7 @@
           }
         ],
         "requestBody": {
-          "description": "Configuration for the Dify bot instance",
+          "description": "Configuração para a instância do bot Dify",
           "required": true,
           "content": {
             "application/json": {
@@ -8537,7 +8537,7 @@
         },
         "responses": {
           "200": {
-            "description": "Bot instance created successfully",
+            "description": "Instância do bot criada com sucesso",
             "content": {
               "application/json": {
                 "schema": {
@@ -8545,7 +8545,7 @@
                   "properties": {
                     "message": {
                       "type": "string",
-                      "example": "Bot instance created successfully"
+                      "example": "Instância do bot criada com sucesso"
                     }
                   }
                 }
@@ -8553,7 +8553,7 @@
             }
           },
           "400": {
-            "description": "Bad Request - Invalid or missing parameters"
+            "description": "Requisição Inválida - Parâmetros inválidos ou ausentes"
           },
           "404": {
             "description": "Not Found - Instance could not be created"
@@ -8695,7 +8695,7 @@
           }
         ],
         "requestBody": {
-          "description": "Configuration for the Dify bot instance",
+          "description": "Configuração para a instância do bot Dify",
           "required": true,
           "content": {
             "application/json": {
@@ -8784,7 +8784,7 @@
         },
         "responses": {
           "200": {
-            "description": "Bot instance created successfully",
+            "description": "Instância do bot criada com sucesso",
             "content": {
               "application/json": {
                 "schema": {
@@ -8792,7 +8792,7 @@
                   "properties": {
                     "message": {
                       "type": "string",
-                      "example": "Bot instance created successfully"
+                      "example": "Instância do bot criada com sucesso"
                     }
                   }
                 }
@@ -9121,7 +9121,7 @@
           }
         ],
         "requestBody": {
-          "description": "Configuration for the n8n bot instance",
+          "description": "Configuração para a instância do bot n8n",
           "required": true,
           "content": {
             "application/json": {
@@ -9218,7 +9218,7 @@
             }
           },
           "400": {
-            "description": "Bad Request - Invalid or missing parameters"
+            "description": "Requisição Inválida - Parâmetros inválidos ou ausentes"
           },
           "404": {
             "description": "Not Found - Instance could not be created"
@@ -9360,7 +9360,7 @@
           }
         ],
         "requestBody": {
-          "description": "Configuration for the n8n bot instance",
+          "description": "Configuração para a instância do bot n8n",
           "required": true,
           "content": {
             "application/json": {
@@ -9778,7 +9778,7 @@
           }
         ],
         "requestBody": {
-          "description": "Configuration for the EvoAI bot instance",
+          "description": "Configuração para a instância do bot EvoAI",
           "required": true,
           "content": {
             "application/json": {
@@ -9872,7 +9872,7 @@
             }
           },
           "400": {
-            "description": "Bad Request - Invalid or missing parameters"
+            "description": "Requisição Inválida - Parâmetros inválidos ou ausentes"
           },
           "404": {
             "description": "Not Found - Instance could not be created"
@@ -10014,7 +10014,7 @@
           }
         ],
         "requestBody": {
-          "description": "Configuration for the EvoAI bot instance",
+          "description": "Configuração para a instância do bot EvoAI",
           "required": true,
           "content": {
             "application/json": {
@@ -11303,11 +11303,11 @@
                   },
                   "apiUrl": {
                     "type": "string",
-                    "description": "API URL for the bot"
+                    "description": "URL da API para o bot"
                   },
                   "apiKey": {
                     "type": "string",
-                    "description": "API Key for authentication (optional)"
+                    "description": "Chave de API para autenticação (opcional)"
                   },
                   "triggerType": {
                     "type": "string",
@@ -11499,11 +11499,11 @@
                   },
                   "apiUrl": {
                     "type": "string",
-                    "description": "API URL for the bot"
+                    "description": "URL da API para o bot"
                   },
                   "apiKey": {
                     "type": "string",
-                    "description": "API Key for authentication (optional)"
+                    "description": "Chave de API para autenticação (opcional)"
                   },
                   "triggerType": {
                     "type": "string",
@@ -11691,7 +11691,7 @@
             }
           }
         ],
-        "description": "Configure settings for an Evolution Bot.",
+        "description": "Configure as configurações para um Bot Evolution.",
         "requestBody": {
           "content": {
             "application/json": {
@@ -11843,7 +11843,7 @@
     "/evolutionBot/changeStatus/{instance}": {
       "post": {
         "operationId": "changeEvobotStatus",
-        "summary": "Change Session Status",
+        "summary": "Alterar Status da Sessão",
         "tags": [
           "Typebot Controller"
         ],
@@ -11864,7 +11864,7 @@
             }
           }
         ],
-        "description": "Change status session",
+        "description": "Alterar status da sessão",
         "requestBody": {
           "content": {
             "application/json": {
