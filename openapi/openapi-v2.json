@@ -630,7 +630,7 @@
             }
           },
           "404": {
-            "description": "Instance not found",
+            "description": "Instância não encontrada",
             "content": {
               "application/json": {
                 "schema": {
@@ -731,7 +731,7 @@
             }
           },
           "404": {
-            "description": "Instance not found",
+            "description": "Instância não encontrada",
             "content": {
               "application/json": {
                 "schema": {
@@ -832,7 +832,7 @@
             }
           },
           "404": {
-            "description": "Instance not found",
+            "description": "Instância não encontrada",
             "content": {
               "application/json": {
                 "schema": {
@@ -938,7 +938,7 @@
             }
           },
           "404": {
-            "description": "Instance not found",
+            "description": "Instância não encontrada",
             "content": {
               "application/json": {
                 "schema": {
@@ -1044,7 +1044,7 @@
             }
           },
           "404": {
-            "description": "Instance not found",
+            "description": "Instância não encontrada",
             "content": {
               "application/json": {
                 "schema": {
@@ -1139,7 +1139,7 @@
             "content": {}
           },
           "404": {
-            "description": "Instance not found",
+            "description": "Instância não encontrada",
             "content": {
               "application/json": {
                 "schema": {
@@ -6333,7 +6333,7 @@
             }
           }
         ],
-        "description": "Leave group",
+        "description": "Sair do grupo",
         "responses": {
           "200": {
             "description": "Ok",
@@ -6438,7 +6438,7 @@
                   },
                   "keepOpen": {
                     "type": "boolean",
-                    "description": "Keep session open"
+                    "description": "Manter sessão aberta"
                   },
                   "debounceTime": {
                     "type": "number",
@@ -6654,7 +6654,7 @@
                   },
                   "keepOpen": {
                     "type": "string",
-                    "description": "Keep session open"
+                    "description": "Manter sessão aberta"
                   },
                   "debounceTime": {
                     "type": "string",
@@ -6925,7 +6925,7 @@
                   },
                   "keepOpen": {
                     "type": "boolean",
-                    "description": "Keep session open"
+                    "description": "Manter sessão aberta"
                   },
                   "debounceTime": {
                     "type": "number",
@@ -8239,7 +8239,7 @@
             "description": "Requisição Inválida - Parâmetros de entrada inválidos"
           },
           "500": {
-            "description": "Internal Server Error"
+            "description": "Erro Interno do Servidor"
           }
         }
       }
@@ -8356,7 +8356,7 @@
             "description": "Requisição Inválida - Parâmetros de entrada inválidos"
           },
           "500": {
-            "description": "Internal Server Error"
+            "description": "Erro Interno do Servidor"
           }
         }
       }
@@ -8418,7 +8418,7 @@
             "description": "Not Found - No sessions found for the given bot and instance"
           },
           "500": {
-            "description": "Internal Server Error"
+            "description": "Erro Interno do Servidor"
           }
         }
       }
@@ -8559,7 +8559,7 @@
             "description": "Not Found - Instance could not be created"
           },
           "500": {
-            "description": "Internal Server Error"
+            "description": "Erro Interno do Servidor"
           }
         }
       }
@@ -9224,7 +9224,7 @@
             "description": "Not Found - Instance could not be created"
           },
           "500": {
-            "description": "Internal Server Error"
+            "description": "Erro Interno do Servidor"
           }
         }
       }
@@ -9878,7 +9878,7 @@
             "description": "Not Found - Instance could not be created"
           },
           "500": {
-            "description": "Internal Server Error"
+            "description": "Erro Interno do Servidor"
           }
         }
       }
@@ -11347,7 +11347,7 @@
                   },
                   "keepOpen": {
                     "type": "boolean",
-                    "description": "Keep the session open after processing messages"
+                    "description": "Manter a sessão aberta após processar mensagens"
                   },
                   "debounceTime": {
                     "type": "number",
@@ -11543,7 +11543,7 @@
                   },
                   "keepOpen": {
                     "type": "boolean",
-                    "description": "Keep the session open after processing messages"
+                    "description": "Manter a sessão aberta após processar mensagens"
                   },
                   "debounceTime": {
                     "type": "number",
@@ -11735,7 +11735,7 @@
                   },
                   "keepOpen": {
                     "type": "boolean",
-                    "description": "Keep the session open after processing messages"
+                    "description": "Manter a sessão aberta após processar mensagens"
                   },
                   "debounceTime": {
                     "type": "number",
