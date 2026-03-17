@@ -432,7 +432,7 @@
                     },
                     "error": {
                       "type": "string",
-                      "description": "The error message indicating the type of error"
+                      "description": "A mensagem de erro indicando o tipo de erro"
                     },
                     "response": {
                       "type": "object",
@@ -509,7 +509,7 @@
                     },
                     "error": {
                       "type": "string",
-                      "description": "The error message indicating the type of error"
+                      "description": "A mensagem de erro indicando o tipo de erro"
                     },
                     "response": {
                       "type": "object",
@@ -617,7 +617,7 @@
                     },
                     "count": {
                       "type": "integer",
-                      "description": "The count or number of attempts or instances related to the pairing process."
+                      "description": "A contagem ou número de tentativas ou instâncias relacionadas ao processo de emparelhamento."
                     }
                   },
                   "example": {
@@ -642,7 +642,7 @@
                     },
                     "error": {
                       "type": "string",
-                      "description": "The error message indicating the type of error"
+                      "description": "A mensagem de erro indicando o tipo de erro"
                     },
                     "response": {
                       "type": "object",
@@ -662,7 +662,7 @@
                     "error": "Not Found",
                     "response": {
                       "message": [
-                        "The \"invalid-instance\" instance does not exist"
+                        "A instância \"invalid-instance\" não existe"
                       ]
                     }
                   }
@@ -711,7 +711,7 @@
                       "properties": {
                         "instanceName": {
                           "type": "string",
-                          "description": "The name of the instance."
+                          "description": "O nome da instância."
                         },
                         "state": {
                           "type": "string",
@@ -743,7 +743,7 @@
                     },
                     "error": {
                       "type": "string",
-                      "description": "The error message indicating the type of error"
+                      "description": "A mensagem de erro indicando o tipo de erro"
                     },
                     "response": {
                       "type": "object",
@@ -763,7 +763,7 @@
                     "error": "Not Found",
                     "response": {
                       "message": [
-                        "The \"invalid-instance\" instance does not exist"
+                        "A instância \"invalid-instance\" não existe"
                       ]
                     }
                   }
@@ -812,7 +812,7 @@
                       "properties": {
                         "instanceName": {
                           "type": "string",
-                          "description": "The name of the instance."
+                          "description": "O nome da instância."
                         },
                         "state": {
                           "type": "string",
@@ -844,7 +844,7 @@
                     },
                     "error": {
                       "type": "string",
-                      "description": "The error message indicating the type of error"
+                      "description": "A mensagem de erro indicando o tipo de erro"
                     },
                     "response": {
                       "type": "object",
@@ -864,7 +864,7 @@
                     "error": "Not Found",
                     "response": {
                       "message": [
-                        "The \"invalid-instance\" instance does not exist"
+                        "A instância \"invalid-instance\" não existe"
                       ]
                     }
                   }
@@ -950,7 +950,7 @@
                     },
                     "error": {
                       "type": "string",
-                      "description": "The error message indicating the type of error"
+                      "description": "A mensagem de erro indicando o tipo de erro"
                     },
                     "response": {
                       "type": "object",
@@ -970,7 +970,7 @@
                     "error": "Not Found",
                     "response": {
                       "message": [
-                        "The \"invalid-instance\" instance does not exist"
+                        "A instância \"invalid-instance\" não existe"
                       ]
                     }
                   }
@@ -1056,7 +1056,7 @@
                     },
                     "error": {
                       "type": "string",
-                      "description": "The error message indicating the type of error"
+                      "description": "A mensagem de erro indicando o tipo de erro"
                     },
                     "response": {
                       "type": "object",
@@ -1076,7 +1076,7 @@
                     "error": "Not Found",
                     "response": {
                       "message": [
-                        "The \"invalid-instance\" instance does not exist"
+                        "A instância \"invalid-instance\" não existe"
                       ]
                     }
                   }
@@ -1151,7 +1151,7 @@
                     },
                     "error": {
                       "type": "string",
-                      "description": "The error message indicating the type of error"
+                      "description": "A mensagem de erro indicando o tipo de erro"
                     },
                     "response": {
                       "type": "object",
@@ -1171,7 +1171,7 @@
                     "error": "Not Found",
                     "response": {
                       "message": [
-                        "The \"invalid-instance\" instance does not exist"
+                        "A instância \"invalid-instance\" não existe"
                       ]
                     }
                   }
@@ -1287,7 +1287,7 @@
                       "properties": {
                         "instanceName": {
                           "type": "string",
-                          "description": "The name of the instance."
+                          "description": "O nome da instância."
                         },
                         "webhook": {
                           "type": "object",
@@ -1480,7 +1480,7 @@
                       "properties": {
                         "instanceName": {
                           "type": "string",
-                          "description": "The name of the instance."
+                          "description": "O nome da instância."
                         },
                         "settings": {
                           "type": "object",
@@ -1648,7 +1648,7 @@
                   },
                   "text": {
                     "type": "string",
-                    "description": "Test message to send"
+                    "description": "Mensagem de teste para enviar"
                   },
                   "delay": {
                     "type": "integer",
@@ -1721,7 +1721,7 @@
                         },
                         "id": {
                           "type": "string",
-                          "description": "The ID of the message."
+                          "description": "O ID da mensagem."
                         }
                       }
                     },
@@ -1903,10 +1903,10 @@
                         },
                         "id": {
                           "type": "string",
-                          "description": "The ID of the message."
+                          "description": "O ID da mensagem."
                         }
                       },
-                      "description": "The key of the message, which identifies the message in the chat."
+                      "description": "A chave da mensagem, que identifica a mensagem no chat."
                     },
                     "message": {
                       "type": "object",
@@ -1916,27 +1916,27 @@
                           "properties": {
                             "url": {
                               "type": "string",
-                              "description": "The URL of the image."
+                              "description": "A URL da imagem."
                             },
                             "mimetype": {
                               "type": "string",
-                              "description": "The MIME type of the image."
+                              "description": "O tipo MIME da imagem."
                             },
                             "caption": {
                               "type": "string",
-                              "description": "The caption text of the image."
+                              "description": "O texto da legenda da imagem."
                             },
                             "fileSha256": {
                               "type": "string",
-                              "description": "The SHA-256 hash of the image file."
+                              "description": "O hash SHA-256 do arquivo de imagem."
                             },
                             "fileLength": {
                               "type": "string",
-                              "description": "The length of the image file."
+                              "description": "O comprimento do arquivo de imagem."
                             },
                             "height": {
                               "type": "integer",
-                              "description": "The height of the image."
+                              "description": "A altura da imagem."
                             },
                             "width": {
                               "type": "integer",
@@ -1944,15 +1944,15 @@
                             },
                             "mediaKey": {
                               "type": "string",
-                              "description": "The media key of the image."
+                              "description": "A chave de mídia da imagem."
                             },
                             "fileEncSha256": {
                               "type": "string",
-                              "description": "The SHA-256 hash of the encrypted image file."
+                              "description": "O hash SHA-256 do arquivo de imagem criptografado."
                             },
                             "directPath": {
                               "type": "string",
-                              "description": "The direct path to the image."
+                              "description": "O caminho direto para a imagem."
                             },
                             "mediaKeyTimestamp": {
                               "type": "string",
@@ -1960,7 +1960,7 @@
                             },
                             "jpegThumbnail": {
                               "type": "string",
-                              "description": "The JPEG thumbnail of the image."
+                              "description": "A miniatura JPEG da imagem."
                             },
                             "contextInfo": {
                               "type": "object",
@@ -1970,7 +1970,7 @@
                           "description": "Detalhes da mensagem de imagem."
                         }
                       },
-                      "description": "The message content, which may include various types of messages like text, images, etc."
+                      "description": "O conteúdo da mensagem, que pode incluir vários tipos de mensagens como texto, imagens, etc."
                     },
                     "messageTimestamp": {
                       "type": "string",
@@ -2128,10 +2128,10 @@
                         },
                         "id": {
                           "type": "string",
-                          "description": "The ID of the message."
+                          "description": "O ID da mensagem."
                         }
                       },
-                      "description": "The key of the message, which identifies the message in the chat."
+                      "description": "A chave da mensagem, que identifica a mensagem no chat."
                     },
                     "message": {
                       "type": "object",
@@ -2141,23 +2141,23 @@
                           "properties": {
                             "url": {
                               "type": "string",
-                              "description": "The URL of the audio message."
+                              "description": "A URL da mensagem de áudio."
                             },
                             "mimetype": {
                               "type": "string",
-                              "description": "The MIME type of the audio message."
+                              "description": "O tipo MIME da mensagem de áudio."
                             },
                             "fileSha256": {
                               "type": "string",
-                              "description": "The SHA-256 hash of the audio file."
+                              "description": "O hash SHA-256 do arquivo de áudio."
                             },
                             "fileLength": {
                               "type": "string",
-                              "description": "The length of the audio file."
+                              "description": "O comprimento do arquivo de áudio."
                             },
                             "seconds": {
                               "type": "integer",
-                              "description": "The duration of the audio message in seconds."
+                              "description": "A duração da mensagem de áudio em segundos."
                             },
                             "ptt": {
                               "type": "boolean",
@@ -2165,15 +2165,15 @@
                             },
                             "mediaKey": {
                               "type": "string",
-                              "description": "The media key of the audio message."
+                              "description": "A chave de mídia da mensagem de áudio."
                             },
                             "fileEncSha256": {
                               "type": "string",
-                              "description": "The SHA-256 hash of the encrypted audio file."
+                              "description": "O hash SHA-256 do arquivo de áudio criptografado."
                             },
                             "directPath": {
                               "type": "string",
-                              "description": "The direct path to the audio file."
+                              "description": "O caminho direto para o arquivo de áudio."
                             },
                             "mediaKeyTimestamp": {
                               "type": "string",
@@ -2183,7 +2183,7 @@
                           "description": "Detalhes da mensagem de áudio."
                         }
                       },
-                      "description": "The message content, which may include various types of messages like text, images, audio, etc."
+                      "description": "O conteúdo da mensagem, que pode incluir vários tipos de mensagens como texto, imagens, áudio, etc."
                     },
                     "messageTimestamp": {
                       "type": "string",
@@ -2430,10 +2430,10 @@
                         },
                         "id": {
                           "type": "string",
-                          "description": "The ID of the message."
+                          "description": "O ID da mensagem."
                         }
                       },
-                      "description": "The key of the message, which identifies the message in the chat."
+                      "description": "A chave da mensagem, que identifica a mensagem no chat."
                     },
                     "message": {
                       "type": "object",
@@ -2447,17 +2447,17 @@
                             },
                             "backgroundArgb": {
                               "type": "integer",
-                              "description": "The background color of the text message, represented as ARGB integer value."
+                              "description": "A cor de fundo da mensagem de texto, representada como valor inteiro ARGB."
                             },
                             "font": {
                               "type": "string",
-                              "description": "The font used in the text message."
+                              "description": "A fonte usada na mensagem de texto."
                             }
                           },
                           "description": "Detalhes da mensagem de texto estendida."
                         }
                       },
-                      "description": "The message content, which may include various types of messages like text, images, etc."
+                      "description": "O conteúdo da mensagem, que pode incluir vários tipos de mensagens como texto, imagens, etc."
                     },
                     "messageTimestamp": {
                       "type": "string",
@@ -2469,7 +2469,7 @@
                     },
                     "participant": {
                       "type": "string",
-                      "description": "The participant in the chat to whom the message was sent."
+                      "description": "O participante no chat para o qual a mensagem foi enviada."
                     }
                   },
                   "example": {
@@ -2625,10 +2625,10 @@
                         },
                         "id": {
                           "type": "string",
-                          "description": "The ID of the message."
+                          "description": "O ID da mensagem."
                         }
                       },
-                      "description": "The key of the message, which identifies the message in the chat."
+                      "description": "A chave da mensagem, que identifica a mensagem no chat."
                     },
                     "message": {
                       "type": "object",
@@ -2639,20 +2639,20 @@
                             "degreesLatitude": {
                               "type": "number",
                               "format": "float",
-                              "description": "The latitude of the location."
+                              "description": "A latitude da localização."
                             },
                             "degreesLongitude": {
                               "type": "number",
                               "format": "float",
-                              "description": "The longitude of the location."
+                              "description": "A longitude da localização."
                             },
                             "name": {
                               "type": "string",
-                              "description": "The name of the location."
+                              "description": "O nome da localização."
                             },
                             "address": {
                               "type": "string",
-                              "description": "The address of the location."
+                              "description": "O endereço da localização."
                             },
                             "contextInfo": {
                               "type": "object",
@@ -2662,7 +2662,7 @@
                           "description": "Detalhes da mensagem de localização."
                         }
                       },
-                      "description": "The message content, which may include various types of messages like text, images, location, etc."
+                      "description": "O conteúdo da mensagem, que pode incluir vários tipos de mensagens como texto, imagens, localização, etc."
                     },
                     "messageTimestamp": {
                       "type": "string",
@@ -2804,10 +2804,10 @@
                         },
                         "id": {
                           "type": "string",
-                          "description": "The ID of the message."
+                          "description": "O ID da mensagem."
                         }
                       },
-                      "description": "The key of the message, which identifies the message in the chat."
+                      "description": "A chave da mensagem, que identifica a mensagem no chat."
                     },
                     "message": {
                       "type": "object",
@@ -2817,7 +2817,7 @@
                           "properties": {
                             "displayName": {
                               "type": "string",
-                              "description": "The display name of the contact."
+                              "description": "O nome de exibição do contato."
                             },
                             "vcard": {
                               "type": "string",
@@ -2831,7 +2831,7 @@
                           "description": "Detalhes da mensagem de contato."
                         }
                       },
-                      "description": "The message content, which may include various types of messages like text, images, contact, etc."
+                      "description": "O conteúdo da mensagem, que pode incluir vários tipos de mensagens como texto, imagens, contato, etc."
                     },
                     "messageTimestamp": {
                       "type": "string",
@@ -2944,10 +2944,10 @@
                         },
                         "id": {
                           "type": "string",
-                          "description": "The ID of the message."
+                          "description": "O ID da mensagem."
                         }
                       },
-                      "description": "The key of the message, which identifies the message in the chat."
+                      "description": "A chave da mensagem, que identifica a mensagem no chat."
                     },
                     "message": {
                       "type": "object",
@@ -2968,14 +2968,14 @@
                                 },
                                 "id": {
                                   "type": "string",
-                                  "description": "The ID of the original message."
+                                  "description": "O ID da mensagem original."
                                 }
                               },
-                              "description": "The key of the original message to which the reaction is linked."
+                              "description": "A chave da mensagem original à qual a reação está vinculada."
                             },
                             "text": {
                               "type": "string",
-                              "description": "The reaction text or emoji."
+                              "description": "O texto da reação ou emoji."
                             },
                             "senderTimestampMs": {
                               "type": "string",
@@ -2985,7 +2985,7 @@
                           "description": "Detalhes da mensagem de reação."
                         }
                       },
-                      "description": "The message content, which may include various types of messages like text, images, reaction, etc."
+                      "description": "O conteúdo da mensagem, que pode incluir vários tipos de mensagens como texto, imagens, reação, etc."
                     },
                     "messageTimestamp": {
                       "type": "string",
@@ -3155,10 +3155,10 @@
                         },
                         "id": {
                           "type": "string",
-                          "description": "The ID of the message."
+                          "description": "O ID da mensagem."
                         }
                       },
-                      "description": "The key of the message, which identifies the message in the chat."
+                      "description": "A chave da mensagem, que identifica a mensagem no chat."
                     },
                     "message": {
                       "type": "object",
@@ -3178,7 +3178,7 @@
                           "properties": {
                             "name": {
                               "type": "string",
-                              "description": "The name of the poll."
+                              "description": "O nome da enquete."
                             },
                             "options": {
                               "type": "array",
@@ -3187,21 +3187,21 @@
                                 "properties": {
                                   "optionName": {
                                     "type": "string",
-                                    "description": "The name of the poll option."
+                                    "description": "O nome da opção de enquete."
                                   }
                                 }
                               },
-                              "description": "The options available in the poll."
+                              "description": "As opções disponíveis na enquete."
                             },
                             "selectableOptionsCount": {
                               "type": "integer",
-                              "description": "The number of options that can be selected in the poll."
+                              "description": "O número de opções que podem ser selecionadas na enquete."
                             }
                           },
                           "description": "Detalhes da mensagem de criação de enquete."
                         }
                       },
-                      "description": "The message content, which may include various types of messages like text, images, poll creation, etc."
+                      "description": "O conteúdo da mensagem, que pode incluir vários tipos de mensagens como texto, imagens, criação de enquete, etc."
                     },
                     "messageTimestamp": {
                       "type": "string",
@@ -3301,7 +3301,7 @@
                   },
                   "buttonText": {
                     "type": "string",
-                    "description": "Text Button"
+                    "description": "Botão de Texto"
                   },
                   "footerText": {
                     "type": "string",
@@ -3410,10 +3410,10 @@
                         },
                         "id": {
                           "type": "string",
-                          "description": "The ID of the message."
+                          "description": "O ID da mensagem."
                         }
                       },
-                      "description": "The key of the message, which identifies the message in the chat."
+                      "description": "A chave da mensagem, que identifica a mensagem no chat."
                     },
                     "message": {
                       "type": "object",
@@ -3433,7 +3433,7 @@
                           "properties": {
                             "name": {
                               "type": "string",
-                              "description": "The name of the poll."
+                              "description": "O nome da enquete."
                             },
                             "options": {
                               "type": "array",
@@ -3442,21 +3442,21 @@
                                 "properties": {
                                   "optionName": {
                                     "type": "string",
-                                    "description": "The name of the poll option."
+                                    "description": "O nome da opção de enquete."
                                   }
                                 }
                               },
-                              "description": "The options available in the poll."
+                              "description": "As opções disponíveis na enquete."
                             },
                             "selectableOptionsCount": {
                               "type": "integer",
-                              "description": "The number of options that can be selected in the poll."
+                              "description": "O número de opções que podem ser selecionadas na enquete."
                             }
                           },
                           "description": "Detalhes da mensagem de criação de enquete."
                         }
                       },
-                      "description": "The message content, which may include various types of messages like text, images, poll creation, etc."
+                      "description": "O conteúdo da mensagem, que pode incluir vários tipos de mensagens como texto, imagens, criação de enquete, etc."
                     },
                     "messageTimestamp": {
                       "type": "string",
@@ -3555,7 +3555,7 @@
                   },
                   "footer": {
                     "type": "string",
-                    "description": "Text Button"
+                    "description": "Botão de Texto"
                   },
                   "buttons": {
                     "type": "array",
@@ -3568,7 +3568,7 @@
                         },
                         "displayText": {
                           "type": "string",
-                          "description": "Text of button"
+                          "description": "Texto do botão"
                         },
                         "id": {
                           "type": "string",
@@ -3648,10 +3648,10 @@
                         },
                         "id": {
                           "type": "string",
-                          "description": "The ID of the message."
+                          "description": "O ID da mensagem."
                         }
                       },
-                      "description": "The key of the message, which identifies the message in the chat."
+                      "description": "A chave da mensagem, que identifica a mensagem no chat."
                     },
                     "message": {
                       "type": "object",
@@ -3671,7 +3671,7 @@
                           "properties": {
                             "name": {
                               "type": "string",
-                              "description": "The name of the poll."
+                              "description": "O nome da enquete."
                             },
                             "options": {
                               "type": "array",
@@ -3680,21 +3680,21 @@
                                 "properties": {
                                   "optionName": {
                                     "type": "string",
-                                    "description": "The name of the poll option."
+                                    "description": "O nome da opção de enquete."
                                   }
                                 }
                               },
-                              "description": "The options available in the poll."
+                              "description": "As opções disponíveis na enquete."
                             },
                             "selectableOptionsCount": {
                               "type": "integer",
-                              "description": "The number of options that can be selected in the poll."
+                              "description": "O número de opções que podem ser selecionadas na enquete."
                             }
                           },
                           "description": "Detalhes da mensagem de criação de enquete."
                         }
                       },
-                      "description": "The message content, which may include various types of messages like text, images, poll creation, etc."
+                      "description": "O conteúdo da mensagem, que pode incluir vários tipos de mensagens como texto, imagens, criação de enquete, etc."
                     },
                     "messageTimestamp": {
                       "type": "string",
@@ -3800,11 +3800,11 @@
                       },
                       "jid": {
                         "type": "string",
-                        "description": "The JID of the WhatsApp account."
+                        "description": "O JID da conta WhatsApp."
                       },
                       "number": {
                         "type": "string",
-                        "description": "The phone number associated with the WhatsApp account."
+                        "description": "O número de telefone associado à conta WhatsApp."
                       }
                     }
                   },
@@ -4094,7 +4094,7 @@
                   "properties": {
                     "chatId": {
                       "type": "string",
-                      "description": "The ID of the chat."
+                      "description": "O ID do chat."
                     },
                     "archived": {
                       "type": "boolean",
@@ -4183,7 +4183,7 @@
                       "properties": {
                         "remoteJid": {
                           "type": "string",
-                          "description": "The remote JID (Jabber ID) of the WhatsApp account."
+                          "description": "O JID remoto (Jabber ID) da conta WhatsApp."
                         },
                         "fromMe": {
                           "type": "boolean",
@@ -4191,10 +4191,10 @@
                         },
                         "id": {
                           "type": "string",
-                          "description": "The ID of the message."
+                          "description": "O ID da mensagem."
                         }
                       },
-                      "description": "The key that identifies the message in the chat."
+                      "description": "A chave que identifica a mensagem no chat."
                     },
                     "message": {
                       "type": "object",
@@ -4207,7 +4207,7 @@
                               "properties": {
                                 "remoteJid": {
                                   "type": "string",
-                                  "description": "The remote JID (Jabber ID) of the WhatsApp account in the referenced message."
+                                  "description": "O JID remoto (Jabber ID) da conta WhatsApp na mensagem referenciada."
                                 },
                                 "fromMe": {
                                   "type": "boolean",
@@ -4215,10 +4215,10 @@
                                 },
                                 "id": {
                                   "type": "string",
-                                  "description": "The ID of the referenced message."
+                                  "description": "O ID da mensagem referenciada."
                                 }
                               },
-                              "description": "The key that identifies the referenced message."
+                              "description": "A chave que identifica a mensagem referenciada."
                             },
                             "type": {
                               "type": "string",
@@ -4228,7 +4228,7 @@
                           "description": "Detalhes da mensagem de protocolo."
                         }
                       },
-                      "description": "The content of the message."
+                      "description": "O conteúdo da mensagem."
                     },
                     "messageTimestamp": {
                       "type": "string",
@@ -4453,7 +4453,7 @@
                   "properties": {
                     "wuid": {
                       "type": "string",
-                      "description": "The WhatsApp User ID (WUID)."
+                      "description": "O ID do Usuário WhatsApp (WUID)."
                     },
                     "profilePictureUrl": {
                       "type": "string",
@@ -5539,11 +5539,11 @@
                   "properties": {
                     "inviteUrl": {
                       "type": "string",
-                      "description": "The URL for the WhatsApp group invite."
+                      "description": "A URL para o convite do grupo WhatsApp."
                     },
                     "inviteCode": {
                       "type": "string",
-                      "description": "The code for the WhatsApp group invite."
+                      "description": "O código para o convite do grupo WhatsApp."
                     }
                   },
                   "example": {
@@ -5711,7 +5711,7 @@
                     },
                     "inviteUrl": {
                       "type": "string",
-                      "description": "The URL for the WhatsApp group invite."
+                      "description": "A URL para o convite do grupo WhatsApp."
                     }
                   },
                   "example": {
@@ -5810,7 +5810,7 @@
                   "properties": {
                     "id": {
                       "type": "string",
-                      "description": "The ID of the group."
+                      "description": "O ID do grupo."
                     },
                     "subject": {
                       "type": "string",
@@ -5818,7 +5818,7 @@
                     },
                     "subjectOwner": {
                       "type": "string",
-                      "description": "The ID of the user who set the subject."
+                      "description": "O ID do usuário que definiu o assunto."
                     },
                     "subjectTime": {
                       "type": "integer",
@@ -5830,7 +5830,7 @@
                     },
                     "size": {
                       "type": "integer",
-                      "description": "The number of participants in the group."
+                      "description": "O número de participantes no grupo."
                     },
                     "creation": {
                       "type": "integer",
@@ -5838,15 +5838,15 @@
                     },
                     "owner": {
                       "type": "string",
-                      "description": "The ID of the group owner."
+                      "description": "O ID do proprietário do grupo."
                     },
                     "desc": {
                       "type": "string",
-                      "description": "The description of the group."
+                      "description": "A descrição do grupo."
                     },
                     "descId": {
                       "type": "string",
-                      "description": "The ID of the description message."
+                      "description": "O ID da mensagem de descrição."
                     },
                     "restrict": {
                       "type": "boolean",
@@ -5863,7 +5863,7 @@
                         "properties": {
                           "id": {
                             "type": "string",
-                            "description": "The ID of the participant."
+                            "description": "O ID do participante."
                           },
                           "admin": {
                             "type": "string",
@@ -5947,7 +5947,7 @@
                     "properties": {
                       "id": {
                         "type": "string",
-                        "description": "The ID of the group."
+                        "description": "O ID do grupo."
                       },
                       "subject": {
                         "type": "string",
@@ -5955,7 +5955,7 @@
                       },
                       "subjectOwner": {
                         "type": "string",
-                        "description": "The ID of the user who set the subject."
+                        "description": "O ID do usuário que definiu o assunto."
                       },
                       "subjectTime": {
                         "type": "integer",
@@ -5967,7 +5967,7 @@
                       },
                       "size": {
                         "type": "integer",
-                        "description": "The number of participants in the group."
+                        "description": "O número de participantes no grupo."
                       },
                       "creation": {
                         "type": "integer",
@@ -5975,15 +5975,15 @@
                       },
                       "owner": {
                         "type": "string",
-                        "description": "The ID of the group owner."
+                        "description": "O ID do proprietário do grupo."
                       },
                       "desc": {
                         "type": "string",
-                        "description": "The description of the group."
+                        "description": "A descrição do grupo."
                       },
                       "descId": {
                         "type": "string",
-                        "description": "The ID of the description message."
+                        "description": "O ID da mensagem de descrição."
                       },
                       "restrict": {
                         "type": "boolean",
@@ -6079,7 +6079,7 @@
                         "properties": {
                           "id": {
                             "type": "string",
-                            "description": "The ID of the participant."
+                            "description": "O ID do participante."
                           },
                           "admin": {
                             "type": "string",
@@ -6434,7 +6434,7 @@
                   },
                   "stopBotFromMe": {
                     "type": "boolean",
-                    "description": "Stop bot when I send message"
+                    "description": "Parar bot quando eu enviar mensagem"
                   },
                   "keepOpen": {
                     "type": "boolean",
@@ -6442,7 +6442,7 @@
                   },
                   "debounceTime": {
                     "type": "number",
-                    "description": "Start typebot for your own messages"
+                    "description": "Iniciar typebot para suas próprias mensagens"
                   }
                 }
               }
@@ -6481,7 +6481,7 @@
             }
           }
         ],
-        "description": "Start typebot",
+        "description": "Iniciar typebot",
         "requestBody": {
           "content": {
             "application/json": {
@@ -6502,7 +6502,7 @@
                   },
                   "startSession": {
                     "type": "boolean",
-                    "description": "Start a new session"
+                    "description": "Iniciar uma nova sessão"
                   },
                   "variables": {
                     "type": "array",
@@ -6650,7 +6650,7 @@
                   },
                   "stopBotFromMe": {
                     "type": "string",
-                    "description": "Stop bot when I send message"
+                    "description": "Parar bot quando eu enviar mensagem"
                   },
                   "keepOpen": {
                     "type": "string",
@@ -6864,7 +6864,7 @@
             }
           }
         ],
-        "description": "Start typebot",
+        "description": "Iniciar typebot",
         "requestBody": {
           "content": {
             "application/json": {
@@ -6921,7 +6921,7 @@
                   },
                   "stopBotFromMe": {
                     "type": "boolean",
-                    "description": "Stop bot when I send message"
+                    "description": "Parar bot quando eu enviar mensagem"
                   },
                   "keepOpen": {
                     "type": "boolean",
@@ -7857,7 +7857,7 @@
                   },
                   "openaiCredsId": {
                     "type": "string",
-                    "description": "The OpenAI credentials ID"
+                    "description": "O ID das credenciais OpenAI"
                   },
                   "botType": {
                     "type": "string",
@@ -7869,15 +7869,15 @@
                   },
                   "assistantId": {
                     "type": "string",
-                    "description": "The ID of the assistant (only if 'botType' is 'assistant')"
+                    "description": "O ID do assistente (apenas se 'botType' for 'assistant')"
                   },
                   "functionUrl": {
                     "type": "string",
-                    "description": "The function URL that the bot will call"
+                    "description": "A URL da função que o bot chamará"
                   },
                   "model": {
                     "type": "string",
-                    "description": "The OpenAI model to use for chat completion (e.g., 'gpt-4o')"
+                    "description": "O modelo OpenAI a usar para conclusão de chat (ex: 'gpt-4o')"
                   },
                   "systemMessages": {
                     "type": "array",
@@ -7922,7 +7922,7 @@
                       "regex",
                       "none"
                     ],
-                    "description": "The operator to match the trigger type"
+                    "description": "O operador para corresponder ao tipo de gatilho"
                   },
                   "triggerValue": {
                     "type": "string",
@@ -7930,7 +7930,7 @@
                   },
                   "expire": {
                     "type": "integer",
-                    "description": "The expiration time of the bot instance in minutes"
+                    "description": "O tempo de expiração da instância do bot em minutos"
                   },
                   "keywordFinish": {
                     "type": "string",
@@ -8151,7 +8151,7 @@
                 "properties": {
                   "openaiCredsId": {
                     "type": "string",
-                    "description": "The OpenAI credentials ID"
+                    "description": "O ID das credenciais OpenAI"
                   },
                   "expire": {
                     "type": "integer",
@@ -8216,7 +8216,7 @@
         },
         "responses": {
           "200": {
-            "description": "Successfully updated OpenAI bot settings",
+            "description": "Configurações do bot OpenAI atualizadas com sucesso",
             "content": {
               "application/json": {
                 "schema": {
@@ -8311,7 +8311,7 @@
                 "properties": {
                   "remoteJid": {
                     "type": "string",
-                    "description": "The JID (Jabber ID) of the remote contact"
+                    "description": "O JID (Jabber ID) do contato remoto"
                   },
                   "status": {
                     "type": "string",
@@ -8320,7 +8320,7 @@
                       "paused",
                       "closed"
                     ],
-                    "description": "Status of the bot instance. Possible values: 'opened', 'paused', 'closed'"
+                    "description": "Status da instância do bot. Valores possíveis: 'opened', 'paused', 'closed'"
                   }
                 },
                 "required": [
@@ -8333,7 +8333,7 @@
         },
         "responses": {
           "200": {
-            "description": "Successfully changed the bot status",
+            "description": "Status do bot alterado com sucesso",
             "content": {
               "application/json": {
                 "schema": {
@@ -8396,7 +8396,7 @@
         ],
         "responses": {
           "200": {
-            "description": "Successfully fetched sessions",
+            "description": "Sessões buscadas com sucesso",
             "content": {
               "application/json": {
                 "schema": {
@@ -8590,7 +8590,7 @@
         ],
         "responses": {
           "200": {
-            "description": "Successfully fetched sessions",
+            "description": "Sessões buscadas com sucesso",
             "content": {
               "application/json": {
                 "schema": {
@@ -8643,7 +8643,7 @@
         ],
         "responses": {
           "200": {
-            "description": "Successfully fetched sessions",
+            "description": "Sessões buscadas com sucesso",
             "content": {
               "application/json": {
                 "schema": {
@@ -9255,7 +9255,7 @@
         ],
         "responses": {
           "200": {
-            "description": "Successfully fetched sessions",
+            "description": "Sessões buscadas com sucesso",
             "content": {
               "application/json": {
                 "schema": {
@@ -9308,7 +9308,7 @@
         ],
         "responses": {
           "200": {
-            "description": "Successfully fetched sessions",
+            "description": "Sessões buscadas com sucesso",
             "content": {
               "application/json": {
                 "schema": {
@@ -9909,7 +9909,7 @@
         ],
         "responses": {
           "200": {
-            "description": "Successfully fetched sessions",
+            "description": "Sessões buscadas com sucesso",
             "content": {
               "application/json": {
                 "schema": {
@@ -9962,7 +9962,7 @@
         ],
         "responses": {
           "200": {
-            "description": "Successfully fetched sessions",
+            "description": "Sessões buscadas com sucesso",
             "content": {
               "application/json": {
                 "schema": {
@@ -11343,7 +11343,7 @@
                   },
                   "stopBotFromMe": {
                     "type": "boolean",
-                    "description": "Stop bot when the owner sends a message"
+                    "description": "Parar bot quando o proprietário enviar uma mensagem"
                   },
                   "keepOpen": {
                     "type": "boolean",
@@ -11420,7 +11420,7 @@
         ],
         "responses": {
           "200": {
-            "description": "Successfully fetched sessions",
+            "description": "Sessões buscadas com sucesso",
             "content": {
               "application/json": {
                 "schema": {
@@ -11539,7 +11539,7 @@
                   },
                   "stopBotFromMe": {
                     "type": "boolean",
-                    "description": "Stop bot when the owner sends a message"
+                    "description": "Parar bot quando o proprietário enviar uma mensagem"
                   },
                   "keepOpen": {
                     "type": "boolean",
@@ -11607,7 +11607,7 @@
         ],
         "responses": {
           "200": {
-            "description": "Successfully fetched sessions",
+            "description": "Sessões buscadas com sucesso",
             "content": {
               "application/json": {
                 "schema": {
@@ -11731,7 +11731,7 @@
                   },
                   "stopBotFromMe": {
                     "type": "boolean",
-                    "description": "Stop bot when the owner sends a message"
+                    "description": "Parar bot quando o proprietário enviar uma mensagem"
                   },
                   "keepOpen": {
                     "type": "boolean",
