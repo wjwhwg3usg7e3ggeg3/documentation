@@ -291,7 +291,7 @@
                   },
                   "chatwootNameInbox": {
                     "type": "string",
-                    "description": "Name inbox chatwoot"
+                    "description": "Nome da caixa de entrada chatwoot"
                   },
                   "chatwootMergeBrazilContacts": {
                     "type": "boolean",
@@ -303,7 +303,7 @@
                   },
                   "chatwootDaysLimitImportMessages": {
                     "type": "integer",
-                    "description": "Limit message import chatwoot"
+                    "description": "Limite de importação de mensagens chatwoot"
                   },
                   "chatwootOrganization": {
                     "type": "string",
@@ -442,7 +442,7 @@
                           "items": {
                             "type": "string"
                           },
-                          "description": "List of detailed error messages"
+                          "description": "Lista de mensagens de erro detalhadas"
                         }
                       }
                     }
@@ -479,7 +479,7 @@
         "parameters": [
           {
             "name": "instanceName",
-            "description": "Name of the instance to be fetched",
+            "description": "Nome da instância a ser buscada",
             "in": "query",
             "schema": {
               "type": "string"
@@ -519,7 +519,7 @@
                           "items": {
                             "type": "string"
                           },
-                          "description": "List of detailed error messages"
+                          "description": "Lista de mensagens de erro detalhadas"
                         }
                       }
                     }
@@ -569,7 +569,7 @@
     "/instance/connect/{instance}": {
       "get": {
         "operationId": "instanceConnect",
-        "summary": "Instances Connect",
+        "summary": "Conectar Instâncias",
         "tags": [
           "Controlador de Instâncias"
         ],
@@ -584,7 +584,7 @@
             "name": "instance",
             "in": "path",
             "required": true,
-            "description": "Name of the instance to connect",
+            "description": "Nome da instância para conectar",
             "schema": {
               "type": "string"
             }
@@ -652,7 +652,7 @@
                           "items": {
                             "type": "string"
                           },
-                          "description": "List of detailed error messages"
+                          "description": "Lista de mensagens de erro detalhadas"
                         }
                       }
                     }
@@ -753,7 +753,7 @@
                           "items": {
                             "type": "string"
                           },
-                          "description": "List of detailed error messages"
+                          "description": "Lista de mensagens de erro detalhadas"
                         }
                       }
                     }
@@ -792,7 +792,7 @@
             "name": "instance",
             "in": "path",
             "required": true,
-            "description": "Name of the instance to get status connect",
+            "description": "Nome da instância para obter status de conexão",
             "schema": {
               "type": "string"
             }
@@ -854,7 +854,7 @@
                           "items": {
                             "type": "string"
                           },
-                          "description": "List of detailed error messages"
+                          "description": "Lista de mensagens de erro detalhadas"
                         }
                       }
                     }
@@ -893,13 +893,13 @@
             "name": "instance",
             "in": "path",
             "required": true,
-            "description": "Name of the instance to logout",
+            "description": "Nome da instância para fazer logout",
             "schema": {
               "type": "string"
             }
           }
         ],
-        "description": "Makes logout on instance",
+        "description": "Faz logout na instância",
         "responses": {
           "200": {
             "description": "Ok",
@@ -930,7 +930,7 @@
                     "status": "SUCCESS",
                     "error": false,
                     "response": {
-                      "message": "Instance logged out"
+                      "message": "Instância desconectada"
                     }
                   }
                 }
@@ -960,7 +960,7 @@
                           "items": {
                             "type": "string"
                           },
-                          "description": "List of detailed error messages"
+                          "description": "Lista de mensagens de erro detalhadas"
                         }
                       }
                     }
@@ -999,7 +999,7 @@
             "name": "instance",
             "in": "path",
             "required": true,
-            "description": "Name of the instance to delete",
+            "description": "Nome da instância a deletar",
             "schema": {
               "type": "string"
             }
@@ -1036,7 +1036,7 @@
                     "status": "SUCCESS",
                     "error": false,
                     "response": {
-                      "message": "Instance deleted"
+                      "message": "Instância deletada"
                     }
                   }
                 }
@@ -1066,7 +1066,7 @@
                           "items": {
                             "type": "string"
                           },
-                          "description": "List of detailed error messages"
+                          "description": "Lista de mensagens de erro detalhadas"
                         }
                       }
                     }
@@ -1105,7 +1105,7 @@
             "name": "instance",
             "in": "path",
             "required": true,
-            "description": "Name of the instance to connect",
+            "description": "Nome da instância para conectar",
             "schema": {
               "type": "string"
             }
@@ -1161,7 +1161,7 @@
                           "items": {
                             "type": "string"
                           },
-                          "description": "List of detailed error messages"
+                          "description": "Lista de mensagens de erro detalhadas"
                         }
                       }
                     }
@@ -1200,7 +1200,7 @@
             "name": "instance",
             "in": "path",
             "required": true,
-            "description": "Name of the instance",
+            "description": "Nome da instância",
             "schema": {
               "type": "string"
             }
@@ -1301,7 +1301,7 @@
                               "items": {
                                 "type": "string"
                               },
-                              "description": "List of events the webhook is subscribed to."
+                              "description": "Lista de eventos aos quais o webhook está inscrito."
                             },
                             "enabled": {
                               "type": "boolean",
@@ -1349,7 +1349,7 @@
             "name": "instance",
             "in": "path",
             "required": true,
-            "description": "Name of the instance",
+            "description": "Nome da instância",
             "schema": {
               "type": "string"
             }
@@ -1377,7 +1377,7 @@
                       "items": {
                         "type": "string"
                       },
-                      "description": "List of events the webhook is subscribed to."
+                      "description": "Lista de eventos aos quais o webhook está inscrito."
                     }
                   },
                   "example": {
@@ -1412,7 +1412,7 @@
             "name": "instance",
             "in": "path",
             "required": true,
-            "description": "Name of the instance",
+            "description": "Nome da instância",
             "schema": {
               "type": "string"
             }
@@ -1487,7 +1487,7 @@
                           "properties": {
                             "reject_call": {
                               "type": "boolean",
-                              "description": "Indicates whether to reject incoming calls."
+                              "description": "Indica se deve rejeitar chamadas de entrada."
                             },
                             "groups_ignore": {
                               "type": "boolean",
@@ -1507,7 +1507,7 @@
                             },
                             "sync_full_history": {
                               "type": "boolean",
-                              "description": "Indicates whether to synchronize full message history."
+                              "description": "Indica se deve sincronizar o histórico completo de mensagens."
                             }
                           }
                         }
@@ -1552,7 +1552,7 @@
             "name": "instance",
             "in": "path",
             "required": true,
-            "description": "Name of the instance to get settings",
+            "description": "Nome da instância para obter configurações",
             "schema": {
               "type": "string"
             }
@@ -1569,7 +1569,7 @@
                   "properties": {
                     "reject_call": {
                       "type": "boolean",
-                      "description": "Indicates whether to reject incoming calls."
+                      "description": "Indica se deve rejeitar chamadas de entrada."
                     },
                     "groups_ignore": {
                       "type": "boolean",
@@ -1589,7 +1589,7 @@
                     },
                     "sync_full_history": {
                       "type": "boolean",
-                      "description": "Indicates whether to synchronize full message history."
+                      "description": "Indica se deve sincronizar o histórico completo de mensagens."
                     }
                   },
                   "example": {
@@ -1612,7 +1612,7 @@
         "operationId": "sendText",
         "summary": "Send Text",
         "tags": [
-          "Message Controller"
+          "Controlador de Mensagens"
         ],
         "deprecated": false,
         "security": [
@@ -1625,7 +1625,7 @@
             "name": "instance",
             "in": "path",
             "required": true,
-            "description": "Name of the instance",
+            "description": "Nome da instância",
             "schema": {
               "type": "string"
             }
@@ -1660,7 +1660,7 @@
                   },
                   "mentionsEveryOne": {
                     "type": "boolean",
-                    "description": "Mentioned everyone when the message send"
+                    "description": "Mencionou todos quando a mensagem foi enviada"
                   },
                   "mentioned": {
                     "type": "array",
@@ -1774,7 +1774,7 @@
         "operationId": "sendMedia",
         "summary": "Send Media",
         "tags": [
-          "Message Controller"
+          "Controlador de Mensagens"
         ],
         "deprecated": false,
         "security": [
@@ -1787,7 +1787,7 @@
             "name": "instance",
             "in": "path",
             "required": true,
-            "description": "Name instance",
+            "description": "Nome da instância",
             "schema": {
               "type": "string"
             }
@@ -1842,7 +1842,7 @@
                   },
                   "mentionsEveryOne": {
                     "type": "boolean",
-                    "description": "Mentioned everyone when the message send"
+                    "description": "Mencionou todos quando a mensagem foi enviada"
                   },
                   "mentioned": {
                     "type": "array",
@@ -2019,7 +2019,7 @@
         "operationId": "sendWhatsAppAudio",
         "summary": "Send WhatsApp Audio",
         "tags": [
-          "Message Controller"
+          "Controlador de Mensagens"
         ],
         "deprecated": false,
         "security": [
@@ -2067,7 +2067,7 @@
                   },
                   "mentionsEveryOne": {
                     "type": "boolean",
-                    "description": "Mentioned everyone when the message send"
+                    "description": "Mencionou todos quando a mensagem foi enviada"
                   },
                   "mentioned": {
                     "type": "array",
@@ -2229,7 +2229,7 @@
         "operationId": "sendSticker",
         "summary": "Send Sticker",
         "tags": [
-          "Message Controller"
+          "Controlador de Mensagens"
         ],
         "deprecated": false,
         "security": [
@@ -2242,7 +2242,7 @@
             "name": "instance",
             "in": "path",
             "required": true,
-            "description": "Name of the instance",
+            "description": "Nome da instância",
             "schema": {
               "type": "string"
             }
@@ -2277,7 +2277,7 @@
                   },
                   "mentionsEveryOne": {
                     "type": "boolean",
-                    "description": "Mentioned everyone when the message send"
+                    "description": "Mencionou todos quando a mensagem foi enviada"
                   },
                   "mentioned": {
                     "type": "array",
@@ -2330,7 +2330,7 @@
         "operationId": "sendStatus",
         "summary": "Send Status",
         "tags": [
-          "Message Controller"
+          "Controlador de Mensagens"
         ],
         "deprecated": false,
         "security": [
@@ -2343,7 +2343,7 @@
             "name": "instance",
             "in": "path",
             "required": true,
-            "description": "Name of the instance ",
+            "description": "Nome da instância",
             "schema": {
               "type": "string"
             }
@@ -2501,7 +2501,7 @@
         "operationId": "sendLocation",
         "summary": "Send Location",
         "tags": [
-          "Message Controller"
+          "Controlador de Mensagens"
         ],
         "deprecated": false,
         "security": [
@@ -2514,7 +2514,7 @@
             "name": "instance",
             "in": "path",
             "required": true,
-            "description": "Name of the instance",
+            "description": "Nome da instância",
             "schema": {
               "type": "string"
             }
@@ -2544,15 +2544,15 @@
                   },
                   "address": {
                     "type": "string",
-                    "description": "Location address"
+                    "description": "Endereço da localização"
                   },
                   "latitude": {
                     "type": "number",
-                    "description": "Latitude location"
+                    "description": "Latitude da localização"
                   },
                   "longitude": {
                     "type": "number",
-                    "description": "Longitude location"
+                    "description": "Longitude da localização"
                   },
                   "delay": {
                     "type": "integer",
@@ -2564,7 +2564,7 @@
                   },
                   "mentionsEveryOne": {
                     "type": "boolean",
-                    "description": "Mentioned everyone when the message send"
+                    "description": "Mencionou todos quando a mensagem foi enviada"
                   },
                   "mentioned": {
                     "type": "array",
@@ -2703,7 +2703,7 @@
         "operationId": "sendContact",
         "summary": "Send Contact",
         "tags": [
-          "Message Controller"
+          "Controlador de Mensagens"
         ],
         "deprecated": false,
         "security": [
@@ -2716,7 +2716,7 @@
             "name": "instance",
             "in": "path",
             "required": true,
-            "description": "Name of the instance",
+            "description": "Nome da instância",
             "schema": {
               "type": "string"
             }
@@ -2870,7 +2870,7 @@
         "operationId": "sendReaction",
         "summary": "Send Reaction",
         "tags": [
-          "Message Controller"
+          "Controlador de Mensagens"
         ],
         "deprecated": false,
         "security": [
@@ -2883,7 +2883,7 @@
             "name": "instance",
             "in": "path",
             "required": true,
-            "description": "Name of the instance",
+            "description": "Nome da instância",
             "schema": {
               "type": "string"
             }
@@ -3028,7 +3028,7 @@
         "operationId": "sendPoll",
         "summary": "Send Poll",
         "tags": [
-          "Message Controller"
+          "Controlador de Mensagens"
         ],
         "deprecated": false,
         "security": [
@@ -3041,7 +3041,7 @@
             "name": "instance",
             "in": "path",
             "required": true,
-            "description": "Name of the instance",
+            "description": "Nome da instância",
             "schema": {
               "type": "string"
             }
@@ -3066,7 +3066,7 @@
                   },
                   "name": {
                     "type": "string",
-                    "description": "Main text of the poll"
+                    "description": "Texto principal da enquete"
                   },
                   "selectableCount": {
                     "type": "number",
@@ -3094,7 +3094,7 @@
                   },
                   "mentionsEveryOne": {
                     "type": "boolean",
-                    "description": "Mentioned everyone when the message send"
+                    "description": "Mencionou todos quando a mensagem foi enviada"
                   },
                   "mentioned": {
                     "type": "array",
@@ -3171,7 +3171,7 @@
                               "description": "The secret of the message context."
                             }
                           },
-                          "description": "Information about the context of the message."
+                          "description": "Informações sobre o contexto da mensagem."
                         },
                         "pollCreationMessage": {
                           "type": "object",
@@ -3253,7 +3253,7 @@
         "operationId": "sendList",
         "summary": "Send List",
         "tags": [
-          "Message Controller"
+          "Controlador de Mensagens"
         ],
         "deprecated": false,
         "security": [
@@ -3266,7 +3266,7 @@
             "name": "instance",
             "in": "path",
             "required": true,
-            "description": "Name of the instance",
+            "description": "Nome da instância",
             "schema": {
               "type": "string"
             }
@@ -3349,7 +3349,7 @@
                   },
                   "mentionsEveryOne": {
                     "type": "boolean",
-                    "description": "Mentioned everyone when the message send"
+                    "description": "Mencionou todos quando a mensagem foi enviada"
                   },
                   "mentioned": {
                     "type": "array",
@@ -3426,7 +3426,7 @@
                               "description": "The secret of the message context."
                             }
                           },
-                          "description": "Information about the context of the message."
+                          "description": "Informações sobre o contexto da mensagem."
                         },
                         "pollCreationMessage": {
                           "type": "object",
@@ -3508,7 +3508,7 @@
         "operationId": "sendList",
         "summary": "Send Buttons",
         "tags": [
-          "Message Controller"
+          "Controlador de Mensagens"
         ],
         "deprecated": false,
         "security": [
@@ -3521,7 +3521,7 @@
             "name": "instance",
             "in": "path",
             "required": true,
-            "description": "Name of the instance",
+            "description": "Nome da instância",
             "schema": {
               "type": "string"
             }
@@ -3587,7 +3587,7 @@
                   },
                   "mentionsEveryOne": {
                     "type": "boolean",
-                    "description": "Mentioned everyone when the message send"
+                    "description": "Mencionou todos quando a mensagem foi enviada"
                   },
                   "mentioned": {
                     "type": "array",
@@ -3664,7 +3664,7 @@
                               "description": "The secret of the message context."
                             }
                           },
-                          "description": "Information about the context of the message."
+                          "description": "Informações sobre o contexto da mensagem."
                         },
                         "pollCreationMessage": {
                           "type": "object",
@@ -3759,7 +3759,7 @@
             "name": "instance",
             "in": "path",
             "required": true,
-            "description": "Name of the instance",
+            "description": "Nome da instância",
             "schema": {
               "type": "string"
             }
@@ -3826,7 +3826,7 @@
     "/chat/markMessageAsRead/{instance}": {
       "post": {
         "operationId": "markMessageAsRead",
-        "summary": "Mark Message As Read",
+        "summary": "Marcar Mensagem Como Lida",
         "tags": [
           "Controlador de Chat"
         ],
@@ -3841,13 +3841,13 @@
             "name": "instance",
             "in": "path",
             "required": true,
-            "description": "Name of the instance",
+            "description": "Nome da instância",
             "schema": {
               "type": "string"
             }
           }
         ],
-        "description": "Mark message as read",
+        "description": "Marcar mensagem como lida",
         "requestBody": {
           "content": {
             "application/json": {
@@ -3859,7 +3859,7 @@
                 "properties": {
                   "readMessages": {
                     "type": "array",
-                    "description": "Messages to be mark as read",
+                    "description": "Mensagens a serem marcadas como lidas",
                     "items": {
                       "type": "object",
                       "properties": {
@@ -3914,7 +3914,7 @@
     "/chat/markChatUnread/{instance}": {
       "post": {
         "operationId": "markMessageAsRead",
-        "summary": "Mark Message As Unread",
+        "summary": "Marcar Mensagem Como Não Lida",
         "tags": [
           "Controlador de Chat"
         ],
@@ -3929,13 +3929,13 @@
             "name": "instance",
             "in": "path",
             "required": true,
-            "description": "Name of the instance",
+            "description": "Nome da instância",
             "schema": {
               "type": "string"
             }
           }
         ],
-        "description": "Mark message as read",
+        "description": "Marcar mensagem como lida",
         "requestBody": {
           "content": {
             "application/json": {
@@ -3948,7 +3948,7 @@
                 "properties": {
                   "lastMessage": {
                     "type": "array",
-                    "description": "Messages to be mark as unread",
+                    "description": "Mensagens a serem marcadas como não lidas",
                     "items": {
                       "type": "object",
                       "properties": {
@@ -4022,7 +4022,7 @@
             "name": "instance",
             "in": "path",
             "required": true,
-            "description": "Name of the instance",
+            "description": "Nome da instância",
             "schema": {
               "type": "string"
             }
@@ -4042,7 +4042,7 @@
                 "properties": {
                   "lastMessage": {
                     "type": "object",
-                    "description": "Messages to be mark as read",
+                    "description": "Mensagens a serem marcadas como lidas",
                     "required": [
                       "key"
                     ],
@@ -4115,7 +4115,7 @@
     "/chat/deleteMessageForEveryone/{instance}": {
       "delete": {
         "operationId": "deleteMessageForEveryone",
-        "summary": "Delete Message For Everyone",
+        "summary": "Deletar Mensagem Para Todos",
         "tags": [
           "Controlador de Chat"
         ],
@@ -4130,13 +4130,13 @@
             "name": "instance",
             "in": "path",
             "required": true,
-            "description": "Name instance",
+            "description": "Nome da instância",
             "schema": {
               "type": "string"
             }
           }
         ],
-        "description": "Delete Message For Everyone",
+        "description": "Deletar Mensagem Para Todos",
         "requestBody": {
           "content": {
             "application/json": {
@@ -4284,7 +4284,7 @@
             "name": "instance",
             "in": "path",
             "required": true,
-            "description": "Name of the instance",
+            "description": "Nome da instância",
             "schema": {
               "type": "string"
             }
@@ -4362,7 +4362,7 @@
             "name": "instance",
             "in": "path",
             "required": true,
-            "description": "Name of the instance",
+            "description": "Nome da instância",
             "schema": {
               "type": "string"
             }
@@ -4418,7 +4418,7 @@
             "name": "instance",
             "in": "path",
             "required": true,
-            "description": "Name instance",
+            "description": "Nome da instância",
             "schema": {
               "type": "string"
             }
@@ -4489,7 +4489,7 @@
             "name": "instance",
             "in": "path",
             "required": true,
-            "description": "Name instance",
+            "description": "Nome da instância",
             "schema": {
               "type": "string"
             }
@@ -4545,7 +4545,7 @@
             "name": "instance",
             "in": "path",
             "required": true,
-            "description": "Name instance",
+            "description": "Nome da instância",
             "schema": {
               "type": "string"
             }
@@ -4611,7 +4611,7 @@
             "name": "instance",
             "in": "path",
             "required": true,
-            "description": "Name instance",
+            "description": "Nome da instância",
             "schema": {
               "type": "string"
             }
@@ -4669,7 +4669,7 @@
             "name": "instance",
             "in": "path",
             "required": true,
-            "description": "Name instance",
+            "description": "Nome da instância",
             "schema": {
               "type": "string"
             }
@@ -4690,11 +4690,11 @@
                     "properties": {
                       "_id": {
                         "type": "string",
-                        "description": "MongoDB message ID"
+                        "description": "ID da Mensagem MongoDB"
                       },
                       "id": {
                         "type": "string",
-                        "description": "Message ID (from WhatsApp)"
+                        "description": "ID da Mensagem (do WhatsApp)"
                       },
                       "remoteJid": {
                         "type": "string",
@@ -4708,7 +4708,7 @@
                   },
                   "limit": {
                     "type": "integer",
-                    "description": "Limit for the return"
+                    "description": "Limite para o retorno"
                   }
                 }
               }
@@ -4741,7 +4741,7 @@
             "name": "instance",
             "in": "path",
             "required": true,
-            "description": "Name instance",
+            "description": "Nome da instância",
             "schema": {
               "type": "string"
             }
@@ -4815,7 +4815,7 @@
             "name": "instance",
             "in": "path",
             "required": true,
-            "description": "Name instance",
+            "description": "Nome da instância",
             "schema": {
               "type": "string"
             }
@@ -4848,7 +4848,7 @@
             "name": "instance",
             "in": "path",
             "required": true,
-            "description": "Name of the instance",
+            "description": "Nome da instância",
             "schema": {
               "type": "string"
             }
@@ -4899,7 +4899,7 @@
             "name": "instance",
             "in": "path",
             "required": true,
-            "description": "Name of the instance",
+            "description": "Nome da instância",
             "schema": {
               "type": "string"
             }
@@ -4950,7 +4950,7 @@
             "name": "instance",
             "in": "path",
             "required": true,
-            "description": "Name instance",
+            "description": "Nome da instância",
             "schema": {
               "type": "string"
             }
@@ -5001,7 +5001,7 @@
             "name": "instance",
             "in": "path",
             "required": true,
-            "description": "Name of the instance",
+            "description": "Nome da instância",
             "schema": {
               "type": "string"
             }
@@ -5052,7 +5052,7 @@
             "name": "instance",
             "in": "path",
             "required": true,
-            "description": "Name instance",
+            "description": "Nome da instância",
             "schema": {
               "type": "string"
             }
@@ -5103,7 +5103,7 @@
             "name": "instance",
             "in": "path",
             "required": true,
-            "description": "Name instance",
+            "description": "Nome da instância",
             "schema": {
               "type": "string"
             }
@@ -5136,7 +5136,7 @@
             "name": "instance",
             "in": "path",
             "required": true,
-            "description": "Name of the instance ",
+            "description": "Nome da instância",
             "schema": {
               "type": "string"
             }
@@ -5169,7 +5169,7 @@
             "name": "instance",
             "in": "path",
             "required": true,
-            "description": "Name of the instance ",
+            "description": "Nome da instância",
             "schema": {
               "type": "string"
             }
@@ -5270,7 +5270,7 @@
             "name": "instance",
             "in": "path",
             "required": true,
-            "description": "Name of the instance ",
+            "description": "Nome da instância",
             "schema": {
               "type": "string"
             }
@@ -5333,7 +5333,7 @@
             "name": "instance",
             "in": "path",
             "required": true,
-            "description": "Name of the instance ",
+            "description": "Nome da instância",
             "schema": {
               "type": "string"
             }
@@ -5393,7 +5393,7 @@
             "name": "instance",
             "in": "path",
             "required": true,
-            "description": "Name of the instance ",
+            "description": "Nome da instância",
             "schema": {
               "type": "string"
             }
@@ -5453,7 +5453,7 @@
             "name": "instance",
             "in": "path",
             "required": true,
-            "description": "Name of the instance ",
+            "description": "Nome da instância",
             "schema": {
               "type": "string"
             }
@@ -5513,7 +5513,7 @@
             "name": "instance",
             "in": "path",
             "required": true,
-            "description": "Name of the instance ",
+            "description": "Nome da instância",
             "schema": {
               "type": "string"
             }
@@ -5617,7 +5617,7 @@
             "name": "instance",
             "in": "path",
             "required": true,
-            "description": "Name of the instance ",
+            "description": "Nome da instância",
             "schema": {
               "type": "string"
             }
@@ -5659,7 +5659,7 @@
             "name": "instance",
             "in": "path",
             "required": true,
-            "description": "Name of the instance ",
+            "description": "Nome da instância",
             "schema": {
               "type": "string"
             }
@@ -5743,7 +5743,7 @@
             "name": "instance",
             "in": "path",
             "required": true,
-            "description": "Name of the instance ",
+            "description": "Nome da instância",
             "schema": {
               "type": "string"
             }
@@ -5784,7 +5784,7 @@
             "name": "instance",
             "in": "path",
             "required": true,
-            "description": "Name of the instance ",
+            "description": "Nome da instância",
             "schema": {
               "type": "string"
             }
@@ -5871,7 +5871,7 @@
                           }
                         }
                       },
-                      "description": "List of participants in the group."
+                      "description": "Lista de participantes no grupo."
                     }
                   },
                   "example": {
@@ -5919,7 +5919,7 @@
             "name": "instance",
             "in": "path",
             "required": true,
-            "description": "Name of the instance ",
+            "description": "Nome da instância",
             "schema": {
               "type": "string"
             }
@@ -6048,7 +6048,7 @@
             "name": "instance",
             "in": "path",
             "required": true,
-            "description": "Name of the instance ",
+            "description": "Nome da instância",
             "schema": {
               "type": "string"
             }
@@ -6090,7 +6090,7 @@
                           "id"
                         ]
                       },
-                      "description": "List of participants in the group."
+                      "description": "Lista de participantes no grupo."
                     }
                   },
                   "example": {
@@ -6126,7 +6126,7 @@
             "name": "instance",
             "in": "path",
             "required": true,
-            "description": "Name of the instance ",
+            "description": "Nome da instância",
             "schema": {
               "type": "string"
             }
@@ -6195,7 +6195,7 @@
             "name": "instance",
             "in": "path",
             "required": true,
-            "description": "Name of the instance ",
+            "description": "Nome da instância",
             "schema": {
               "type": "string"
             }
@@ -6258,7 +6258,7 @@
             "name": "instance",
             "in": "path",
             "required": true,
-            "description": "Name of the instance ",
+            "description": "Nome da instância",
             "schema": {
               "type": "string"
             }
@@ -6303,7 +6303,7 @@
     "/group/leaveGroup/{instance}": {
       "delete": {
         "operationId": "leaveGroup",
-        "summary": "Leave Group",
+        "summary": "Sair do Grupo",
         "tags": [
           "Controlador de Grupos"
         ],
@@ -6318,7 +6318,7 @@
             "name": "instance",
             "in": "path",
             "required": true,
-            "description": "Name of the instance ",
+            "description": "Nome da instância",
             "schema": {
               "type": "string"
             }
@@ -6360,7 +6360,7 @@
             "name": "instance",
             "in": "path",
             "required": true,
-            "description": "Name of the instance",
+            "description": "Nome da instância",
             "schema": {
               "type": "string"
             }
@@ -6418,7 +6418,7 @@
                   },
                   "keywordFinish": {
                     "type": "string",
-                    "description": "Keyword to finish session"
+                    "description": "Palavra-chave para terminar a sessão"
                   },
                   "delayMessage": {
                     "type": "number",
@@ -6430,7 +6430,7 @@
                   },
                   "listeningFromMe": {
                     "type": "boolean",
-                    "description": "Marked as viewed"
+                    "description": "Marcado como visualizado"
                   },
                   "stopBotFromMe": {
                     "type": "boolean",
@@ -6475,7 +6475,7 @@
             "name": "instance",
             "in": "path",
             "required": true,
-            "description": "Name of the instance",
+            "description": "Nome da instância",
             "schema": {
               "type": "string"
             }
@@ -6551,7 +6551,7 @@
             "name": "instance",
             "in": "path",
             "required": true,
-            "description": "Name of the instance",
+            "description": "Nome da instância",
             "schema": {
               "type": "string"
             }
@@ -6603,7 +6603,7 @@
             "name": "instance",
             "in": "path",
             "required": true,
-            "description": "Name of the instance",
+            "description": "Nome da instância",
             "schema": {
               "type": "string"
             }
@@ -6634,7 +6634,7 @@
                   },
                   "keywordFinish": {
                     "type": "string",
-                    "description": "Keyword to finished session"
+                    "description": "Palavra-chave para sessão terminada"
                   },
                   "delayMessage": {
                     "type": "string",
@@ -6662,7 +6662,7 @@
                   },
                   "ignoreJids": {
                     "type": "string",
-                    "description": "Jids ignore from bot"
+                    "description": "JIDs ignorados do bot"
                   },
                   "typebotIdFallback": {
                     "type": "string",
@@ -6699,7 +6699,7 @@
             "name": "instance",
             "in": "path",
             "required": true,
-            "description": "Name of the instance",
+            "description": "Nome da instância",
             "schema": {
               "type": "string"
             }
@@ -6732,7 +6732,7 @@
             "name": "instance",
             "in": "path",
             "required": true,
-            "description": "Name of the instance",
+            "description": "Nome da instância",
             "schema": {
               "type": "string"
             }
@@ -6765,7 +6765,7 @@
             "name": "instance",
             "in": "path",
             "required": true,
-            "description": "Name of the instance",
+            "description": "Nome da instância",
             "schema": {
               "type": "string"
             }
@@ -6807,7 +6807,7 @@
             "name": "instance",
             "in": "path",
             "required": true,
-            "description": "Name of the instance",
+            "description": "Nome da instância",
             "schema": {
               "type": "string"
             }
@@ -6849,7 +6849,7 @@
             "name": "instance",
             "in": "path",
             "required": true,
-            "description": "Name of the instance",
+            "description": "Nome da instância",
             "schema": {
               "type": "string"
             }
@@ -6905,7 +6905,7 @@
                   },
                   "keywordFinish": {
                     "type": "string",
-                    "description": "Keyword to finished session"
+                    "description": "Palavra-chave para sessão terminada"
                   },
                   "delayMessage": {
                     "type": "number",
@@ -6917,7 +6917,7 @@
                   },
                   "listeningFromMe": {
                     "type": "boolean",
-                    "description": "Listening message for me"
+                    "description": "Mensagem de escuta para mim"
                   },
                   "stopBotFromMe": {
                     "type": "boolean",
@@ -6974,7 +6974,7 @@
             "name": "instance",
             "in": "path",
             "required": true,
-            "description": "Name of the instance",
+            "description": "Nome da instância",
             "schema": {
               "type": "string"
             }
@@ -7016,7 +7016,7 @@
             "name": "instance",
             "in": "path",
             "required": true,
-            "description": "Name of the instance",
+            "description": "Nome da instância",
             "schema": {
               "type": "string"
             }
@@ -7077,7 +7077,7 @@
                   },
                   "nameInbox": {
                     "type": "string",
-                    "description": "Name inbox chatwoot"
+                    "description": "Nome da caixa de entrada chatwoot"
                   },
                   "mergeBrazilContacts": {
                     "type": "boolean"
@@ -7112,7 +7112,7 @@
                     "type": "array",
                     "items": {
                       "type": "string",
-                      "description": "Jids ignore"
+                      "description": "JIDs ignorados"
                     }
                   }
                 }
@@ -7146,7 +7146,7 @@
             "name": "instance",
             "in": "path",
             "required": true,
-            "description": "Name of the instance",
+            "description": "Nome da instância",
             "schema": {
               "type": "string"
             }
@@ -7179,7 +7179,7 @@
             "name": "instance",
             "in": "path",
             "required": true,
-            "description": "Name of the instance",
+            "description": "Nome da instância",
             "schema": {
               "type": "string"
             }
@@ -7267,7 +7267,7 @@
             "name": "instance",
             "in": "path",
             "required": true,
-            "description": "Name of the instance",
+            "description": "Nome da instância",
             "schema": {
               "type": "string"
             }
@@ -7300,7 +7300,7 @@
             "name": "instance",
             "in": "path",
             "required": true,
-            "description": "Name of the instance",
+            "description": "Nome da instância",
             "schema": {
               "type": "string"
             }
@@ -7388,7 +7388,7 @@
             "name": "instance",
             "in": "path",
             "required": true,
-            "description": "Name of the instance",
+            "description": "Nome da instância",
             "schema": {
               "type": "string"
             }
@@ -7421,7 +7421,7 @@
             "name": "instance",
             "in": "path",
             "required": true,
-            "description": "Name of the instance",
+            "description": "Nome da instância",
             "schema": {
               "type": "string"
             }
@@ -7509,7 +7509,7 @@
             "name": "instance",
             "in": "path",
             "required": true,
-            "description": "Name of the instance",
+            "description": "Nome da instância",
             "schema": {
               "type": "string"
             }
@@ -7542,7 +7542,7 @@
             "name": "instance",
             "in": "path",
             "required": true,
-            "description": "Name of the instance",
+            "description": "Nome da instância",
             "schema": {
               "type": "string"
             }
@@ -7601,14 +7601,14 @@
                   },
                   "model": {
                     "type": "string",
-                    "description": "Model to be used (e.g., 'gpt-4o')"
+                    "description": "Modelo a ser usado (ex: 'gpt-4o')"
                   },
                   "systemMessages": {
                     "type": "array",
                     "items": {
                       "type": "string"
                     },
-                    "description": "Messages to define system behavior"
+                    "description": "Mensagens para definir o comportamento do sistema"
                   },
                   "assistantMessages": {
                     "type": "array",
@@ -7626,7 +7626,7 @@
                   },
                   "maxTokens": {
                     "type": "integer",
-                    "description": "Maximum number of tokens per interaction"
+                    "description": "Número máximo de tokens por interação"
                   },
                   "triggerType": {
                     "type": "string",
@@ -7646,7 +7646,7 @@
                   },
                   "keywordFinish": {
                     "type": "string",
-                    "description": "Keyword to terminate the bot interaction"
+                    "description": "Palavra-chave para terminar a interação do bot"
                   },
                   "delayMessage": {
                     "type": "integer",
@@ -7654,7 +7654,7 @@
                   },
                   "unknownMessage": {
                     "type": "string",
-                    "description": "Message to display for unrecognized input"
+                    "description": "Mensagem a exibir para entrada não reconhecida"
                   },
                   "listeningFromMe": {
                     "type": "boolean",
@@ -7677,7 +7677,7 @@
                     "items": {
                       "type": "string"
                     },
-                    "description": "List of JIDs to ignore"
+                    "description": "Lista de JIDs a ignorar"
                   }
                 }
               }
@@ -7710,7 +7710,7 @@
             "name": "instance",
             "in": "path",
             "required": true,
-            "description": "Name of the instance",
+            "description": "Nome da instância",
             "schema": {
               "type": "string"
             }
@@ -7743,7 +7743,7 @@
             "name": "instance",
             "in": "path",
             "required": true,
-            "description": "Name of the instance",
+            "description": "Nome da instância",
             "schema": {
               "type": "string"
             }
@@ -7770,7 +7770,7 @@
     "/openai/delete/:openaiBotId/{instance}": {
       "delete": {
         "operationId": "deleteBotOpenAI",
-        "summary": "Delete OpenAI Bot",
+        "summary": "Deletar Bot OpenAI",
         "tags": [
           "OpenIA Controller"
         ],
@@ -7785,7 +7785,7 @@
             "name": "instance",
             "in": "path",
             "required": true,
-            "description": "Name of the instance",
+            "description": "Nome da instância",
             "schema": {
               "type": "string"
             }
@@ -7827,7 +7827,7 @@
             "name": "instance",
             "in": "path",
             "required": true,
-            "description": "Name of the instance",
+            "description": "Nome da instância",
             "schema": {
               "type": "string"
             }
@@ -7891,18 +7891,18 @@
                     "items": {
                       "type": "string"
                     },
-                    "description": "Messages to be sent by the assistant"
+                    "description": "Mensagens a serem enviadas pelo assistente"
                   },
                   "userMessages": {
                     "type": "array",
                     "items": {
                       "type": "string"
                     },
-                    "description": "Messages sent by the user"
+                    "description": "Mensagens enviadas pelo usuário"
                   },
                   "maxTokens": {
                     "type": "integer",
-                    "description": "Maximum number of tokens for the bot's responses"
+                    "description": "Número máximo de tokens para as respostas do bot"
                   },
                   "triggerType": {
                     "type": "string",
@@ -7934,7 +7934,7 @@
                   },
                   "keywordFinish": {
                     "type": "string",
-                    "description": "Keyword to end the bot interaction"
+                    "description": "Palavra-chave para encerrar a interação do bot"
                   },
                   "delayMessage": {
                     "type": "integer",
@@ -7942,7 +7942,7 @@
                   },
                   "unknownMessage": {
                     "type": "string",
-                    "description": "Message to send if the bot doesn't recognize the input"
+                    "description": "Mensagem a enviar se o bot não reconhecer a entrada"
                   },
                   "listeningFromMe": {
                     "type": "boolean",
@@ -7965,7 +7965,7 @@
                     "items": {
                       "type": "string"
                     },
-                    "description": "List of JIDs to ignore"
+                    "description": "Lista de JIDs a ignorar"
                   }
                 },
                 "required": [
@@ -8004,7 +8004,7 @@
             "name": "instance",
             "in": "path",
             "required": true,
-            "description": "Name of the instance",
+            "description": "Nome da instância",
             "schema": {
               "type": "string"
             }
@@ -8060,7 +8060,7 @@
             "name": "instance",
             "in": "path",
             "required": true,
-            "description": "Name of the instance",
+            "description": "Nome da instância",
             "schema": {
               "type": "string"
             }
@@ -8078,7 +8078,7 @@
     "/openai/creds/:openaiCredsId/{instance}": {
       "delete": {
         "operationId": "deleteCredsOpenAI",
-        "summary": "Delete OpenAI Creds",
+        "summary": "Deletar Credenciais OpenAI",
         "tags": [
           "OpenIA Controller"
         ],
@@ -8093,7 +8093,7 @@
             "name": "instance",
             "in": "path",
             "required": true,
-            "description": "Name of the instance",
+            "description": "Nome da instância",
             "schema": {
               "type": "string"
             }
@@ -8135,7 +8135,7 @@
             "name": "instance",
             "in": "path",
             "required": true,
-            "description": "Name of the instance",
+            "description": "Nome da instância",
             "schema": {
               "type": "string"
             }
@@ -8159,7 +8159,7 @@
                   },
                   "keywordFinish": {
                     "type": "string",
-                    "description": "Keyword to finish the interaction"
+                    "description": "Palavra-chave para terminar a interação"
                   },
                   "delayMessage": {
                     "type": "integer",
@@ -8167,7 +8167,7 @@
                   },
                   "unknownMessage": {
                     "type": "string",
-                    "description": "Message when the input is not recognized"
+                    "description": "Mensagem quando a entrada não é reconhecida"
                   },
                   "listeningFromMe": {
                     "type": "boolean",
@@ -8190,7 +8190,7 @@
                     "items": {
                       "type": "string"
                     },
-                    "description": "List of JIDs (Jabber IDs) to ignore"
+                    "description": "Lista de JIDs (Jabber IDs) a ignorar"
                   },
                   "openaiIdFallback": {
                     "type": "string",
@@ -8262,7 +8262,7 @@
             "name": "instance",
             "in": "path",
             "required": true,
-            "description": "Name of the instance",
+            "description": "Nome da instância",
             "schema": {
               "type": "string"
             }
@@ -8295,7 +8295,7 @@
             "name": "instance",
             "in": "path",
             "required": true,
-            "description": "Name of the instance",
+            "description": "Nome da instância",
             "schema": {
               "type": "string"
             }
@@ -8388,7 +8388,7 @@
             "name": "instance",
             "in": "path",
             "required": true,
-            "description": "Name of the instance",
+            "description": "Nome da instância",
             "schema": {
               "type": "string"
             }
@@ -8441,7 +8441,7 @@
             "name": "instance",
             "in": "path",
             "required": true,
-            "description": "Name of the instance",
+            "description": "Nome da instância",
             "schema": {
               "type": "string"
             }
@@ -8582,7 +8582,7 @@
             "name": "instance",
             "in": "path",
             "required": true,
-            "description": "Name of the instance",
+            "description": "Nome da instância",
             "schema": {
               "type": "string"
             }
@@ -8626,7 +8626,7 @@
             "name": "instance",
             "in": "path",
             "required": true,
-            "description": "Name of the instance",
+            "description": "Nome da instância",
             "schema": {
               "type": "string"
             }
@@ -8679,7 +8679,7 @@
             "name": "instance",
             "in": "path",
             "required": true,
-            "description": "Name of the instance",
+            "description": "Nome da instância",
             "schema": {
               "type": "string"
             }
@@ -9103,7 +9103,7 @@
         "tags": [
           "n8n Controller"
         ],
-        "description": "Creates a new n8n bot with the provided configuration",
+        "description": "Cria um novo bot n8n com a configuração fornecida",
         "security": [
           {
             "ApiKeyAuth": []
@@ -9114,7 +9114,7 @@
             "name": "instance",
             "in": "path",
             "required": true,
-            "description": "Name of the instance",
+            "description": "Nome da instância",
             "schema": {
               "type": "string"
             }
@@ -9247,7 +9247,7 @@
             "name": "instance",
             "in": "path",
             "required": true,
-            "description": "Name of the instance",
+            "description": "Nome da instância",
             "schema": {
               "type": "string"
             }
@@ -9291,7 +9291,7 @@
             "name": "instance",
             "in": "path",
             "required": true,
-            "description": "Name of the instance",
+            "description": "Nome da instância",
             "schema": {
               "type": "string"
             }
@@ -9344,7 +9344,7 @@
             "name": "instance",
             "in": "path",
             "required": true,
-            "description": "Name of the instance",
+            "description": "Nome da instância",
             "schema": {
               "type": "string"
             }
@@ -9760,7 +9760,7 @@
         "tags": [
           "Controlador EvoAI"
         ],
-        "description": "Creates a new EvoAI bot with the provided configuration",
+        "description": "Cria um novo bot EvoAI com a configuração fornecida",
         "security": [
           {
             "ApiKeyAuth": []
@@ -9771,7 +9771,7 @@
             "name": "instance",
             "in": "path",
             "required": true,
-            "description": "Name of the instance",
+            "description": "Nome da instância",
             "schema": {
               "type": "string"
             }
@@ -9901,7 +9901,7 @@
             "name": "instance",
             "in": "path",
             "required": true,
-            "description": "Name of the instance",
+            "description": "Nome da instância",
             "schema": {
               "type": "string"
             }
@@ -9945,7 +9945,7 @@
             "name": "instance",
             "in": "path",
             "required": true,
-            "description": "Name of the instance",
+            "description": "Nome da instância",
             "schema": {
               "type": "string"
             }
@@ -9998,7 +9998,7 @@
             "name": "instance",
             "in": "path",
             "required": true,
-            "description": "Name of the instance",
+            "description": "Nome da instância",
             "schema": {
               "type": "string"
             }
@@ -10887,7 +10887,7 @@
     "/flowise/delete/:flowiseId/{instance}": {
       "delete": {
         "operationId": "deleteBot",
-        "summary": "Delete Bot Flowise",
+        "summary": "Deletar Bot Flowise",
         "tags": [
           "Controlador de Grupos"
         ],
@@ -10902,7 +10902,7 @@
             "name": "instance",
             "in": "path",
             "required": true,
-            "description": "Name of the instance ",
+            "description": "Nome da instância",
             "schema": {
               "type": "string"
             }
@@ -11269,7 +11269,7 @@
             "name": "instance",
             "in": "path",
             "required": true,
-            "description": "Name of the instance",
+            "description": "Nome da instância",
             "schema": {
               "type": "string"
             }
@@ -11327,7 +11327,7 @@
                   },
                   "keywordFinish": {
                     "type": "string",
-                    "description": "Keyword to terminate the session"
+                    "description": "Palavra-chave para terminar a sessão"
                   },
                   "delayMessage": {
                     "type": "number",
@@ -11335,11 +11335,11 @@
                   },
                   "unknownMessage": {
                     "type": "string",
-                    "description": "Message displayed when an unknown input is received"
+                    "description": "Mensagem exibida quando uma entrada desconhecida é recebida"
                   },
                   "listeningFromMe": {
                     "type": "boolean",
-                    "description": "Listen to messages sent by the bot owner"
+                    "description": "Ouvir mensagens enviadas pelo proprietário do bot"
                   },
                   "stopBotFromMe": {
                     "type": "boolean",
@@ -11358,7 +11358,7 @@
                     "items": {
                       "type": "string"
                     },
-                    "description": "List of JIDs to ignore"
+                    "description": "Lista de JIDs a ignorar"
                   }
                 }
               }
@@ -11403,7 +11403,7 @@
             "name": "instance",
             "in": "path",
             "required": true,
-            "description": "Name of the instance",
+            "description": "Nome da instância",
             "schema": {
               "type": "string"
             }
@@ -11465,7 +11465,7 @@
             "name": "instance",
             "in": "path",
             "required": true,
-            "description": "Name of the instance",
+            "description": "Nome da instância",
             "schema": {
               "type": "string"
             }
@@ -11523,7 +11523,7 @@
                   },
                   "keywordFinish": {
                     "type": "string",
-                    "description": "Keyword to terminate the session"
+                    "description": "Palavra-chave para terminar a sessão"
                   },
                   "delayMessage": {
                     "type": "number",
@@ -11531,11 +11531,11 @@
                   },
                   "unknownMessage": {
                     "type": "string",
-                    "description": "Message displayed when an unknown input is received"
+                    "description": "Mensagem exibida quando uma entrada desconhecida é recebida"
                   },
                   "listeningFromMe": {
                     "type": "boolean",
-                    "description": "Listen to messages sent by the bot owner"
+                    "description": "Ouvir mensagens enviadas pelo proprietário do bot"
                   },
                   "stopBotFromMe": {
                     "type": "boolean",
@@ -11554,7 +11554,7 @@
                     "items": {
                       "type": "string"
                     },
-                    "description": "List of JIDs to ignore"
+                    "description": "Lista de JIDs a ignorar"
                   }
                 }
               }
@@ -11599,7 +11599,7 @@
             "name": "instance",
             "in": "path",
             "required": true,
-            "description": "Name of the instance",
+            "description": "Nome da instância",
             "schema": {
               "type": "string"
             }
@@ -11628,7 +11628,7 @@
     "/evolutionBot/delete/:evolutionBotId/{instance}": {
       "delete": {
         "operationId": "deleteBot",
-        "summary": "Delete Bot Evolution",
+        "summary": "Deletar Bot Evolution",
         "tags": [
           "Controlador de Grupos"
         ],
@@ -11643,7 +11643,7 @@
             "name": "instance",
             "in": "path",
             "required": true,
-            "description": "Name of the instance ",
+            "description": "Nome da instância",
             "schema": {
               "type": "string"
             }
@@ -11685,7 +11685,7 @@
             "name": "instance",
             "in": "path",
             "required": true,
-            "description": "Name of the instance",
+            "description": "Nome da instância",
             "schema": {
               "type": "string"
             }
@@ -11715,7 +11715,7 @@
                   },
                   "keywordFinish": {
                     "type": "string",
-                    "description": "Keyword to terminate the session"
+                    "description": "Palavra-chave para terminar a sessão"
                   },
                   "delayMessage": {
                     "type": "number",
@@ -11723,11 +11723,11 @@
                   },
                   "unknownMessage": {
                     "type": "string",
-                    "description": "Message displayed when an unknown input is received"
+                    "description": "Mensagem exibida quando uma entrada desconhecida é recebida"
                   },
                   "listeningFromMe": {
                     "type": "boolean",
-                    "description": "Listen to messages sent by the bot owner"
+                    "description": "Ouvir mensagens enviadas pelo proprietário do bot"
                   },
                   "stopBotFromMe": {
                     "type": "boolean",
@@ -11746,7 +11746,7 @@
                     "items": {
                       "type": "string"
                     },
-                    "description": "List of JIDs to ignore"
+                    "description": "Lista de JIDs a ignorar"
                   },
                   "botIdFallback": {
                     "type": "string",
@@ -11783,7 +11783,7 @@
             "name": "instance",
             "in": "path",
             "required": true,
-            "description": "Name of the instance",
+            "description": "Nome da instância",
             "schema": {
               "type": "string"
             }
@@ -11816,7 +11816,7 @@
             "name": "instance",
             "in": "path",
             "required": true,
-            "description": "Name of the instance",
+            "description": "Nome da instância",
             "schema": {
               "type": "string"
             }
@@ -11858,7 +11858,7 @@
             "name": "instance",
             "in": "path",
             "required": true,
-            "description": "Name of the instance",
+            "description": "Nome da instância",
             "schema": {
               "type": "string"
             }
