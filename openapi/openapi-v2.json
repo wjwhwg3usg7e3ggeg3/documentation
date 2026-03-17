@@ -5255,7 +5255,7 @@
     "/group/create/{instance}": {
       "post": {
         "operationId": "createGroup",
-        "summary": "Create Group",
+        "summary": "Criar Grupo",
         "tags": [
           "Controlador de Grupos"
         ],
@@ -5276,7 +5276,7 @@
             }
           }
         ],
-        "description": "Create group",
+        "description": "Criar grupo",
         "requestBody": {
           "content": {
             "application/json": {
@@ -6345,7 +6345,7 @@
     "/typebot/create/{instance}": {
       "post": {
         "operationId": "setTypebot",
-        "summary": "Create Typebot",
+        "summary": "Criar Typebot",
         "tags": [
           "Typebot Controller"
         ],
@@ -7527,7 +7527,7 @@
     "/openai/create/{instance}": {
       "post": {
         "operationId": "createBotOpenAI",
-        "summary": "Create OpenAI",
+        "summary": "Criar OpenAI",
         "tags": [
           "OpenIA Controller"
         ],
@@ -7548,7 +7548,7 @@
             }
           }
         ],
-        "description": "Create an OpenAI bot with detailed configuration",
+        "description": "Criar um bot OpenAI com configuração detalhada",
         "requestBody": {
           "content": {
             "application/json": {
@@ -8426,11 +8426,11 @@
     "/dify/create/{instance}": {
       "post": {
         "operationId": "createDifyBot",
-        "summary": "Create a new Dify bot instance",
+        "summary": "Criar uma nova instância do bot Dify",
         "tags": [
           "Controlador Dify"
         ],
-        "description": "Creates a new Dify bot with the provided configuration",
+        "description": "Cria um novo bot Dify com a configuração fornecida",
         "security": [
           {
             "ApiKeyAuth": []
@@ -8664,7 +8664,7 @@
     "/dify/update/:difyId/{instance}": {
       "put": {
         "operationId": "updateDifyBot",
-        "summary": "Create a new Dify bot instance",
+        "summary": "Criar uma nova instância do bot Dify",
         "tags": [
           "Controlador Dify"
         ],
@@ -9099,7 +9099,7 @@
     "/n8n/create/{instance}": {
       "post": {
         "operationId": "createN8nBot",
-        "summary": "Create a new n8n bot instance",
+        "summary": "Criar uma nova instância do bot n8n",
         "tags": [
           "n8n Controller"
         ],
@@ -9329,7 +9329,7 @@
     "/n8n/update/:n8nId/{instance}": {
       "put": {
         "operationId": "updateN8nBot",
-        "summary": "Create a new n8n bot instance",
+        "summary": "Criar uma nova instância do bot n8n",
         "tags": [
           "n8n Controller"
         ],
@@ -9756,7 +9756,7 @@
     "/evoai/create/{instance}": {
       "post": {
         "operationId": "createEvoAIBot",
-        "summary": "Create a new evoai bot instance",
+        "summary": "Criar uma nova instância do bot evoai",
         "tags": [
           "Controlador EvoAI"
         ],
@@ -9983,7 +9983,7 @@
     "/evoai/update/:evoaiId/{instance}": {
       "put": {
         "operationId": "updateEvoAIBot",
-        "summary": "Create a new EvoAI bot instance",
+        "summary": "Criar uma nova instância do bot EvoAI",
         "tags": [
           "Controlador EvoAI"
         ],
@@ -10411,7 +10411,7 @@
         "tags": [
           "Controlador Flowise"
         ],
-        "description": "Create Bot Flowise",
+        "description": "Criar Bot Flowise",
         "security": [
           {
             "ApiKeyAuth": []
@@ -11254,7 +11254,7 @@
     "/evolutionBot/create/{instance}": {
       "post": {
         "operationId": "createEvolutionBot",
-        "summary": "Create Evolution Bot",
+        "summary": "Criar Bot Evolution",
         "tags": [
           "Controlador Bot Evolution"
         ],
@@ -11275,7 +11275,7 @@
             }
           }
         ],
-        "description": "Create a new Evolution Bot configuration.",
+        "description": "Criar uma nova configuração do Bot Evolution.",
         "requestBody": {
           "content": {
             "application/json": {
@@ -11670,7 +11670,7 @@
     "/evolutionBot/settings/{instance}": {
       "post": {
         "operationId": "createEvolutionBotSettings",
-        "summary": "Create Evolution Bot Settings",
+        "summary": "Criar Configurações do Bot Evolution",
         "tags": [
           "Controlador Bot Evolution"
         ],
