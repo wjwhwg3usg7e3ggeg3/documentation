@@ -1826,7 +1826,7 @@
                   },
                   "media": {
                     "type": "string",
-                    "description": "Url or base64"
+                    "description": "URL ou base64"
                   },
                   "fileName": {
                     "type": "string",
@@ -2265,7 +2265,7 @@
                   },
                   "sticker": {
                     "type": "string",
-                    "description": "Url or base64 "
+                    "description": "URL ou base64"
                   },
                   "delay": {
                     "type": "integer",
@@ -3082,7 +3082,7 @@
                         "Question 3"
                       ]
                     },
-                    "description": "Values for question"
+                    "description": "Valores para pergunta"
                   },
                   "delay": {
                     "type": "integer",
@@ -3564,7 +3564,7 @@
                       "properties": {
                         "title": {
                           "type": "string",
-                          "description": "Types: reply,url,call"
+                          "description": "Tipos: reply, url, call"
                         },
                         "displayText": {
                           "type": "string",
@@ -3744,7 +3744,7 @@
     "/chat/whatsappNumbers/{instance}": {
       "post": {
         "operationId": "whatsappNumbers",
-        "summary": "WhatsApp Numbers",
+        "summary": "Números WhatsApp",
         "tags": [
           "Controlador de Chat"
         ],
@@ -4073,7 +4073,7 @@
                   },
                   "archive": {
                     "type": "boolean",
-                    "description": "Whether to archive the chat or not"
+                    "description": "Se deve arquivar o chat ou não"
                   },
                   "chat": {
                     "type": "string",
@@ -4347,7 +4347,7 @@
     "/message/updateBlockStatus/{instance}": {
       "post": {
         "operationId": "updateBlockStatus",
-        "summary": "Update block status",
+        "summary": "Atualizar status de bloqueio",
         "tags": [
           "Controlador de Chat"
         ],
@@ -4385,7 +4385,7 @@
                   },
                   "status": {
                     "type": "string",
-                    "description": "Values: block, unblock "
+                    "description": "Valores: block, unblock"
                   }
                 }
               }
@@ -4457,7 +4457,7 @@
                     },
                     "profilePictureUrl": {
                       "type": "string",
-                      "description": "URL of the user's profile picture."
+                      "description": "URL da foto de perfil do usuário."
                     }
                   },
                   "example": {
@@ -4702,7 +4702,7 @@
                       },
                       "fromMe": {
                         "type": "boolean",
-                        "description": "Whether the message is from the instance owner or not"
+                        "description": "Se a mensagem é do proprietário da instância ou não"
                       }
                     }
                   },
@@ -4726,7 +4726,7 @@
     "/chat/updateMessage/{instance}": {
       "post": {
         "operationId": "updateMessage",
-        "summary": "Update Message",
+        "summary": "Atualizar Mensagem",
         "tags": [
           "Controlador de Chat"
         ],
@@ -4747,7 +4747,7 @@
             }
           }
         ],
-        "description": "Update message",
+        "description": "Atualizar mensagem",
         "requestBody": {
           "content": {
             "application/json": {
@@ -4935,7 +4935,7 @@
     "/chat/updateProfileName/{instance}": {
       "post": {
         "operationId": "updateProfileName",
-        "summary": "Update Profile Name",
+        "summary": "Atualizar Nome do Perfil",
         "tags": [
           "Controlador de Chat"
         ],
@@ -4956,7 +4956,7 @@
             }
           }
         ],
-        "description": "Update profile name",
+        "description": "Atualizar nome do perfil",
         "requestBody": {
           "content": {
             "application/json": {
@@ -4986,7 +4986,7 @@
     "/chat/updateProfileStatus/{instance}": {
       "post": {
         "operationId": "updateProfileStatus",
-        "summary": "Update Profile Status",
+        "summary": "Atualizar Status do Perfil",
         "tags": [
           "Controlador de Chat"
         ],
@@ -5007,7 +5007,7 @@
             }
           }
         ],
-        "description": "Update profile status",
+        "description": "Atualizar status do perfil",
         "requestBody": {
           "content": {
             "application/json": {
@@ -5037,7 +5037,7 @@
     "/chat/updateProfilePicture/{instance}": {
       "post": {
         "operationId": "updateProfilePicture",
-        "summary": "Update Profile Picture",
+        "summary": "Atualizar Foto de Perfil",
         "tags": [
           "Controlador de Chat"
         ],
@@ -5058,7 +5058,7 @@
             }
           }
         ],
-        "description": "Update profile picture",
+        "description": "Atualizar foto de perfil",
         "requestBody": {
           "content": {
             "application/json": {
@@ -5109,7 +5109,7 @@
             }
           }
         ],
-        "description": "Update profile picture",
+        "description": "Atualizar foto de perfil",
         "responses": {
           "200": {
             "description": "Ok",
@@ -5154,7 +5154,7 @@
     "/chat/updatePrivacySettings/{instance}": {
       "post": {
         "operationId": "updatePrivacySettings",
-        "summary": "Update Privacy Settings",
+        "summary": "Atualizar Configurações de Privacidade",
         "tags": [
           "Controlador de Chat"
         ],
@@ -5175,7 +5175,7 @@
             }
           }
         ],
-        "description": "Update privacy settings",
+        "description": "Atualizar configurações de privacidade",
         "requestBody": {
           "content": {
             "application/json": {
@@ -5318,9 +5318,9 @@
     },
     "/group/updateGroupPicture/{instance}": {
       "post": {
-        "summary": "Update group picture",
+        "summary": "Atualizar foto do grupo",
         "tags": [
-          "Update group picture"
+          "Atualizar foto do grupo"
         ],
         "deprecated": false,
         "security": [
@@ -5348,7 +5348,7 @@
             }
           }
         ],
-        "description": "Update group picture",
+        "description": "Atualizar foto do grupo",
         "requestBody": {
           "content": {
             "application/json": {
@@ -5378,7 +5378,7 @@
     "/group/updateGroupSubject/{instance}": {
       "post": {
         "operationId": "updateGroupSubject",
-        "summary": "Update Group Subject",
+        "summary": "Atualizar Assunto do Grupo",
         "tags": [
           "Controlador de Grupos"
         ],
@@ -5408,7 +5408,7 @@
             }
           }
         ],
-        "description": "Update group subject",
+        "description": "Atualizar assunto do grupo",
         "requestBody": {
           "content": {
             "application/json": {
@@ -5438,7 +5438,7 @@
     "/group/updateGroupDescription/{instance}": {
       "post": {
         "operationId": "updateGroupDescription",
-        "summary": "Update Group Description",
+        "summary": "Atualizar Descrição do Grupo",
         "tags": [
           "Controlador de Grupos"
         ],
@@ -5468,7 +5468,7 @@
             }
           }
         ],
-        "description": "Update group description",
+        "description": "Atualizar descrição do grupo",
         "requestBody": {
           "content": {
             "application/json": {
@@ -5826,7 +5826,7 @@
                     },
                     "pictureUrl": {
                       "type": "string",
-                      "description": "URL of the group's profile picture."
+                      "description": "URL da foto de perfil do grupo."
                     },
                     "size": {
                       "type": "integer",
@@ -5928,7 +5928,7 @@
             "name": "getParticipants",
             "in": "query",
             "required": true,
-            "description": "Whether to get the group members or not",
+            "description": "Se deve obter os membros do grupo ou não",
             "schema": {
               "type": "boolean"
             }
@@ -5963,7 +5963,7 @@
                       },
                       "pictureUrl": {
                         "type": "string",
-                        "description": "URL of the group's profile picture."
+                        "description": "URL da foto de perfil do grupo."
                       },
                       "size": {
                         "type": "integer",
@@ -6111,7 +6111,7 @@
     "/group/updateParticipant/{instance}": {
       "post": {
         "operationId": "updateParticipant",
-        "summary": "Update Group Members",
+        "summary": "Atualizar Membros do Grupo",
         "tags": [
           "Controlador de Grupos"
         ],
@@ -6141,7 +6141,7 @@
             }
           }
         ],
-        "description": "Update group members",
+        "description": "Atualizar membros do grupo",
         "requestBody": {
           "content": {
             "application/json": {
@@ -6180,7 +6180,7 @@
     "/group/updateSetting/{instance}": {
       "post": {
         "operationId": "updateSetting",
-        "summary": "Update Group Settings",
+        "summary": "Atualizar Configurações do Grupo",
         "tags": [
           "Controlador de Grupos"
         ],
@@ -6210,7 +6210,7 @@
             }
           }
         ],
-        "description": "Update group settings",
+        "description": "Atualizar configurações do grupo",
         "requestBody": {
           "content": {
             "application/json": {
@@ -6426,7 +6426,7 @@
                   },
                   "unknownMessage": {
                     "type": "string",
-                    "description": "Unrecognized message"
+                    "description": "Mensagem não reconhecida"
                   },
                   "listeningFromMe": {
                     "type": "boolean",
@@ -6511,11 +6511,11 @@
                       "properties": {
                         "name": {
                           "type": "string",
-                          "description": "Variable name"
+                          "description": "Nome da variável"
                         },
                         "value": {
                           "type": "string",
-                          "description": "Variable value"
+                          "description": "Valor da variável"
                         }
                       }
                     }
@@ -6570,7 +6570,7 @@
                   },
                   "status": {
                     "type": "string",
-                    "description": "Typebot status, types: opened, paused, closed"
+                    "description": "Status do typebot, tipos: opened, paused, closed"
                   }
                 }
               }
@@ -6642,7 +6642,7 @@
                   },
                   "unknownMessage": {
                     "type": "string",
-                    "description": "Unrecognized message"
+                    "description": "Mensagem não reconhecida"
                   },
                   "listeningFromMe": {
                     "type": "string",
@@ -6893,7 +6893,7 @@
                   },
                   "url": {
                     "type": "string",
-                    "description": "Url of typebot"
+                    "description": "URL do typebot"
                   },
                   "typebot": {
                     "type": "string",
@@ -6913,7 +6913,7 @@
                   },
                   "unknownMessage": {
                     "type": "string",
-                    "description": "Unrecognized message"
+                    "description": "Mensagem não reconhecida"
                   },
                   "listeningFromMe": {
                     "type": "boolean",
@@ -7408,7 +7408,7 @@
         "operationId": "setWebsocket",
         "summary": "Set Websocket",
         "tags": [
-          "Websocket Controller"
+          "Controlador Websocket"
         ],
         "deprecated": false,
         "security": [
@@ -7496,7 +7496,7 @@
         "operationId": "findWebsocket",
         "summary": "Encontrar Websocket",
         "tags": [
-          "Websocket Controller"
+          "Controlador Websocket"
         ],
         "deprecated": false,
         "security": [
@@ -7593,11 +7593,11 @@
                   },
                   "assistantId": {
                     "type": "string",
-                    "description": "Unique identifier for the assistant"
+                    "description": "Identificador único para o assistente"
                   },
                   "functionUrl": {
                     "type": "string",
-                    "description": "URL for additional bot functionality"
+                    "description": "URL para funcionalidade adicional do bot"
                   },
                   "model": {
                     "type": "string",
@@ -7638,7 +7638,7 @@
                   },
                   "triggerValue": {
                     "type": "string",
-                    "description": "Value to trigger the bot"
+                    "description": "Valor para ativar o bot"
                   },
                   "expire": {
                     "type": "integer",
@@ -7812,7 +7812,7 @@
     "/openai/update/:openaiBotId/{instance}": {
       "put": {
         "operationId": "updateBotOpenAI",
-        "summary": "Update OpenAI Bot",
+        "summary": "Atualizar Bot OpenAI",
         "tags": [
           "OpenIA Controller"
         ],
@@ -7842,7 +7842,7 @@
             }
           }
         ],
-        "description": "Update OpenAI bot with detailed configuration",
+        "description": "Atualizar bot OpenAI com configuração detalhada",
         "requestBody": {
           "description": "Configuração para a instância do bot OpenAI",
           "required": true,
@@ -8615,7 +8615,7 @@
         "tags": [
           "OpenAI Controller"
         ],
-        "description": "Update dify bot.",
+        "description": "Atualizar bot dify.",
         "security": [
           {
             "ApiKeyAuth": []
@@ -8668,7 +8668,7 @@
         "tags": [
           "Controlador Dify"
         ],
-        "description": "Update bot Dify",
+        "description": "Atualizar bot Dify",
         "security": [
           {
             "ApiKeyAuth": []
@@ -9280,7 +9280,7 @@
         "tags": [
           "n8n Controller"
         ],
-        "description": "Update n8n bot.",
+        "description": "Atualizar bot n8n.",
         "security": [
           {
             "ApiKeyAuth": []
@@ -9333,7 +9333,7 @@
         "tags": [
           "n8n Controller"
         ],
-        "description": "Update bot n8n",
+        "description": "Atualizar bot n8n",
         "security": [
           {
             "ApiKeyAuth": []
@@ -9934,7 +9934,7 @@
         "tags": [
           "Controlador EvoAI"
         ],
-        "description": "Update EvoAI bot.",
+        "description": "Atualizar bot EvoAI.",
         "security": [
           {
             "ApiKeyAuth": []
@@ -9987,7 +9987,7 @@
         "tags": [
           "Controlador EvoAI"
         ],
-        "description": "Update bot EvoAI",
+        "description": "Atualizar bot EvoAI",
         "security": [
           {
             "ApiKeyAuth": []
@@ -10694,7 +10694,7 @@
         "tags": [
           "Controlador Flowise"
         ],
-        "description": "Update flowise bot",
+        "description": "Atualizar bot flowise",
         "security": [
           {
             "ApiKeyAuth": []
@@ -11392,7 +11392,7 @@
         "tags": [
           "OpenAI Controller"
         ],
-        "description": "Update evo bot.",
+        "description": "Atualizar bot evo.",
         "security": [
           {
             "ApiKeyAuth": []
@@ -11441,7 +11441,7 @@
     "/evolutionBot/update/:evolutionBotId/{instance}": {
       "put": {
         "operationId": "updateEvolutionBot",
-        "summary": "Update Evolution Bot",
+        "summary": "Atualizar Bot Evolution",
         "tags": [
           "Controlador Bot Evolution"
         ],
@@ -11471,7 +11471,7 @@
             }
           }
         ],
-        "description": "Update an existing Evolution Bot configuration.",
+        "description": "Atualizar uma configuração existente do Bot Evolution.",
         "requestBody": {
           "content": {
             "application/json": {
@@ -11588,7 +11588,7 @@
         "tags": [
           "OpenAI Controller"
         ],
-        "description": "Update evo bots.",
+        "description": "Atualizar bots evo.",
         "security": [
           {
             "ApiKeyAuth": []
@@ -11877,7 +11877,7 @@
                   },
                   "status": {
                     "type": "string",
-                    "description": "Typebot status, types: opened, paused, closed"
+                    "description": "Status do typebot, tipos: opened, paused, closed"
                   }
                 }
               }
